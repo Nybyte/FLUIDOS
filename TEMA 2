@@ -1,0 +1,742 @@
+# Tema 2: Mecánica de Fluidos - Estática de Fluidos
+
+## Índice de Contenidos
+1. [Problema 1: Tensión en el Cable de Compuerta Rectangular Sumergida](#problema-1-tensión-en-el-cable-de-compuerta-rectangular-sumergida)
+2. [Problema 2: Presión y Aceleración en Tanque de Combustible Inclinado](#problema-2-presión-y-aceleración-en-tanque-de-combustible-inclinado)
+3. [Problema 3: Fuerzas en Compuerta con Articulación en el Fondo](#problema-3-fuerzas-en-compuerta-con-articulación-en-el-fondo)
+4. [Problema 4: Aceleración de Taza de Café sobre Bandeja Horizontal](#problema-4-aceleración-de-taza-de-café-sobre-bandeja-horizontal)
+5. [Problema 5: Fuerza Hidrostática sobre Superficie Curva](#problema-5-fuerza-hidrostática-sobre-superficie-curva)
+
+---
+
+## Problema 1: Tensión en el Cable de Compuerta Rectangular Sumergida
+
+### Enunciado
+Una puerta
+rectangular
+homogénea de
+1.25 metros de
+ancho y 2.5
+metros de largo
+que pesa 360 kg
+se mantiene en
+su lugar
+mediante un
+cable flexible
+horizontal como
+se muestra en la
+Figura 3. El
+agua actúa
+contra la
+puerta que está
+articulada en el
+punto A. La
+fricción en la
+bisagra es
+despreciable.
+Determine la
+tensión en el
+cable.
+
+### Datos
+Largo puerta:
+$$L = 2.5\ \text{m}$$
+Ancho puerta:
+$$b = 1.25\ \text{m}$$
+Ángulo inclin.:
+$$\theta = 60^\circ$$
+Masa puerta:
+$$m_p = 360\ \text{kg}$$
+Profundidad sum:
+$$L_{\text{sum}} = 2\ \text{m}$$
+Gravedad:
+$$g = 9.81\ \text{m/s}^2$$
+Peso esp. agua:
+$$\gamma = 9810\ \text{N/m}^3$$
+
+### Resolución
+
+1. Fuerza
+hidrostática
+$$F_R$$:
+La fuerza
+resultante sobre
+una superficie
+plana es:
+$$F_R = \gamma \cdot h_c \cdot A$$
+El centroide de
+la zona
+sumergida está a
+la mitad de su
+longitud:
+$$y_c = 1\ \text{m}$$
+La profundidad
+vertical del
+centroide es:
+$$h_c = y_c \cdot \sin(\theta)$$
+$$h_c = 1 \cdot \sin(60^\circ)$$
+$$h_c \approx 0.866\ \text{m}$$
+El área de la
+superficie
+sumergida es:
+$$A = L_{\text{sum}} \cdot b$$
+$$A = 2 \cdot 1.25$$
+$$A = 2.5\ \text{m}^2$$
+La fuerza
+resultante es:
+$$F_R = 9810 \cdot 0.866 \cdot 2.5$$
+$$F_R \approx 21239.5\ \text{N}$$
+
+2. Centro de
+presiones
+$$y_R$$:
+La distancia
+al centro de
+presiones es:
+$$y_R = y_c + \frac{I_{xc}}{y_c \cdot A}$$
+El momento de
+inercia de la
+sección es:
+$$I_{xc} = \frac{1}{12} b L_{\text{sum}}^3$$
+$$I_{xc} = \frac{1}{12} \cdot 1.25 \cdot (2)^3$$
+$$I_{xc} \approx 0.8333\ \text{m}^4$$
+Sustituyendo:
+$$y_R = 1 + \frac{0.8333}{1 \cdot 2.5}$$
+$$y_R = 1 + 0.3333$$
+$$y_R \approx 1.3333\ \text{m}$$
+La distancia
+desde la
+articulación A
+es:
+$$d_A = L_{\text{sum}} - y_R$$
+$$d_A = 2 - 1.3333$$
+$$d_A \approx 0.667\ \text{m}$$
+
+3. Equilibrio
+de momentos:
+Sumamos
+momentos
+respecto al
+punto A:
+$$\sum M_A = 0$$
+
+* Peso de la
+puerta:
+$$W_p = m_p \cdot g$$
+$$W_p = 360 \cdot 9.81$$
+$$W_p \approx 3531.6\ \text{N}$$
+Su centro de
+gravedad está a
+la mitad de la
+longitud total:
+$$d_G = 1.25\ \text{m}$$
+El brazo de
+palanca
+horizontal es:
+$$x_W = 1.25 \cdot \cos(60^\circ)$$
+$$x_W = 0.625\ \text{m}$$
+El momento
+del peso es:
+$$M_W = W_p \cdot x_W$$
+$$M_W = 3531.6 \cdot 0.625$$
+$$M_W \approx 2207.25\ \text{Nm}$$
+
+* Fuerza
+hidrostática:
+$$M_F = F_R \cdot d_A$$
+$$M_F = 21239.5 \cdot 0.667$$
+$$M_F \approx 14166.7\ \text{Nm}$$
+
+* Tensión del
+cable:
+La tensión T
+es horizontal,
+aplicada en
+el extremo
+superior:
+$$d_T = L = 2.5\ \text{m}$$
+El brazo de
+palanca
+vertical es:
+$$y_T = 2.5 \cdot \sin(60^\circ)$$
+$$y_T \approx 2.165\ \text{m}$$
+El momento de
+la tensión es:
+$$M_T = T \cdot 2.165$$
+
+Igualando
+los momentos:
+$$T \cdot 2.165 = M_W + M_F$$
+$$T \cdot 2.165 = 2207.25 + 14166.7$$
+$$T \cdot 2.165 = 16373.95$$
+$$T = \frac{16373.95}{2.165}$$
+$$T \approx 7563\ \text{N}$$
+La tensión en
+el cable es de
+7.56 kN.
+
+---
+
+## Problema 2: Presión y Aceleración en Tanque de Combustible Inclinado
+
+### Enunciado
+La sección
+transversal del
+tanque de
+combustible de
+un vehículo
+experimental se
+muestra en la
+Figura 1. El
+tanque es
+rectangular y
+se ventila a la
+atmósfera. La
+densidad
+relativa del
+combustible es
+de 0.65. Un
+medidor de
+presión
+("Transducer")
+está ubicado en
+su costado, como
+se ilustra.
+Durante la
+prueba del
+vehículo, el
+tanque está
+sujeto a una
+aceleración
+lineal constante
+ay. Determinar:
+(a) Una
+expresión que
+relacione ay y
+la presión
+relativa en el
+medidor de
+presión.
+(b) ¿Cuál es la
+aceleración
+máxima que
+puede ocurrir
+antes de que el
+nivel de
+combustible
+caiga por
+debajo del
+transductor?
+
+### Datos
+Densidad rel.:
+$$SG = 0.65$$
+Densidad fuel:
+$$\rho = 650\ \text{kg/m}^3$$
+Medio ancho:
+$$y_{\text{med}} = 0.23\ \text{m}$$
+Cota transduc.:
+$$z_{\text{trans}} = 0.15\ \text{m}$$
+Cota inicial:
+$$h_i = 0.15 + z_1$$
+Gravedad:
+$$g = 9.81\ \text{m/s}^2$$
+
+### Resolución
+
+#### Apartado a:
+Expresión de la
+presión
+relativa.
+Bajo una
+aceleración
+lineal
+horizontal
+$$a_y$$
+hacia la
+derecha, la
+superficie libre
+del combustible
+se inclina un
+ángulo
+$$\theta$$
+que cumple:
+$$\tan \theta = \frac{a_y}{g}$$
+
+Dado que el
+transductor
+está en la
+pared derecha
+$$(y = 0.23\ \text{m})$$,
+la altura de la
+superficie libre
+en ese punto
+disminuye por la
+inclinación:
+$$z_{\text{surf}} = h_i - 0.23 \cdot \tan\theta$$
+$$z_{\text{surf}} = (0.15 + z_1) - 0.23 \cdot \frac{a_y}{g}$$
+
+La presión
+relativa
+(manométrica)
+en el
+transductor es:
+$$p_{\text{rel}} = \rho \cdot g \cdot (z_{\text{surf}} - z_{\text{trans}})$$
+$$p_{\text{rel}} = \rho \cdot g \cdot \left( 0.15 + z_1 - 0.23 \frac{a_y}{g} - 0.15 \right)$$
+$$p_{\text{rel}} = \rho \cdot g \cdot \left( z_1 - 0.23 \frac{a_y}{g} \right)$$
+$$p_{\text{rel}} = \rho \cdot (g \cdot z_1 - 0.23 \cdot a_y)$$
+
+#### Apartado b:
+Aceleración
+máxima
+$$a_{y,\text{max}}$$.
+El nivel de
+combustible
+cae por debajo
+del transductor
+cuando la
+presión
+relativa en él
+se hace cero:
+$$p_{\text{rel}} = 0$$
+$$\rho \cdot (g \cdot z_1 - 0.23 \cdot a_{y,\text{max}}) = 0$$
+$$g \cdot z_1 - 0.23 \cdot a_{y,\text{max}} = 0$$
+Despejamos la
+aceleración:
+$$a_{y,\text{max}} = \frac{g \cdot z_1}{0.23}$$
+
+Si consideramos
+el valor de la
+gravedad
+$$g = 9.81\ \text{m/s}^2$$,
+tenemos la
+expresión:
+$$a_{y,\text{max}} = 42.65 \cdot z_1\ \text{m/s}^2$$
+
+Por ejemplo, si
+la distancia
+$$z_1$$
+fuese de
+$$0.15\ \text{m}$$,
+la aceleración
+máxima sería:
+$$a_{y,\text{max}} = \frac{9.81 \cdot 0.15}{0.23}$$
+$$a_{y,\text{max}} \approx 6.4\ \text{m/s}^2$$
+
+---
+
+## Problema 3: Fuerzas en Compuerta con Articulación en el Fondo
+
+### Enunciado
+La compuerta de
+la Figura tiene
+1.524 m de
+ancho, está
+articulada en el
+punto B y
+descansa sobre
+una pared lisa
+en el punto A.
+Calcule:
+(a) La fuerza
+sobre la
+compuerta
+debida a la
+presión del
+agua.
+(b) La fuerza
+horizontal P
+que se ejerce
+sobre la pared
+en A.
+
+### Datos
+Ancho compuerta:
+$$b = 1.524\ \text{m}$$
+Altura vertical:
+$$h_v = 1.83\ \text{m}$$
+Proyec. horiz.:
+$$h_h = 2.44\ \text{m}$$
+Profundidad:
+$$H = 4.57\ \text{m}$$
+Densidad mar:
+$$\rho = 1025.18\ \text{kg/m}^3$$
+Gravedad:
+$$g = 9.807\ \text{m/s}^2$$
+Peso esp. mar:
+$$\gamma = 10053.6\ \text{N/m}^3$$
+
+### Resolución
+
+#### Apartado a:
+Fuerza
+hidrostática F.
+La longitud de
+la compuerta
+inclinada L es:
+$$L = \sqrt{h_h^2 + h_v^2}$$
+$$L = \sqrt{2.44^2 + 1.83^2}$$
+$$L = 3.05\ \text{m}$$
+
+El área de la
+compuerta es:
+$$A = L \cdot b$$
+$$A = 3.05 \cdot 1.524$$
+$$A = 4.6482\ \text{m}^2$$
+
+Profundidad del
+centroide hc:
+La compuerta
+va desde la
+profundidad
+4.57 m (en B)
+hasta la cota
+A a una
+profundidad:
+$$h_A = 4.57 - 1.83$$
+$$h_A = 2.74\ \text{m}$$
+El centroide es:
+$$h_c = \frac{4.57 + 2.74}{2}$$
+$$h_c = 3.655\ \text{m}$$
+
+La fuerza
+resultante es:
+$$F = \gamma \cdot h_c \cdot A$$
+$$F = 10053.6 \cdot 3.655 \cdot 4.6482$$
+$$F \approx 170.81\ \text{kN}$$
+
+#### Apartado b:
+Fuerza P en A.
+Ángulo de
+inclinación de
+la compuerta:
+$$\sin \theta = \frac{1.83}{3.05}$$
+$$\sin \theta = 0.6$$
+
+Definimos la
+coordenada y
+desde la
+intersección
+virtual de la
+compuerta
+con la
+superficie:
+* Origen al
+punto B:
+$$y_B = \frac{4.57}{0.6}$$
+$$y_B \approx 7.617\ \text{m}$$
+* Origen al
+centroide:
+$$y_c = \frac{3.655}{0.6}$$
+$$y_c \approx 6.092\ \text{m}$$
+
+El momento de
+inercia de la
+compuerta es:
+$$I_{xc} = \frac{1}{12} b L^3$$
+$$I_{xc} = \frac{1}{12} \cdot 1.524 \cdot (3.05)^3$$
+$$I_{xc} \approx 3.606\ \text{m}^4$$
+
+Determinamos el
+centro de
+presiones:
+$$y_p = y_c + \frac{I_{xc}}{y_c \cdot A}$$
+$$y_p = 6.092 + \frac{3.606}{6.092 \cdot 4.6482}$$
+$$y_p = 6.092 + 0.127$$
+$$y_p = 6.219\ \text{m}$$
+
+La distancia
+del centro de
+presiones al
+punto B es:
+$$d_B = y_B - y_p$$
+$$d_B = 7.617 - 6.219$$
+$$d_B \approx 1.398\ \text{m}$$
+
+Hacemos un
+equilibrio de
+momentos
+respecto a B:
+$$\sum M_B = 0$$
+La fuerza P
+es horizontal,
+y su brazo
+de palanca
+vertical
+respecto a B
+es de 1.83 m.
+$$P \cdot 1.83 = F \cdot d_B$$
+$$P = 170.81\ \text{kN} \cdot \left( \frac{1.398\ \text{m}}{1.83\ \text{m}} \right)$$
+$$P \approx 130.33\ \text{kN}$$
+La fuerza
+horizontal P
+es de 130.33 kN.
+
+---
+
+## Problema 4: Aceleración de Taza de Café sobre Bandeja Horizontal
+
+### Enunciado
+Una cinta
+transportadora
+lleva una taza
+de café sobre
+una bandeja
+horizontal
+mientras se
+acelera a
+7 m/s². La taza
+tiene 10 cm de
+profundidad y
+6 cm de diámetro
+y el café que
+contiene llega
+hasta 3 cm del
+borde en reposo.
+A) Suponiendo
+que el café
+adquiere una
+aceleración
+uniforme,
+determine si se
+derramará o no.
+B) Calcule la
+presión
+manométrica en
+el punto A si la
+densidad del
+café es de
+1010 kg/m³.
+
+### Datos
+Aceleración:
+$$a_x = 7\ \text{m/s}^2$$
+Profundidad:
+$$H_t = 0.1\ \text{m}$$
+Diámetro:
+$$D = 0.06\ \text{m}$$
+Radio taza:
+$$R = 0.03\ \text{m}$$
+Espacio libre:
+$$d_{\text{libre}} = 0.03\ \text{m}$$
+Altura café:
+$$h_{\text{café}} = 0.07\ \text{m}$$
+Densidad café:
+$$\rho = 1010\ \text{kg/m}^3$$
+Gravedad:
+$$g = 9.81\ \text{m/s}^2$$
+
+### Resolución
+
+#### Apartado a:
+Determinación de
+derrame.
+La aceleración
+provoca una
+inclinación de
+la superficie
+libre de
+ángulo
+$$\theta$$:
+$$\tan \theta = \frac{a_x}{g}$$
+$$\tan \theta = \frac{7}{9.81}$$
+$$\tan \theta \approx 0.7136$$
+
+La elevación de
+la superficie
+libre en la
+pared del
+recipiente es:
+$$\Delta z = R \cdot \tan\theta$$
+$$\Delta z = 0.03 \cdot 0.7136$$
+$$\Delta z = 0.0214\ \text{m}$$
+$$\Delta z = 2.14\ \text{cm}$$
+Dado que la
+altura libre
+disponible en
+reposo es de
+3 cm, y
+$$2.14\ \text{cm} < 3\ \text{cm}$$,
+el café no se
+derramará.
+
+#### Apartado b:
+Presión
+manométrica en
+punto A.
+El punto A está
+en el fondo de
+la taza a la
+izquierda. Sus
+coordenadas
+respecto al
+centro de la
+superficie libre
+son:
+$$x_A = -0.03\ \text{m}$$
+$$z_A = -0.07\ \text{m}$$
+
+La presión en
+cualquier punto
+se modela como:
+$$p = p_0 - \rho a_x x - \rho g z$$
+Estableciendo
+la superficie
+manométrica de
+referencia
+$$(p_0 = 0)$$:
+$$p_A = -\rho a_x x_A - \rho g z_A$$
+$$p_A = -(1010 \cdot 7 \cdot (-0.03)) - (1010 \cdot 9.81 \cdot (-0.07))$$
+$$p_A = 212.1 + 693.57$$
+$$p_A \approx 906\ \text{Pa}$$
+La presión en
+el punto A es
+de 906 Pa.
+
+---
+
+## Problema 5: Fuerza Hidrostática sobre Superficie Curva
+
+### Enunciado
+Calcular la
+fuerza
+hidrostática
+resultante F
+sobre la
+superficie curva
+AB de un cuarto
+de cilindro de
+2 m de radio y
+1 m de ancho,
+y su línea de
+acción (centro
+de presiones),
+si la cota del
+borde superior
+B es de 4 m de
+profundidad.
+
+### Datos
+Radio arco:
+$$R = 2\ \text{m}$$
+Ancho:
+$$b = 1\ \text{m}$$
+Densidad:
+$$\rho = 1000\ \text{kg/m}^3$$
+Gravedad:
+$$g = 9.81\ \text{m/s}^2$$
+Profundidad B:
+$$h_B = 4\ \text{m}$$
+
+### Resolución
+
+1. Fuerza
+Horizontal
+$$F_H$$:
+Es igual a la
+fuerza sobre la
+proyección
+vertical de la
+superficie, de
+altura R = 2 m
+y ancho b = 1 m.
+El centroide de
+esta proyección
+vertical está a:
+$$h_{c,H} = 4 + \frac{R}{2}$$
+$$h_{c,H} = 4 + 1$$
+$$h_{c,H} = 5\ \text{m}$$
+La fuerza es:
+$$F_H = \rho g h_{c,H} A_{\text{proy}}$$
+$$F_H = 1000 \cdot 9.81 \cdot 5 \cdot (2 \cdot 1)$$
+$$F_H = 98100\ \text{N}$$
+$$F_H = 98.1\ \text{kN}$$
+
+2. Fuerza
+Vertical
+$$F_V$$:
+Es igual al peso
+del volumen de
+agua sobre la
+superficie
+curva, formado
+por un bloque
+rectangular
+$$(2\ \text{m} \times 4\ \text{m} \times 1\ \text{m})$$
+y un cuarto de
+cilindro
+$$(R=2\ \text{m}, L=1\ \text{m})$$.
+
+Volumen del
+bloque:
+$$V_1 = 2 \cdot 4 \cdot 1$$
+$$V_1 = 8\ \text{m}^3$$
+
+Volumen del
+cuarto de
+cilindro:
+$$V_2 = \frac{\pi R^2}{4} \cdot 1$$
+$$V_2 = \frac{\pi \cdot 2^2}{4} \cdot 1$$
+$$V_2 = \pi \approx 3.1416\ \text{m}^3$$
+
+La fuerza
+vertical es:
+$$F_V = \rho \cdot g \cdot (V_1 + V_2)$$
+$$F_V = 1000 \cdot 9.81 \cdot (8 + 3.1416)$$
+$$F_V = 109319\ \text{N}$$
+$$F_V \approx 109.32\ \text{kN}$$
+
+3. Fuerza
+Resultante F:
+$$F = \sqrt{F_H^2 + F_V^2}$$
+$$F = \sqrt{98.1^2 + 109.32^2}$$
+$$F \approx 146.9\ \text{kN}$$
+
+4. Centro de
+presiones:
+* Coordenada
+vertical
+$$y_{cp}$$:
+Es la profundidad
+del centro de
+presiones del
+rectángulo de la
+proyección
+vertical:
+$$y_{cp} = h_{c,H} + \frac{I_{xc}}{h_{c,H} \cdot A_{\text{proy}}}$$
+El momento de
+inercia es:
+$$I_{xc} = \frac{1}{12} b R^3$$
+$$I_{xc} = \frac{1}{12} \cdot 1 \cdot (2)^3$$
+$$I_{xc} \approx 0.6667\ \text{m}^4$$
+Sustituyendo:
+$$y_{cp} = 5 + \frac{0.6667}{5 \cdot 2}$$
+$$y_{cp} = 5 + 0.0667$$
+$$y_{cp} \approx 5.067\ \text{m}$$
+
+* Coordenada
+horizontal
+$$x_{cp}$$:
+Es la distancia
+del centroide
+del volumen de
+agua acumulada
+medida desde la
+pared vertical:
+$$x_{cp} = \frac{V_1 x_1 + V_2 x_2}{V_1 + V_2}$$
+Centroides de
+cada volumen:
+$$x_1 = 1\ \text{m}$$
+$$x_2 = \frac{4 R}{3\pi}$$
+$$x_2 = \frac{8}{3\pi} \approx 0.8488\ \text{m}$$
+Sustituyendo:
+$$x_{cp} = \frac{8 \cdot 1 + 3.1416 \cdot 0.8488}{8 + 3.1416}$$
+$$x_{cp} = \frac{8 + 2.6667}{11.1416}$$
+$$x_{cp} \approx 0.957\ \text{m}$$
+La fuerza
+resultante pasa
+por el punto:
+$$(0.957, 5.067)\ \text{m}$$
+con una
+magnitud de
+146.9 kN.

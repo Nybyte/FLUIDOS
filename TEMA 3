@@ -1,0 +1,1553 @@
+Tema 3: Mecánica de Fluidos - Conservación de la Cantidad de Movimiento
+
+## Índice de Contenidos
+* [Parte 1: Problemas de Clase (TEMA 3. FLUIDODINÁMICA)](#parte-1-problemas-de-clase-tema-3-fluidodinámica)
+  1. [Problema 1: Caudal Ideal en Tubo de Pitot](#problema-1-caudal-ideal-en-tubo-de-pitot)
+  2. [Problema 2: Caudal en Venturi con Manómetro Diferencial](#problema-2-caudal-en-venturi-con-manómetro-diferencial)
+  3. [Problema 3: Análisis de Sifón Ideal](#problema-3-análisis-de-sifón-ideal)
+  4. [Problema 4: Sifón con Pérdidas de Carga](#problema-4-sifón-con-pérdidas-de-carga)
+  5. [Problema 5: Submarino y Presión de Estancamiento](#problema-5-submarino-y-presión-de-estancamiento)
+  6. [Problema 6: Espesor de Líquido Liviano en Tanque](#problema-6-espesor-de-líquido-liviano-en-tanque)
+  7. [Problema 7: Presiones en Instalación con Bomba](#problema-7-presiones-en-instalación-con-bomba)
+  8. [Problema 8: Fuerza en Tobera de Manguera](#problema-8-fuerza-en-tobera-de-manguera)
+  9. [Problema 9: Conducto de Sección Variable y Bridas](#problema-9-conducto-de-sección-variable-y-bridas)
+  10. [Problema 10: Manómetro en Túnel de Viento](#problema-10-manómetro-en-túnel-de-viento)
+* [Parte 2: Problemas Propuestos de Examen](#parte-2-problemas-propuestos-de-examen)
+  1. [Problema Propuesto 1: Fuerza de Anclaje en Boquilla Vertical](#problema-propuesto-1-fuerza-de-anclaje-en-boquilla-vertical)
+  2. [Problema Propuesto 2: Sifón de Tanque Grande y Cavitación](#problema-propuesto-2-sifón-de-tanque-grande-y-cavitación)
+  3. [Problema Propuesto 3: Codo de 180° y Fuerza en las Bridas](#problema-propuesto-3-codo-de-180-y-fuerza-en-las-bridas)
+  4. [Problema Propuesto 4: Tanque Cerrado con Pitot y Manómetro de Mercurio](#problema-propuesto-4-tanque-cerrado-con-pitot-y-manómetro-de-mercurio)
+
+---
+
+# Parte 1: Problemas de Clase (TEMA 3. FLUIDODINÁMICA)
+
+## Problema 1: Caudal Ideal en Tubo de Pitot
+
+### Enunciado
+Calcular el
+caudal ideal que
+circula por la
+tubería de la
+figura.
+Despréciense los
+rozamientos,
+$$l = 500\ \text{mm}$$
+El tubo de la
+figura es un
+tubo de Pitot.
+
+### Datos
+Diámetro tubo:
+$$D_1 = 150\ \text{mm} = 0.15\ \text{m}$$
+Deflexión:
+$$l = 500\ \text{mm} = 0.5\ \text{m}$$
+Gravedad:
+$$g = 9.81\ \text{m/s}^2$$
+
+### Resolución
+El piezómetro
+izquierdo mide
+la altura de
+presión
+estática en la
+sección (1). El
+Pitot derecho
+mide la altura
+de presión de
+estancamiento
+en la línea de
+corriente.
+
+La diferencia
+de niveles
+$$l$$
+representa la
+carga de
+velocidad en la
+sección (1):
+$$l = \frac{v_1^2}{2g}$$
+Despejamos la
+velocidad:
+$$v_1 = \sqrt{2g \cdot l}$$
+$$v_1 = \sqrt{2 \cdot 9.81 \cdot 0.5}$$
+$$v_1 \approx 3.132\ \text{m/s}$$
+
+El área
+transversal del
+conducto es:
+$$A_1 = \frac{\pi \cdot D_1^2}{4}$$
+$$A_1 = \frac{\pi \cdot (0.15)^2}{4}$$
+$$A_1 \approx 0.01767\ \text{m}^2$$
+
+El caudal es:
+$$Q = A_1 \cdot v_1$$
+$$Q = 0.01767 \cdot 3.132$$
+$$Q \approx 0.0553\ \text{m}^3/\text{s}$$
+El caudal es
+de 55.3 L/s.
+
+---
+
+## Problema 2: Caudal en Venturi con Manómetro Diferencial
+
+### Enunciado
+Determínese el
+caudal de agua
+en la
+conducción de
+la figura,
+despreciando
+las pérdidas de
+carga entre las
+secciones 1 y 2.
+
+### Datos
+Diámetro 1:
+$$D_1 = 0.3\ \text{m}$$
+Diámetro 2:
+$$D_2 = 0.15\ \text{m}$$
+Deflexión Hg:
+$$d = 0.2\ \text{m}$$
+Desnivel cotas:
+$$z_2 - z_1 = 0.75\ \text{m}$$
+Densidad rel. Hg:
+$$SG_{\text{Hg}} = 13.6$$
+Peso esp. agua:
+$$\gamma_w$$
+
+### Resolución
+
+1. Manómetro:
+Recorremos el
+manómetro
+desde 1 hasta 2:
+$$p_1 + \gamma_w (h + 0.2) - \gamma_{\text{Hg}} (0.2) - \gamma_w (h + 0.75) = p_2$$
+Simplificando
+la diferencia
+de presiones:
+$$p_1 - p_2 = \gamma_w \cdot 0.75 + 0.2 \cdot (\gamma_{\text{Hg}} - \gamma_w)$$
+Dividiendo
+por:
+$$\gamma_w$$
+$$\frac{p_1 - p_2}{\gamma_w} = 0.75 + 0.2 \cdot (SG_{\text{Hg}} - 1)$$
+$$\frac{p_1 - p_2}{\gamma_w} = 0.75 + 0.2 \cdot 12.6$$
+$$\frac{p_1 - p_2}{\gamma_w} = 3.27\ \text{m}$$
+
+2. Bernoulli:
+Aplicando
+Bernoulli
+entre 1 y 2:
+$$\frac{p_1 - p_2}{\gamma_w} = z_2 - z_1 + \frac{v_2^2 - v_1^2}{2g}$$
+$$\frac{p_1 - p_2}{\gamma_w} = 0.75 + \frac{v_2^2 - v_1^2}{2g}$$
+
+3. Igualando:
+$$3.27 = 0.75 + \frac{v_2^2 - v_1^2}{2g}$$
+$$\frac{v_2^2 - v_1^2}{2g} = 2.52\ \text{m}$$
+$$v_2^2 - v_1^2 = 2.52 \cdot 2 \cdot 9.81$$
+$$v_2^2 - v_1^2 \approx 49.44\ \text{m}^2/\text{s}^2$$
+
+Por continuidad:
+$$v_1 = v_2 \cdot \left( \frac{D_2}{D_1} \right)^2$$
+$$v_1 = v_2 \cdot \left( \frac{0.15}{0.30} \right)^2$$
+$$v_1 = 0.25 \cdot v_2$$
+Sustituyendo
+en la ecuación:
+$$v_2^2 - (0.25 v_2)^2 = 49.44$$
+$$0.9375 \cdot v_2^2 = 49.44$$
+$$v_2 = \sqrt{\frac{49.44}{0.9375}}$$
+$$v_2 \approx 7.26\ \text{m/s}$$
+
+El caudal es:
+$$Q = A_2 \cdot v_2$$
+$$Q = \frac{\pi \cdot D_2^2}{4} \cdot 7.26$$
+$$Q = 0.01767 \cdot 7.26$$
+$$Q \approx 0.128\ \text{m}^3/\text{s}$$
+El caudal es
+de 128 L/s.
+
+---
+
+## Problema 3: Análisis de Sifón Ideal
+
+### Enunciado
+En el sifón de
+agua de la
+figura, en el
+que se
+despreciarán
+las pérdidas,
+el diámetro es
+constante e
+igual a
+150 mm,
+H = 3 m y
+$$z_A = 4.5\ \text{m}$$
+Presión
+barométrica:
+$$770\ \text{Torr}$$
+Calcular:
+a) Velocidad y
+caudal de
+desagüe.
+b) Presión
+absoluta y
+relativa en el
+punto más alto
+del sifón.
+
+### Datos
+Diámetro:
+$$D = 0.15\ \text{m}$$
+Carga H:
+$$H = 3\ \text{m}$$
+Cota máxima A:
+$$z_A = 4.5\ \text{m}$$
+Presión bar.:
+$$P_{\text{atm}} = 770\ \text{Torr}$$
+
+### Resolución
+
+#### Apartado a:
+Velocidad y
+caudal en
+salida S.
+Aplicamos
+Bernoulli
+desde la
+superficie
+libre (1)
+$$(z_1 = 3\ \text{m})$$
+hasta la
+salida S
+$$(z_S = 0\ \text{m})$$.
+Ambas presiones
+son relativas a
+la atmósfera
+$$(P_{\text{rel}} = 0)$$:
+$$z_1 + 0 + 0 = z_S + 0 + \frac{v_S^2}{2g}$$
+$$3 = 0 + 0 + \frac{v_S^2}{2g}$$
+$$v_S = \sqrt{2g \cdot 3}$$
+$$v_S = \sqrt{2 \cdot 9.81 \cdot 3}$$
+$$v_S \approx 7.67\ \text{m/s}$$
+
+El caudal es:
+$$Q = A \cdot v_S$$
+$$Q = \frac{\pi \cdot (0.15)^2}{4} \cdot 7.67$$
+$$Q \approx 0.135\ \text{m}^3/\text{s}$$
+
+#### Apartado b:
+Presión en A.
+Aplicamos
+Bernoulli
+desde la
+superficie
+libre (1) hasta
+el punto más
+alto A:
+$$z_1 + 0 + 0 = z_A + \frac{p_{A,\text{rel}}}{\gamma} + \frac{v_A^2}{2g}$$
+Por continuidad:
+$$v_A = v_S \approx 7.67\ \text{m/s}$$
+Sustituyendo:
+$$3 = 4.5 + \frac{p_{A,\text{rel}}}{\gamma} + 3$$
+$$\frac{p_{A,\text{rel}}}{\gamma} = -4.5\ \text{m}$$
+$$p_{A,\text{rel}} = -4.5 \cdot 9810$$
+$$p_{A,\text{rel}} = -44145\ \text{Pa}$$
+La presión
+relativa es:
+$$-44.15\ \text{kPa}$$
+
+Presión
+absoluta:
+$$P_{\text{atm}} = 770\ \text{Torr}$$
+$$P_{\text{atm}} = 770 \cdot 133.322\ \text{Pa}$$
+$$P_{\text{atm}} = 102658\ \text{Pa}$$
+$$p_{A,\text{abs}} = P_{\text{atm}} + p_{A,\text{rel}}$$
+$$p_{A,\text{abs}} = 102658 - 44145$$
+$$p_{A,\text{abs}} = 58513\ \text{Pa}$$
+La presión
+absoluta es:
+$$58.51\ \text{kPa}$$
+
+---
+
+## Problema 4: Sifón con Pérdidas de Carga
+
+### Enunciado
+El sifón de la
+figura tiene un
+diámetro
+interior de
+150 mm. Las
+longitudes de
+los trozos AB y
+BC son
+$$L_1 = 2\ \text{m}$$
+y
+$$L_2 = 6\ \text{m}$$
+respectivamente.
+Suponiendo que
+las pérdidas de
+carga vienen
+dadas por la
+expresión de
+la figura,
+determínese la
+velocidad, el
+caudal de agua
+y la presión
+en B.
+
+### Datos
+Diámetro:
+$$D = 0.15\ \text{m}$$
+Longitud AB:
+$$L_1 = 2\ \text{m}$$
+Longitud BC:
+$$L_2 = 6\ \text{m}$$
+Longitud total:
+$$L = 8\ \text{m}$$
+Elevación A:
+$$z_A = 4.2\ \text{m}$$
+Elevación C:
+$$z_C = 0\ \text{m}$$
+Elevación B:
+$$z_B = 4.2 + 1.5 = 5.7\ \text{m}$$
+Ecuación Hr:
+$$H_r = 0.02 \cdot \frac{L}{D} \cdot \frac{V^2}{2g}$$
+
+### Resolución
+
+1. Velocidad:
+Aplicamos
+Bernoulli con
+pérdidas de
+carga entre la
+superficie A y
+la salida C:
+$$z_A = \frac{v_C^2}{2g} + H_{r,\text{total}}$$
+$$4.2 = \frac{v^2}{2g} + 0.02 \cdot \frac{8}{0.15} \cdot \frac{v^2}{2g}$$
+$$4.2 = \frac{v^2}{2g} \cdot (1 + 1.0667)$$
+$$4.2 = 2.0667 \cdot \frac{v^2}{2g}$$
+$$v = \sqrt{\frac{4.2 \cdot 19.62}{2.0667}}$$
+$$v \approx 6.31\ \text{m/s}$$
+
+El caudal es:
+$$Q = A \cdot v$$
+$$Q = \frac{\pi \cdot (0.15)^2}{4} \cdot 6.31$$
+$$Q \approx 0.111\ \text{m}^3/\text{s}$$
+
+2. Presión en B:
+Aplicamos
+Bernoulli
+desde A hasta B
+considerando
+pérdidas en el
+tramo AB
+$$(L_1 = 2\ \text{m})$$:
+$$z_A = z_B + \frac{p_B}{\gamma} + \frac{v^2}{2g} + 0.02 \frac{L_1}{D} \frac{v^2}{2g}$$
+$$0 = z_B - z_A + \frac{p_B}{\gamma} + \frac{v^2}{2g} \cdot \left( 1 + 0.02 \frac{L_1}{D} \right)$$
+El término
+cinético es:
+$$\frac{v^2}{2g} = \frac{(6.31)^2}{19.62}$$
+$$\frac{v^2}{2g} \approx 2.03\ \text{m}$$
+Sustituyendo
+los valores:
+$$0 = 1.5 + \frac{p_B}{\gamma} + 2.03 \cdot \left( 1 + 0.02 \frac{2}{0.15} \right)$$
+$$0 = 1.5 + \frac{p_B}{\gamma} + 2.03 \cdot (1 + 0.2667)$$
+$$0 = 1.5 + \frac{p_B}{\gamma} + 2.571$$
+$$\frac{p_B}{\gamma} = -4.071\ \text{m}$$
+$$p_B = -4.071 \cdot 9810$$
+$$p_B \approx -39936\ \text{Pa}$$
+La presión en
+B es:
+$$-39.9\ \text{kPa}$$
+
+---
+
+## Problema 5: Submarino y Presión de Estancamiento
+
+### Enunciado
+Un submarino se
+mueve a través
+del agua del
+mar (suponemos
+su densidad
+1.03 veces la
+del agua dulce)
+a profundidad
+de 50 m con
+velocidad
+v = 5 m/s.
+Determinar la
+presión en el
+punto (2).
+
+### Datos
+Profundidad:
+$$h = 50\ \text{m}$$
+Densidad mar:
+$$\rho = 1030\ \text{kg/m}^3$$
+Velocidad:
+$$v_0 = 5\ \text{m/s}$$
+
+### Resolución
+La presión
+estática a la
+profundidad del
+submarino es:
+$$p_{\text{estática}} = \rho \cdot g \cdot h$$
+$$p_{\text{estática}} = 1030 \cdot 9.81 \cdot 50$$
+$$p_{\text{estática}} = 505215\ \text{Pa}$$
+
+El punto (2)
+representa el
+punto de
+estancamiento
+de la proa del
+submarino
+$$(v = 0)$$.
+Aplicamos la
+ecuación de
+Bernoulli:
+$$p_2 = p_{\text{estática}} + \frac{1}{2} \rho v_0^2$$
+$$p_2 = 505215 + \frac{1}{2} \cdot 1030 \cdot (5)^2$$
+$$p_2 = 505215 + 12875$$
+$$p_2 = 518090\ \text{Pa}$$
+La presión en
+el punto (2)
+es:
+$$518.09\ \text{kPa}$$
+
+---
+
+## Problema 6: Espesor de Líquido Liviano en Tanque
+
+### Enunciado
+El agua fluye
+constantemente
+con velocidad
+de 10 pies/s
+desde el tanque
+grande que se
+muestra en la
+figura.
+Determine la
+profundidad, H,
+de la capa de
+líquido liviano
+de peso
+específico
+50 lb/ft³ que
+cubre el agua
+en el tanque.
+
+### Datos
+Velocidad:
+$$v_2 = 10\ \text{ft/s}$$
+Altura agua:
+$$h_{\text{water}} = 4\ \text{ft}$$
+Peso esp. liq.:
+$$\gamma_{\text{light}} = 50\ \text{lb/ft}^3$$
+Peso esp. agua:
+$$\gamma_{\text{water}} = 62.4\ \text{lb/ft}^3$$
+Altura salida:
+$$z_2 = 5\ \text{ft}$$
+Gravedad:
+$$g = 32.2\ \text{ft/s}^2$$
+
+### Resolución
+Aplicamos la
+ecuación de
+Bernoulli
+desde el fondo
+del tanque (1)
+$$(z_1 = 0)$$
+hasta la
+salida (2)
+$$(z_2 = 5\ \text{ft})$$.
+
+La presión en
+el fondo del
+tanque es:
+$$p_1 = \gamma_{\text{light}} \cdot H + \gamma_{\text{water}} \cdot 4$$
+$$p_1 = 50 \cdot H + 62.4 \cdot 4$$
+$$p_1 = 50 H + 249.6$$
+
+Aplicamos
+Bernoulli:
+$$\frac{p_1}{\gamma_{\text{water}}} + z_1 + 0 = z_2 + \frac{v_2^2}{2g}$$
+$$\frac{50 H + 249.6}{62.4} + 0 = 5 + \frac{10^2}{2 \cdot 32.2}$$
+$$0.8013 \cdot H + 4 = 5 + 1.5528$$
+$$0.8013 \cdot H + 4 = 6.5528$$
+$$0.8013 \cdot H = 2.5528$$
+$$H \approx 3.19\ \text{ft}$$
+El espesor H
+es de 3.19 ft.
+
+---
+
+## Problema 7: Presiones en Instalación con Bomba
+
+### Enunciado
+En la
+instalación de
+la figura,
+determínese
+las presiones
+en 1 y 2,
+despreciando
+las pérdidas de
+carga en la
+conducción, con
+los siguientes
+datos:
+Q = 30 l/s,
+$$D_1 = 0.25\ \text{m}$$,
+$$D_2 = 0.20\ \text{m}$$,
+potencia
+bomba Pe = 22 kW,
+rendimiento de
+bomba 0.75.
+
+### Datos
+Caudal:
+$$Q = 0.03\ \text{m}^3/\text{s}$$
+Diámetro 1:
+$$D_1 = 0.25\ \text{m}$$
+Diámetro 2:
+$$D_2 = 0.20\ \text{m}$$
+Potencia:
+$$P_e = 22000\ \text{W}$$
+Rendimiento:
+$$\eta = 0.75$$
+Desnivel cota:
+$$z_2 = 6\ \text{m}$$
+Nivel tanque:
+$$z_3 = 3\ \text{m}$$
+Peso esp. agua:
+$$\gamma = 9810\ \text{N/m}^3$$
+
+### Resolución
+Calculamos la
+carga útil
+entregada por
+la bomba al
+fluido:
+$$H_B = \frac{P_e \cdot \eta}{\gamma \cdot Q}$$
+$$H_B = \frac{22000 \cdot 0.75}{9810 \cdot 0.03}$$
+$$H_B \approx 56.06\ \text{m}$$
+
+Velocidades
+del conducto:
+$$v_1 = \frac{Q}{A_1}$$
+$$v_1 = \frac{0.03}{\frac{\pi \cdot (0.25)^2}{4}}$$
+$$v_1 \approx 0.611\ \text{m/s}$$
+
+$$v_2 = \frac{Q}{A_2}$$
+$$v_2 = \frac{0.03}{\frac{\pi \cdot (0.20)^2}{4}}$$
+$$v_2 \approx 0.955\ \text{m/s}$$
+
+Presión en 1:
+Bernoulli
+desde la
+superficie
+libre (3)
+hasta (1):
+$$z_3 = z_1 + \frac{p_1}{\gamma} + \frac{v_1^2}{2g}$$
+$$3 = 0 + \frac{p_1}{\gamma} + \frac{0.611^2}{2 \cdot 9.81}$$
+$$3 = \frac{p_1}{\gamma} + 0.019$$
+$$\frac{p_1}{\gamma} = 2.981\ \text{m}$$
+$$p_1 = 2.981 \cdot 9810$$
+$$p_1 \approx 29.2\ \text{kPa}$$
+
+Presión en 2:
+Bernoulli
+desde (3)
+hasta (2)
+sumando la
+carga útil
+de la bomba:
+$$z_3 + H_B = z_2 + \frac{p_2}{\gamma} + \frac{v_2^2}{2g}$$
+$$3 + 56.06 = 6 + \frac{p_2}{\gamma} + \frac{0.955^2}{2 \cdot 9.81}$$
+$$59.06 = 6 + \frac{p_2}{\gamma} + 0.046$$
+$$\frac{p_2}{\gamma} = 53.014\ \text{m}$$
+$$p_2 = 53.014 \cdot 9810$$
+$$p_2 \approx 520\ \text{kPa}$$
+
+---
+
+## Problema 8: Fuerza en Tobera de Manguera
+
+### Enunciado
+Una manguera de
+10 cm de
+diámetro tiene
+una tobera de
+3 cm por donde
+se descargan
+1.5 m³/min.
+Suponiendo
+flujo sin
+fricción, halle
+la fuerza F
+que se ejerce
+sobre los
+tornillos que
+sujetan la
+tobera a la
+manguera.
+
+### Datos
+Diámetro 1:
+$$D_1 = 0.1\ \text{m}$$
+Diámetro 2:
+$$D_2 = 0.03\ \text{m}$$
+Caudal:
+$$Q = \frac{1.5}{60} = 0.025\ \text{m}^3/\text{s}$$
+Densidad agua:
+$$\rho = 1000\ \text{kg/m}^3$$
+
+### Resolución
+Velocidades en
+la manguera y
+en la tobera:
+$$v_1 = \frac{Q}{A_1}$$
+$$v_1 = \frac{0.025}{\frac{\pi \cdot (0.1)^2}{4}}$$
+$$v_1 \approx 3.18\ \text{m/s}$$
+
+$$v_2 = \frac{Q}{A_2}$$
+$$v_2 = \frac{0.025}{\frac{\pi \cdot (0.03)^2}{4}}$$
+$$v_2 \approx 35.37\ \text{m/s}$$
+
+Presión en 1:
+Aplicamos
+Bernoulli
+desde la
+sección 1
+hasta la
+descarga
+libre en 2
+$$(p_2 = 0)$$:
+$$p_1 = \frac{1}{2} \rho \left( v_2^2 - v_1^2 \right)$$
+$$p_1 = \frac{1}{2} \cdot 1000 \cdot (35.37^2 - 3.18^2)$$
+$$p_1 \approx 620490\ \text{Pa}$$
+
+Conservación de
+cantidad de
+movimiento en
+el volumen de
+control de la
+tobera:
+$$p_1 A_1 - F_B = \rho Q (v_2 - v_1)$$
+$$F_B = p_1 A_1 - \rho Q (v_2 - v_1)$$
+Sustituyendo
+los valores:
+$$p_1 A_1 = 620490 \cdot \frac{\pi \cdot 0.1^2}{4}$$
+$$p_1 A_1 \approx 4873\ \text{N}$$
+$$\Delta M = 1000 \cdot 0.025 \cdot (35.37 - 3.18)$$
+$$\Delta M \approx 805\ \text{N}$$
+Fuerza total:
+$$F_B = 4873 - 805$$
+$$F_B = 4068\ \text{N}$$
+La fuerza es de
+4.07 kN.
+
+---
+
+## Problema 9: Conducto de Sección Variable y Bridas
+
+### Enunciado
+El flujo en el
+conducto de
+sección
+variable de la
+figura tiene
+$$D_1 = 8\ \text{cm}$$,
+$$D_2 = 5\ \text{cm}$$
+y
+$$p_2 = 1\ \text{atm}$$
+Todos los
+fluidos se
+encuentran a
+20°C. Si
+$$V_1 = 5\ \text{m/s}$$
+y la lectura
+del manómetro
+es
+$$h = 58\ \text{cm}$$,
+estime la
+fuerza total
+que resisten
+las bridas.
+
+### Datos
+Diámetro 1:
+$$D_1 = 0.08\ \text{m}$$
+Diámetro 2:
+$$D_2 = 0.05\ \text{m}$$
+Velocidad 1:
+$$v_1 = 5\ \text{m/s}$$
+Deflexión Hg:
+$$h = 0.58\ \text{m}$$
+Peso esp. agua:
+$$\gamma_{\text{Ag}} = 9810\ \text{N/m}^3$$
+Peso esp. Hg:
+$$\gamma_{\text{Hg}} = 13.6 \cdot 9810\ \text{N/m}^3$$
+
+### Resolución
+Sección 1:
+$$A_1 = \frac{\pi \cdot D_1^2}{4}$$
+$$A_1 = \frac{\pi \cdot (0.08)^2}{4}$$
+$$A_1 \approx 0.005026\ \text{m}^2$$
+
+Velocidad de
+salida por
+continuidad:
+$$v_2 = v_1 \cdot \left( \frac{D_1}{D_2} \right)^2$$
+$$v_2 = 5 \cdot \left( \frac{8}{5} \right)^2$$
+$$v_2 = 12.8\ \text{m/s}$$
+
+Flujo másico:
+$$\dot{m} = \rho A_1 v_1$$
+$$\dot{m} = 1000 \cdot 0.005026 \cdot 5$$
+$$\dot{m} \approx 25.13\ \text{kg/s}$$
+
+Presión
+manométrica
+en 1:
+Dado que la
+sección 2 es
+libre
+$$(p_{2,\text{man}} = 0)$$:
+$$p_1 - p_2 = h \cdot (\gamma_{\text{Hg}} - \gamma_{\text{Ag}})$$
+$$p_1 = 0.58 \cdot (13.6 \cdot 9810 - 9810)$$
+$$p_1 \approx 71691\ \text{Pa}$$
+
+Ecuación de
+momento lineal:
+$$p_1 A_1 - F_{\text{bridas}} = \dot{m} (v_2 - v_1)$$
+$$F_{\text{bridas}} = p_1 A_1 - \dot{m} (v_2 - v_1)$$
+Sustituyendo
+los valores:
+$$p_1 A_1 = 71691 \cdot 0.005026$$
+$$p_1 A_1 \approx 360.3\ \text{N}$$
+$$\Delta M = 25.13 \cdot (12.8 - 5)$$
+$$\Delta M \approx 196.0\ \text{N}$$
+Fuerza total:
+$$F_{\text{bridas}} = 360.3 - 196.0$$
+$$F_{\text{bridas}} = 164.3\ \text{N}$$
+
+---
+
+## Problema 10: Manómetro en Túnel de Viento
+
+### Enunciado
+Determinar la
+altura h
+mostrada en el
+manómetro.
+
+### Datos
+Velocidad aire:
+$$v = 60\ \text{mph}$$
+$$v = 26.82\ \text{m/s}$$
+Densidad aire:
+$$\rho_{\text{air}} = 1.225\ \text{kg/m}^3$$
+Aceite deflex.:
+$$d = 1\ \text{in} = 0.0254\ \text{m}$$
+Gravedad esp.:
+$$SG = 0.9$$
+Peso esp. agua:
+$$\gamma_{\text{agua}} = 9810\ \text{N/m}^3$$
+
+### Resolución
+Presión
+estática en
+el túnel de
+viento:
+$$p_{\text{estática}} = -\frac{1}{2} \rho_{\text{air}} v^2$$
+$$p_{\text{estática}} = -\frac{1}{2} \cdot 1.225 \cdot (26.82)^2$$
+$$p_{\text{estática}} \approx -440.6\ \text{Pa}$$
+
+Recorremos el
+manómetro
+desde el agua
+hasta la
+columna de
+aceite expuesta
+a la atmósfera
+$$(p_{\text{atm}} = 0)$$:
+$$p_{\text{estática}} + \gamma_{\text{agua}} \cdot h = p_{\text{atm}} + \gamma_{\text{aceite}} \cdot d$$
+$$-440.6 + 9810 \cdot h = 0 + (SG \cdot \gamma_{\text{agua}}) \cdot 0.0254$$
+$$9810 \cdot h = 440.6 + (0.9 \cdot 9810) \cdot 0.0254$$
+$$9810 \cdot h = 440.6 + 224.26$$
+$$9810 \cdot h = 664.86\ \text{Pa}$$
+$$h = \frac{664.86}{9810}$$
+$$h \approx 0.0677\ \text{m}$$
+La deflexión h
+es de 6.77 cm
+(o 2.67 in).
+
+---
+
+# Parte 2: Problemas Propuestos de Examen
+
+## Problema Propuesto 1: Fuerza de Anclaje en Boquilla Vertical
+
+### Enunciado
+El agua fluye a
+través de una
+boquilla
+conectada al
+extremo de un
+grifo de
+laboratorio con
+una velocidad de
+flujo de 0.6 L/s.
+Los diámetros de
+entrada y salida
+son 16 y 5 mm,
+respectivamente.
+El eje de la
+boquilla es
+vertical. La
+masa de la
+boquilla es de
+0.1 kg. La
+presión en la
+sección (1) es
+de 464 kPa
+(manométrica).
+Determine la
+fuerza de
+anclaje para
+mantener la
+boquilla en su
+lugar.
+
+### Datos
+Caudal:
+$$Q = 0.0006\ \text{m}^3/\text{s}$$
+Densidad agua:
+$$\rho = 1000\ \text{kg/m}^3$$
+Diámetro 1:
+$$D_1 = 0.016\ \text{m}$$
+Diámetro 2:
+$$D_2 = 0.005\ \text{m}$$
+Masa boquilla:
+$$m_n = 0.1\ \text{kg}$$
+Presión 1:
+$$P_1 = 464000\ \text{Pa}$$
+Presión 2:
+$$P_2 = 0\ \text{Pa}$$
+Altura boquilla:
+$$h = 0.03\ \text{m}$$
+Gravedad:
+$$g = 9.81\ \text{m/s}^2$$
+
+### Resolución
+
+#### Paso 1: Áreas y Velocidades (Continuidad)
+El caudal
+volumétrico es
+constante a lo
+largo de la
+boquilla. Usamos
+la ecuación de
+continuidad:
+$$Q = A \cdot w$$
+para encontrar
+las velocidades
+en las
+secciones (1)
+y (2).
+
+Sección (1):
+$$A_1 = \frac{\pi \cdot D_1^2}{4}$$
+$$A_1 = \frac{\pi \cdot (0.016)^2}{4}$$
+$$A_1 \approx 2.0106 \cdot 10^{-4}\ \text{m}^2$$
+La velocidad en
+(1) es:
+$$w_1 = \frac{Q}{A_1}$$
+$$w_1 = \frac{0.0006}{2.0106 \cdot 10^{-4}}$$
+$$w_1 \approx 2.984\ \text{m/s}$$
+
+Sección (2):
+$$A_2 = \frac{\pi \cdot D_2^2}{4}$$
+$$A_2 = \frac{\pi \cdot (0.005)^2}{4}$$
+$$A_2 \approx 1.9635 \cdot 10^{-5}\ \text{m}^2$$
+La velocidad en
+(2) es:
+$$w_2 = \frac{Q}{A_2}$$
+$$w_2 = \frac{0.0006}{1.9635 \cdot 10^{-5}}$$
+$$w_2 \approx 30.558\ \text{m/s}$$
+
+El flujo másico
+es:
+$$\dot{m} = \rho \cdot Q$$
+$$\dot{m} = 1000 \cdot 0.0006$$
+$$\dot{m} = 0.6\ \text{kg/s}$$
+
+#### Paso 2: Análisis de Fuerzas
+Establecemos el
+volumen de
+control que
+contiene el
+agua y la
+boquilla.
+Definimos el
+eje z positivo
+hacia arriba.
+
+Las fuerzas
+que actúan en
+la dirección
+vertical (z)
+son:
+
+1. Fuerza de
+presión en
+sección (1)
+$$F_{P1}$$:
+El agua de
+entrada empuja
+hacia abajo:
+$$F_{P1} = -P_1 \cdot A_1$$
+$$F_{P1} = -464000 \cdot 2.0106 \cdot 10^{-4}$$
+$$F_{P1} \approx -93.29\ \text{N}$$
+
+2. Peso de la
+boquilla
+$$W_n$$:
+Actúa hacia
+abajo:
+$$W_n = -m_n \cdot g$$
+$$W_n = -0.1 \cdot 9.81$$
+$$W_n = -0.981\ \text{N}$$
+
+3. Peso del
+agua confinada
+$$W_w$$:
+El volumen del
+cono truncado
+de agua es:
+$$V = \frac{\pi \cdot h}{12} \left( D_1^2 + D_1 D_2 + D_2^2 \right)$$
+Sustituyendo:
+$$V = \frac{\pi \cdot 0.03}{12} \left( 0.016^2 + 0.016 \cdot 0.005 + 0.005^2 \right)$$
+$$V \approx 2.835 \cdot 10^{-6}\ \text{m}^3$$
+El peso del
+agua es:
+$$W_w = -\rho \cdot V \cdot g$$
+$$W_w = -1000 \cdot 2.835 \cdot 10^{-6} \cdot 9.81$$
+$$W_w \approx -0.028\ \text{N}$$
+
+4. Fuerza de
+anclaje
+$$F_A$$:
+Suponemos que
+actúa hacia
+arriba:
+$$F_A > 0$$
+
+#### Paso 3: Conservación del Momento Lineal
+La ecuación
+para flujo
+estacionario en
+la dirección
+vertical es:
+$$\sum F_z = \dot{m} \cdot \left( v_{\text{salida}, z} - v_{\text{entrada}, z} \right)$$
+El flujo va
+hacia abajo,
+por lo que las
+velocidades
+vectoriales en
+el eje z son
+negativas:
+$$v_{\text{entrada}, z} = -w_1$$
+$$v_{\text{salida}, z} = -w_2$$
+Sustituyendo
+las fuerzas y
+velocidades:
+$$F_A + F_{P1} + W_n + W_w = \dot{m} \cdot \left( -w_2 - (-w_1) \right)$$
+$$F_A + F_{P1} + W_n + W_w = \dot{m} \cdot (w_1 - w_2)$$
+Despejamos la
+fuerza de
+anclaje
+$$F_A$$:
+$$F_A = -F_{P1} - W_n - W_w + \dot{m} \cdot (w_1 - w_2)$$
+
+#### Paso 4: Cálculo Final
+Sustitimos los
+valores en la
+ecuación:
+$$F_{P1} = -93.29\ \text{N}$$
+$$W_n = -0.981\ \text{N}$$
+$$W_w = -0.028\ \text{N}$$
+El término de
+cambio de
+momento es:
+$$\Delta M = \dot{m} \cdot (w_1 - w_2)$$
+$$\Delta M = 0.6 \cdot (2.984 - 30.558)$$
+$$\Delta M = 0.6 \cdot (-27.574)$$
+$$\Delta M = -16.544\ \text{N}$$
+
+Sustituyendo
+los valores
+numéricos:
+$$F_A = -(-93.29) - (-0.981) - (-0.028) + (-16.544)$$
+$$F_A = 93.29 + 0.981 + 0.028 - 16.544$$
+$$F_A = 94.299 - 16.544$$
+$$F_A \approx 77.75\ \text{N}$$
+Como es
+positiva, la
+fuerza de
+anclaje actúa
+hacia arriba para
+sostener la
+boquilla.
+
+---
+
+## Problema Propuesto 2: Sifón de Tanque Grande y Cavitación
+
+### Enunciado
+Se extrae agua
+de un tanque
+grande y se
+descarga a la
+atmósfera a
+través de un
+tubo de 2 in
+de diámetro. El
+extremo del
+tubo está a
+3 ft por debajo
+del fondo del
+tanque y los
+efectos
+viscosos son
+despreciables.
+Determine:
+(a) El caudal
+volumétrico
+del tanque.
+(b) La altura
+máxima, H,
+sobre la cual
+el agua puede
+ser sifonada
+sin que ocurra
+cavitación.
+La presión
+atmosférica es
+de 1.013 bar
+y la presión de
+vapor del agua
+es de 0.0179
+bar.
+
+### Datos
+Diámetro:
+$$D = 2\ \text{in} = 0.0508\ \text{m}$$
+Altura tanque:
+$$h_{\text{tanque}} = 9\ \text{ft} = 2.7432\ \text{m}$$
+Descarga fondo:
+$$h_{\text{descarga}} = 3\ \text{ft} = 0.9144\ \text{m}$$
+Presión atm:
+$$P_{\text{atm}} = 101300\ \text{Pa}$$
+Presión vapor:
+$$P_v = 1790\ \text{Pa}$$
+Densidad:
+$$\rho = 1000\ \text{kg/m}^3$$
+Gravedad:
+$$g = 9.81\ \text{m/s}^2$$
+
+### Resolución
+
+#### Apartado a:
+Caudal
+volumétrico.
+Aplicamos la
+ecuación de
+Bernoulli
+entre la
+superficie
+del tanque (1)
+y la descarga
+(2).
+Definimos
+nuestro nivel
+de referencia
+(z = 0) en el
+fondo del
+tanque.
+Las alturas
+son:
+$$z_1 = 2.7432\ \text{m}$$
+$$z_2 = -0.9144\ \text{m}$$
+Ecuación de
+Bernoulli:
+$$\frac{P_1}{\gamma} + z_1 + \frac{v_1^2}{2g} = \frac{P_2}{\gamma} + z_2 + \frac{v_2^2}{2g}$$
+
+Simplificaciones:
+Ambos puntos
+están a la
+atmósfera:
+$$P_1 = P_2 = P_{\text{atm}}$$
+Sus términos de
+presión se
+anulan.
+El tanque es
+"grande", por
+lo que:
+$$v_1 \approx 0$$
+La ecuación se
+reduce a:
+$$z_1 = z_2 + \frac{v_2^2}{2g}$$
+Despejamos la
+velocidad de
+salida:
+$$v_2 = \sqrt{2g \cdot (z_1 - z_2)}$$
+$$v_2 = \sqrt{2 \cdot 9.81 \cdot (2.7432 - (-0.9144))}$$
+$$v_2 = \sqrt{19.62 \cdot 3.6576}$$
+$$v_2 = \sqrt{71.762}$$
+$$v_2 \approx 8.471\ \text{m/s}$$
+
+El área de la
+tubería es:
+$$A = \frac{\pi \cdot D^2}{4}$$
+$$A = \frac{\pi \cdot (0.0508)^2}{4}$$
+$$A \approx 0.002027\ \text{m}^2$$
+El caudal
+volumétrico es:
+$$Q = A \cdot v_2$$
+$$Q = 0.002027 \cdot 8.471$$
+$$Q \approx 0.0172\ \text{m}^3/\text{s}$$
+
+#### Apartado b:
+Altura máxima H.
+La cavitación
+ocurre si la
+presión cae por
+debajo de
+la presión
+de vapor del
+agua.
+El punto de
+mínima presión
+es la parte
+más alta del
+sifón (3).
+Aplicamos la
+ecuación de
+Bernoulli
+entre la
+superficie (1)
+y el punto (3).
+
+Definimos las
+presiones
+absolutas:
+$$P_1 = P_{\text{atm}} = 101300\ \text{Pa}$$
+$$P_3 = P_v = 1790\ \text{Pa}$$
+Las
+velocidades
+son:
+$$v_1 \approx 0$$
+$$v_3 = v_2 \approx 8.471\ \text{m/s}$$
+Definimos el
+nivel de
+referencia en
+la superficie
+del tanque:
+$$z_1 = 0$$
+$$z_3 = H$$
+Ecuación de
+Bernoulli:
+$$\frac{P_{\text{atm}}}{\rho g} + 0 + 0 = \frac{P_v}{\rho g} + H + \frac{v_3^2}{2g}$$
+Despejamos la
+altura H:
+$$H = \frac{P_{\text{atm}} - P_v}{\rho g} - \frac{v_3^2}{2g}$$
+Calculamos el
+término
+cinético:
+$$\frac{v_3^2}{2g} = \frac{(8.471)^2}{2 \cdot 9.81}$$
+$$\frac{v_3^2}{2g} \approx 3.6576\ \text{m}$$
+Sustituyendo
+los valores
+numéricos:
+$$H = \frac{101300 - 1790}{1000 \cdot 9.81} - 3.6576$$
+$$H = \frac{99510}{9810} - 3.6576$$
+$$H \approx 10.1437 - 3.6576$$
+$$H \approx 6.49\ \text{m}$$
+La altura
+máxima del
+sifón es de
+$$6.49\ \text{m}$$
+
+---
+
+## Problema Propuesto 3: Codo de 180° y Fuerza en las Bridas
+
+### Enunciado
+Flujo de agua a
+20 °C a través
+de un conducto
+de 5 cm de
+diámetro que
+tiene una curva
+de 180°. La
+longitud total
+del conducto
+entre las
+bridas 1 y 2 es
+de 75 cm. El
+flujo de peso
+es de 230 N/s
+con:
+$$p_1 = 165\ \text{kPa}$$
+y
+$$p_2 = 134\ \text{kPa}$$
+Despreciando el
+peso del
+conducto,
+determine la
+fuerza total
+que deben
+soportar las
+bridas.
+
+### Datos
+Diámetro:
+$$D = 0.05\ \text{m}$$
+Longitud:
+$$L = 0.75\ \text{m}$$
+Flujo peso:
+$$\dot{W} = 230\ \text{N/s}$$
+Presión 1 abs:
+$$p_1 = 165000\ \text{Pa}$$
+Presión 2 abs:
+$$p_2 = 134000\ \text{Pa}$$
+Presión atm:
+$$P_{\text{atm}} = 101325\ \text{Pa}$$
+Gravedad:
+$$g = 9.81\ \text{m/s}^2$$
+Densidad:
+$$\rho = 998\ \text{kg/m}^3$$
+
+### Resolución
+
+#### Paso 1: Presión Manométrica y Sección
+Para calcular la
+fuerza neta
+sobre las
+bridas, usamos
+presiones
+manométricas:
+$$p_{1,\text{man}} = 165000 - 101325$$
+$$p_{1,\text{man}} = 63675\ \text{Pa}$$
+$$p_{2,\text{man}} = 134000 - 101325$$
+$$p_{2,\text{man}} = 32675\ \text{Pa}$$
+
+El área
+transversal del
+conducto es:
+$$A = \frac{\pi \cdot D^2}{4}$$
+$$A = \frac{\pi \cdot (0.05)^2}{4}$$
+$$A \approx 0.0019635\ \text{m}^2$$
+
+#### Paso 2: Flujo Másico y Velocidad
+El flujo
+másico es:
+$$\dot{m} = \frac{\dot{W}}{g}$$
+$$\dot{m} = \frac{230}{9.81}$$
+$$\dot{m} \approx 23.445\ \text{kg/s}$$
+
+El caudal
+volumétrico es:
+$$Q = \frac{\dot{m}}{\rho}$$
+$$Q = \frac{23.445}{998}$$
+$$Q \approx 0.02349\ \text{m}^3/\text{s}$$
+
+La velocidad
+del agua en el
+conducto de
+diámetro
+constante es:
+$$v = \frac{Q}{A}$$
+$$v = \frac{0.02349}{0.0019635}$$
+$$v \approx 11.96\ \text{m/s}$$
+
+#### Paso 3: Fuerzas Horizontales (Eje X)
+Eje X positivo
+hacia la
+derecha.
+En la brida 1,
+el agua entra
+hacia la
+derecha:
+$$v_{1x} = v$$
+En la brida 2,
+el agua sale
+hacia la
+izquierda:
+$$v_{2x} = -v$$
+
+Fuerzas en X:
+1. Presión 1:
+El fluido
+empuja hacia
+la derecha:
+$$F_{P1} = +p_{1,\text{man}} \cdot A$$
+2. Presión 2:
+El fluido
+aguas abajo
+empuja la cara
+del volumen de
+control hacia
+la derecha:
+$$F_{P2} = +p_{2,\text{man}} \cdot A$$
+3. Reacción de
+anclaje:
+$$F_x$$
+
+Ecuación de
+momento lineal
+en X:
+$$\sum F_x = \dot{m} \cdot \left( v_{\text{salida}, x} - v_{\text{entrada}, x} \right)$$
+$$p_{1,\text{man}} A + p_{2,\text{man}} A + F_x = \dot{m} \cdot (-v - v)$$
+$$p_{1,\text{man}} A + p_{2,\text{man}} A + F_x = -2 \dot{m} v$$
+Despejamos
+$$F_x$$:
+$$F_x = -2 \dot{m} v - A \cdot (p_{1,\text{man}} + p_{2,\text{man}})$$
+
+Sustituyendo:
+$$-2 \dot{m} v = -2 \cdot 23.445 \cdot 11.96$$
+$$-2 \dot{m} v \approx -560.8\ \text{N}$$
+Fuerzas de
+presión:
+$$-A \cdot (p_{1,\text{man}} + p_{2,\text{man}}) = -0.0019635 \cdot (63675 + 32675)$$
+$$-A \cdot (p_{1,\text{man}} + p_{2,\text{man}}) = -0.0019635 \cdot 96350$$
+$$-A \cdot (p_{1,\text{man}} + p_{2,\text{man}}) \approx -189.2\ \text{N}$$
+Sumando todo:
+$$F_x = -560.8 - 189.2$$
+$$F_x = -750\ \text{N}$$
+El signo menos
+indica que la
+fuerza sobre las
+bridas es hacia
+la izquierda.
+
+#### Paso 4: Fuerzas Verticales (Eje Y)
+El agua en el
+interior del
+conducto
+tiene peso:
+$$V_{\text{agua}} = A \cdot L$$
+$$V_{\text{agua}} = 0.0019635 \cdot 0.75$$
+$$V_{\text{agua}} \approx 0.0014726\ \text{m}^3$$
+El peso de
+esta agua es:
+$$W_{\text{agua}} = \rho \cdot V_{\text{agua}} \cdot g$$
+$$W_{\text{agua}} = 998 \cdot 0.0014726 \cdot 9.81$$
+$$W_{\text{agua}} \approx 14.4\ \text{N}$$
+Como el flujo
+es horizontal,
+no hay cambio
+de cantidad
+de movimiento
+en el eje Y.
+Las bridas
+sostienen este
+peso:
+$$\sum F_y = F_y - W_{\text{agua}} = 0$$
+$$F_y = 14.4\ \text{N} \approx 14\ \text{N}$$
+La fuerza de
+las bridas es
+de 14 N hacia
+arriba.
+
+---
+
+## Problema Propuesto 4: Tanque Cerrado con Pitot y Manómetro de Mercurio
+
+### Enunciado
+El agua fluye de
+forma constante
+desde un tanque
+grande y
+cerrado. La
+deflexión en el
+manómetro de
+mercurio es de
+2.54 cm y los
+efectos
+viscosos son
+despreciables.
+Determine:
+(a) El caudal
+volumétrico.
+(b) La presión
+del aire en el
+espacio sobre
+la superficie
+del agua en el
+tanque.
+
+### Datos
+Diámetro tubo:
+$$D_1 = 1\ \text{ft} = 0.3048\ \text{m}$$
+Diámetro boq.:
+$$D_2 = 3\ \text{in} = 0.0762\ \text{m}$$
+Deflexión h:
+$$h = 1\ \text{in} = 0.0254\ \text{m}$$
+Altura tanque:
+$$z_0 = 8\ \text{ft} = 2.4384\ \text{m}$$
+Peso esp. agua:
+$$\gamma_{\text{Ag}} = 9810\ \text{N/m}^3$$
+Peso esp. Hg:
+$$\gamma_{\text{Hg}} = 132768.5\ \text{N/m}^3$$
+Gravedad:
+$$g = 9.81\ \text{m/s}^2$$
+Densidad agua:
+$$\rho_{\text{Ag}} = 998.2\ \text{kg/m}^3$$
+
+### Resolución
+
+#### Apartado a:
+Caudal
+volumétrico.
+
+1. Análisis del
+Manómetro:
+La toma estática
+mide la presión
+estática en la
+sección 1
+$$p_1$$.
+El tubo de
+Pitot mide la
+presión de
+estancamiento
+del chorro en
+la sección 2
+$$p_{\text{stag}}$$.
+Al descargar a
+la atmósfera:
+$$p_{\text{stag}} = \frac{1}{2} \rho v_2^2$$
+Recorriendo el
+manómetro:
+$$p_{\text{stag}} + \gamma_{\text{Ag}} y - \gamma_{\text{Hg}} h - \gamma_{\text{Ag}} (y - h) = p_1$$
+$$p_{\text{stag}} - p_1 = h \cdot (\gamma_{\text{Hg}} - \gamma_{\text{Ag}})$$
+Sustituyendo
+los valores
+numéricos:
+$$\Delta p = 0.0254 \cdot (132768.5 - 9810)$$
+$$\Delta p = 0.0254 \cdot 122958.5$$
+$$\Delta p \approx 3123.15\ \text{Pa}$$
+
+2. Bernoulli:
+Aplicamos
+Bernoulli entre
+la sección 1
+y el chorro (2)
+a lo largo del
+eje central
+horizontal:
+$$p_1 + \frac{1}{2} \rho_{\text{Ag}} v_1^2 = p_{\text{chorro}} + \frac{1}{2} \rho_{\text{Ag}} v_2^2$$
+Como
+$$p_{\text{chorro}} = 0$$:
+$$p_1 + \frac{1}{2} \rho_{\text{Ag}} v_1^2 = \frac{1}{2} \rho_{\text{Ag}} v_2^2$$
+Dado que el
+miembro derecho
+es la presión
+de estancamiento
+$$p_{\text{stag}}$$,
+entonces:
+$$p_{\text{stag}} - p_1 = \frac{1}{2} \rho_{\text{Ag}} v_1^2$$
+
+3. Velocidad:
+Igualamos ambas
+relaciones para
+la diferencia
+de presión:
+$$\frac{1}{2} \rho_{\text{Ag}} v_1^2 = \Delta p$$
+$$\frac{1}{2} \cdot 998.2 \cdot v_1^2 = 3123.15$$
+$$499.1 \cdot v_1^2 = 3123.15$$
+$$v_1 = \sqrt{6.2575}$$
+$$v_1 \approx 2.5015\ \text{m/s}$$
+
+El área de la
+sección 1 es:
+$$A_1 = \frac{\pi \cdot D_1^2}{4}$$
+$$A_1 = \frac{\pi \cdot (0.3048)^2}{4}$$
+$$A_1 \approx 0.07297\ \text{m}^2$$
+El caudal
+volumétrico es:
+$$Q = A_1 \cdot v_1$$
+$$Q = 0.07297 \cdot 2.5015$$
+$$Q \approx 0.1826\ \text{m}^3/\text{s}$$
+
+#### Apartado b:
+Presión del
+aire en el
+tanque.
+
+1. Velocidad
+en el chorro:
+Por continuidad:
+$$v_2 = v_1 \cdot \left( \frac{D_1}{D_2} \right)^2$$
+$$v_2 = 2.5015 \cdot \left( \frac{12\ \text{in}}{3\ \text{in}} \right)^2$$
+$$v_2 = 2.5015 \cdot 16$$
+$$v_2 \approx 40.024\ \text{m/s}$$
+
+2. Bernoulli:
+Aplicamos
+Bernoulli desde
+la superficie
+del tanque (0)
+hasta el
+chorro (2).
+Cota de la
+tubería como
+referencia
+(z = 0).
+Superficie
+del tanque:
+$$z_0 = 2.4384\ \text{m}$$
+$$v_0 \approx 0$$
+Chorro libre:
+$$z_2 = 0$$
+$$p_2 = 0$$
+Ecuación:
+$$p_{\text{aire}} + \gamma_{\text{Ag}} z_0 + 0 = 0 + \frac{1}{2} \rho_{\text{Ag}} v_2^2 + 0$$
+$$p_{\text{aire}} = \frac{1}{2} \rho_{\text{Ag}} v_2^2 - \gamma_{\text{Ag}} z_0$$
+
+Sustituyendo
+los valores:
+$$\frac{1}{2} \rho_{\text{Ag}} v_2^2 = \frac{1}{2} \cdot 998.2 \cdot (40.024)^2$$
+$$\frac{1}{2} \rho_{\text{Ag}} v_2^2 \approx 799518\ \text{Pa}$$
+$$\gamma_{\text{Ag}} z_0 = 9810 \cdot 2.4384$$
+$$\gamma_{\text{Ag}} z_0 \approx 23921\ \text{Pa}$$
+Presión del
+aire:
+$$p_{\text{aire}} = 799518 - 23921$$
+$$p_{\text{aire}} = 775597\ \text{Pa}$$
+Convertimos a
+bares:
+$$p_{\text{aire}} \approx 7.75\ \text{bar}$$
+El resultado
+con mayor
+resolución
+decimal es de
+$$7.75\ \text{bar}$$,
+siendo sumamente
+próximo al
+valor de
+$$7.72\ \text{bar}$$
+del documento,
+el cual se
+debe a
+redondeos
+intermedios.

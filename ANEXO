@@ -1,0 +1,311 @@
+
+## Índice de Contenidos
+1. [Problema 1: Diferencia de Presiones en Manómetro de Tubo en U](#problema-1-diferencia-de-presiones-en-manómetro-de-tubo-en-u)
+2. [Problema 2: Lectura de Manómetro en U Invertido con Bernoulli](#problema-2-lectura-de-manómetro-en-u-invertido-con-bernoulli)
+3. [Problema 3: Velocidad en la Garganta de un Tubo Venturi](#problema-3-velocidad-en-la-garganta-de-un-tubo-venturi)
+
+---
+
+## Problema 1: Diferencia de Presiones en Manómetro de Tubo en U
+
+### Enunciado
+a) Determina una
+ecuación para la
+diferencia de
+presión:
+$$p_A - p_B$$
+en términos del
+peso específico
+del fluido 1,
+el peso
+específico del
+fluido 2 y las
+alturas
+indicadas en la
+figura.
+b) Para:
+$$\Upsilon_1 = 9.80\ \text{kN/m}^3$$
+$$\Upsilon_2 = 15.60\ \text{kN/m}^3$$
+$$h_1 = 1\ \text{m}$$
+$$h_2 = 0.5\ \text{m}$$
+¿cuál es el
+valor de:
+$$p_A - p_B$$
+
+### Datos
+Peso esp. 1:
+$$\Upsilon_1 = 9.80\ \text{kN/m}^3$$
+$$\Upsilon_1 = 9800\ \text{N/m}^3$$
+Peso esp. 2:
+$$\Upsilon_2 = 15.60\ \text{kN/m}^3$$
+$$\Upsilon_2 = 15600\ \text{N/m}^3$$
+Altura 1:
+$$h_1 = 1\ \text{m}$$
+Altura 2:
+$$h_2 = 0.5\ \text{m}$$
+
+### Resolución
+
+#### Apartado a:
+Determinamos la
+ecuación para
+la diferencia
+de presiones
+$$p_A - p_B$$
+recorriendo
+el manómetro
+hidrostático.
+
+Partimos de la
+presión en la
+sección A:
+$$p_A$$
+y bajamos
+hasta la
+interfaz
+izquierda de
+manera que:
+$$p_{\text{izq}} = p_A + \Upsilon_1 \cdot h_1$$
+Subimos por la
+columna de
+fluido 2
+(peso
+específico
+$$\Upsilon_2$$)
+una altura
+$$h_2$$
+hasta la
+interfaz
+derecha:
+$$p_{\text{der}} = p_{\text{izq}} - \Upsilon_2 \cdot h_2$$
+$$p_{\text{der}} = p_A + \Upsilon_1 h_1 - \Upsilon_2 h_2$$
+Desde esta
+interfaz,
+subimos por
+el fluido 1
+hasta la
+sección B:
+$$p_B = p_{\text{der}} - \Upsilon_1 \cdot (h_1 - h_2)$$
+$$p_B = (p_A + \Upsilon_1 h_1 - \Upsilon_2 h_2) - \Upsilon_1 (h_1 - h_2)$$
+Multiplicando
+los términos:
+$$p_B = p_A + \Upsilon_1 h_1 - \Upsilon_2 h_2 - \Upsilon_1 h_1 + \Upsilon_1 h_2$$
+Cancelamos la
+altura h_1:
+$$p_B = p_A - h_2 \cdot (\Upsilon_2 - \Upsilon_1)$$
+Reorganizando:
+$$p_A - p_B = h_2 \cdot (\Upsilon_2 - \Upsilon_1)$$
+
+#### Apartado b:
+Sustituimos
+los valores
+numéricos:
+$$p_A - p_B = 0.5\ \text{m} \cdot (15.60\ \text{kN/m}^3 - 9.80\ \text{kN/m}^3)$$
+$$p_A - p_B = 0.5 \cdot 5.80\ \text{kPa}$$
+$$p_A - p_B = 2.90\ \text{kPa}$$
+
+---
+
+## Problema 2: Lectura de Manómetro en U Invertido con Bernoulli
+
+### Enunciado
+El agua fluye a
+través del
+conducto de la
+figura. La
+presión estática
+en los puntos
+(1) y (2) está
+medida con un
+manómetro tipo
+U invertido que
+contiene aceite.
+Determinar la
+lectura h del
+manómetro.
+
+### Datos
+Fluido en tubo:
+$$\text{Agua (w)}$$
+Peso esp. agua:
+$$\gamma_w$$
+Fluido manom.:
+$$\text{Aceite}$$
+Gravedad esp.:
+$$SG$$
+Peso esp. oil:
+$$\gamma_{\text{oil}} = SG \cdot \gamma_w$$
+Lectura manom.:
+$$h$$
+Elevación:
+$$z_2 - z_1$$
+Altura columna:
+$$\ell$$
+
+### Resolución
+
+1. Hidrostática:
+Recorremos el
+manómetro
+desde (1)
+hasta (2):
+Subimos por el
+agua desde el
+punto (1) a la
+interfaz
+izquierda:
+$$p_{\text{izq}} = p_1 - \gamma_w \cdot (z_2 - z_1 + \ell + h)$$
+Bajamos por el
+aceite una
+distancia h
+hasta la
+interfaz
+derecha:
+$$p_{\text{der}} = p_{\text{izq}} + \gamma_{\text{oil}} \cdot h$$
+Bajamos por el
+agua una
+distancia
+$$\ell$$
+hasta el
+punto (2):
+$$p_2 = p_{\text{der}} + \gamma_w \cdot \ell$$
+Sustituyendo
+las ecuaciones
+anteriores:
+$$p_2 = p_1 - \gamma_w (z_2 - z_1 + \ell + h) + \gamma_{\text{oil}} h + \gamma_w \ell$$
+$$p_2 = p_1 - \gamma_w (z_2 - z_1) - \gamma_w \ell - \gamma_w h + \gamma_{\text{oil}} h + \gamma_w \ell$$
+Simplificando
+el término
+$$\gamma_w \ell$$:
+$$p_2 = p_1 - \gamma_w (z_2 - z_1) - h \cdot (\gamma_w - \gamma_{\text{oil}})$$
+Reorganizando
+para obtener
+la diferencia
+de presiones:
+$$p_1 - p_2 = \gamma_w (z_2 - z_1) + h \cdot (\gamma_w - \gamma_{\text{oil}})$$
+
+2. Bernoulli:
+Aplicando la
+ecuación de
+Bernoulli
+entre (1) y
+(2):
+$$\frac{p_1}{\gamma_w} + z_1 + \frac{v_1^2}{2g} = \frac{p_2}{\gamma_w} + z_2 + \frac{v_2^2}{2g}$$
+Multiplicamos
+todo por:
+$$\gamma_w$$
+$$p_1 + \gamma_w z_1 + \gamma_w \frac{v_1^2}{2g} = p_2 + \gamma_w z_2 + \gamma_w \frac{v_2^2}{2g}$$
+Reorganizando:
+$$p_1 - p_2 = \gamma_w (z_2 - z_1) + \gamma_w \left( \frac{v_2^2 - v_1^2}{2g} \right)$$
+
+3. Altura h:
+Igualamos las
+dos expresiones
+obtenidas
+para:
+$$p_1 - p_2$$
+$$\gamma_w (z_2 - z_1) + h (\gamma_w - \gamma_{\text{oil}}) = \gamma_w (z_2 - z_1) + \gamma_w \left( \frac{v_2^2 - v_1^2}{2g} \right)$$
+Cancelamos el
+término de
+elevación:
+$$h \cdot (\gamma_w - \gamma_{\text{oil}}) = \gamma_w \left( \frac{v_2^2 - v_1^2}{2g} \right)$$
+Dividiendo
+por:
+$$\gamma_w$$
+$$h \cdot \left( 1 - \frac{\gamma_{\text{oil}}}{\gamma_w} \right) = \frac{v_2^2 - v_1^2}{2g}$$
+Sustituyendo
+la densidad
+relativa:
+$$SG = \frac{\gamma_{\text{oil}}}{\gamma_w}$$
+$$h \cdot (1 - SG) = \frac{v_2^2 - v_1^2}{2g}$$
+Despejamos la
+lectura h:
+$$h = \frac{v_2^2 - v_1^2}{2g \cdot (1 - SG)}$$
+
+---
+
+## Problema 3: Velocidad en la Garganta de un Tubo Venturi
+
+### Enunciado
+Los tubos
+piezométricos
+se conectan a
+una sección
+venturi como
+se muestra en
+la figura. El
+líquido es
+incompresible.
+La velocidad
+en la sección
+de garganta
+es el doble
+que en la
+sección de
+aproximación.
+Encuentre la
+velocidad en
+la sección de
+la garganta.
+
+### Datos
+Carga piez. 1:
+$$z_1 + \frac{p_1}{\gamma} = 1\ \text{m}$$
+Carga piez. 2:
+$$z_2 + \frac{p_2}{\gamma} = 0.5\ \text{m}$$
+Relación de
+velocidades:
+$$V_2 = 2 V_1$$
+Gravedad:
+$$g = 9.81\ \text{m/s}^2$$
+
+### Resolución
+
+1. Relación:
+De la relación
+de velocidad
+despejamos la
+entrada:
+$$V_1 = \frac{V_2}{2}$$
+
+2. Bernoulli:
+Aplicamos la
+ecuación de
+Bernoulli
+entre (1) y
+(2):
+$$\left( z_1 + \frac{p_1}{\gamma} \right) + \frac{V_1^2}{2g} = \left( z_2 + \frac{p_2}{\gamma} \right) + \frac{V_2^2}{2g}$$
+Sustituyendo
+los valores
+de carga
+piezométrica
+dados por los
+piezómetros:
+$$1 + \frac{V_1^2}{2g} = 0.5 + \frac{V_2^2}{2g}$$
+Reorganizando:
+$$1 - 0.5 = \frac{V_2^2}{2g} - \frac{V_1^2}{2g}$$
+$$0.5 = \frac{V_2^2 - V_1^2}{2g}$$
+
+3. Velocidad:
+Sustituyendo
+$$V_1$$
+en función
+de
+$$V_2$$:
+$$0.5 = \frac{V_2^2 - \left( \frac{V_2}{2} \right)^2}{2g}$$
+$$0.5 = \frac{V_2^2 - \frac{V_2^2}{4}}{2g}$$
+$$0.5 = \frac{\frac{3}{4} V_2^2}{2g}$$
+$$0.5 = \frac{3 \cdot V_2^2}{8g}$$
+Despejamos la
+velocidad de
+la garganta:
+$$V_2^2 = \frac{0.5 \cdot 8g}{3}$$
+$$V_2^2 = \frac{4 \cdot 9.81}{3}$$
+$$V_2^2 = \frac{39.24}{3}$$
+$$V_2^2 = 13.08$$
+$$V_2 = \sqrt{13.08}$$
+$$V_2 \approx 3.62\ \text{m/s}$$
+La velocidad
+en la garganta
+es de
+$$3.62\ \text{m/s}$$

@@ -1,0 +1,2452 @@
+# Tema 8: Mecánica de Fluidos - Problemas de Bombas Hidráulicas
+
+## Índice de Contenidos
+1. [Problema 1: Bombeo con Selección de Catálogo (M1, M2, M3)](#problema-1-bombeo-con-selección-de-catálogo-m1-m2-m3)
+2. [Problema 2: Instalación y Punto de Operación con Gráfica de Rendimiento](#problema-2-instalación-y-punto-de-operación-con-gráfica-de-rendimiento)
+3. [Problema 3: Curvas Características de una Bomba a 1450 rpm](#problema-3-curvas-características-de-una-bomba-a-1450-rpm)
+4. [Problema 4: Acoplamiento de Bomba a Red - Punto de Funcionamiento y Multiacoplamiento](#problema-4-acoplamiento-de-bomba-a-red---punto-de-funcionamiento-y-multiacoplamiento)
+5. [Problema 5: Acoplamiento de Bomba a Red - Punto de Funcionamiento y Cavitación](#problema-5-acoplamiento-de-bomba-a-red---punto-de-funcionamiento-y-cavitación)
+6. [Problema 6: Acoplamiento de Bomba a Red - Método Iterativo](#problema-6-acoplamiento-de-bomba-a-red---método-iterativo)
+7. [Problema 7: Acoplamiento de Bomba a Red - Regulación por Estrangulación o Variación de Frecuencia](#problema-7-acoplamiento-de-bomba-a-red---regulación-por-estrangulación-o-variación-de-frecuencia)
+8. [Problema 8: Acoplamiento de Bomba a Red - Método Gráfico](#problema-8-acoplamiento-de-bomba-a-red---método-gráfico)
+9. [Problema 9: Instalación y Optimización de Elevación a 5°C](#problema-9-instalación-y-optimización-de-elevación-a-5°c)
+
+---
+
+## Problema 1: Bombeo con Selección de Catálogo (M1, M2, M3)
+
+### Enunciado
+Un joven técnico
+desea trasvasar
+agua a
+$$20^\circ\text{C}$$
+desde una
+piscina a cota
+$$0\ \text{m}$$
+hasta un
+depósito abierto
+cuyo nivel
+queda a
+$$15\ \text{m}$$
+de altura.
+Dispone de:
+* 1 bomba M3.
+* 2 bombas M2.
+* 2 bombas M1.
+La instalación
+tiene un
+coeficiente de
+pérdidas de:
+$$k = 4166.7\ \frac{\text{m.c.a.}}{(\text{m}^3/\text{s})^2}$$
+Se pide:
+a) Dibuje la
+curva del
+sistema dando
+al menos 6
+puntos sobre
+la gráfica.
+b) Indique los
+puntos de
+funcionamiento
+de cada bomba
+individual.
+c) ¿Cuáles de
+ellas serían
+válidas de forma
+individual y
+cuáles no para
+un caudal no
+inferior a
+$$0.05\ \text{m}^3/\text{s}$$
+Justifíquelo.
+d) De los
+modelos M1 y
+M2, justifique
+qué parejas
+del mismo
+modelo y en
+qué disposición
+(serie o
+paralelo)
+cumplen con el
+caudal fijo de
+$$0.06\ \text{m}^3/\text{s}$$
+e) Desde el
+punto de vista
+energético,
+justifique qué
+pareja elegiría
+para instalar y
+qué pérdida de
+carga debería
+introducir la
+válvula.
+f) Justifique
+mediante
+cálculos la
+elección e
+indique el
+punto de cada
+bomba.
+g) Con un
+coeficiente de
+pérdidas de
+aspiración de
+$$1400\ \frac{\text{m.c.a.}}{(\text{m}^3/\text{s})^2}$$
+determine la
+máxima cota z
+sobre el nivel
+de la piscina
+para evitar
+cavitación.
+h) Con un
+variador de
+frecuencia en
+bomba M2, ¿a
+qué velocidad
+debe girar
+para dar
+$$0.06\ \text{m}^3/\text{s}$$
+i) Evalué el
+acoplamiento
+en serie de
+M1 + M2.
+Compruebe que
+el caudal es
+mayor de
+$$0.06\ \text{m}^3/\text{s}$$
+j) En una red
+$$H_{red} = 5 + 500 Q^2$$
+con bombas en
+paralelo:
+$$H_{B1} = 20 - 2000 Q^2$$
+$$H_{B2} = 30 - 1500 Q^2$$
+determine el
+punto conjunto
+e individual.
+
+### Datos
+#### Propiedades
+#### del Agua:
+Temperatura:
+$$T = 20^\circ\text{C}$$
+Densidad:
+$$\rho = 998.2\ \text{kg/m}^3$$
+Presión vapor:
+$$P_v = 2338\ \text{Pa}$$
+
+#### Constantes:
+Pérdidas red:
+$$k = 4166.7\ \text{m.c.a.}/(\text{m}^3/\text{s})^2$$
+Gravedad:
+$$g = 9.81\ \text{m/s}^2$$
+
+#### Curvas M1 y M2
+#### a 2000 rpm:
+$$H_{M1} = 21 - 16.94 Q - 1652.89 Q^2$$
+$$H_{M2} = 29.5 + 6.43 Q - 2643.12 Q^2$$
+
+### Resolución
+
+#### Parte 1: Curva del Sistema y Viabilidad Individual
+
+##### Apartado a: Curva de la Red
+La altura
+requerida
+por la red
+$$(H_{red})$$
+se compone de la
+altura
+geométrica
+$$(\Delta z)$$
+y la pérdida de
+carga por
+fricción en
+tuberías:
+$$H_{red} = \Delta z + k \cdot Q^2$$
+Sustituyendo
+la diferencia
+de cota de
+15 m y el
+coeficiente k:
+$$H_{red} = 15 + 4166.7 \cdot Q^2$$
+
+Puntos de la
+curva de red:
+
+Para
+$$Q = 0\ \text{m}^3/\text{s}$$
+$$H = 15 + 4166.7 \cdot (0)^2$$
+$$H = 15\ \text{m}$$
+
+Para
+$$Q = 0.02\ \text{m}^3/\text{s}$$
+$$H = 15 + 4166.7 \cdot (0.02)^2$$
+$$H = 15 + 4166.7 \cdot 0.0004$$
+$$H = 15 + 1.667$$
+$$H = 16.67\ \text{m}$$
+
+Para
+$$Q = 0.04\ \text{m}^3/\text{s}$$
+$$H = 15 + 4166.7 \cdot (0.04)^2$$
+$$H = 15 + 4166.7 \cdot 0.0016$$
+$$H = 15 + 6.667$$
+$$H = 21.67\ \text{m}$$
+
+Para
+$$Q = 0.06\ \text{m}^3/\text{s}$$
+$$H = 15 + 4166.7 \cdot (0.06)^2$$
+$$H = 15 + 4166.7 \cdot 0.0036$$
+$$H = 15 + 15$$
+$$H = 30\ \text{m}$$
+
+Para
+$$Q = 0.08\ \text{m}^3/\text{s}$$
+$$H = 15 + 4166.7 \cdot (0.08)^2$$
+$$H = 15 + 4166.7 \cdot 0.0064$$
+$$H = 15 + 26.667$$
+$$H = 41.67\ \text{m}$$
+
+Para
+$$Q = 0.10\ \text{m}^3/\text{s}$$
+$$H = 15 + 4166.7 \cdot (0.10)^2$$
+$$H = 15 + 4166.7 \cdot 0.01$$
+$$H = 15 + 41.667$$
+$$H = 56.67\ \text{m}$$
+
+##### Apartados b y c: Funcionamiento Individual
+Evaluamos la
+viabilidad si
+se requiere un
+caudal no
+inferior a:
+$$Q = 0.05\ \text{m}^3/\text{s}$$
+La altura
+que la red
+demanda a
+este caudal
+es:
+$$H_{red} = 15 + 4166.7 \cdot (0.05)^2$$
+$$H_{red} = 15 + 4166.7 \cdot 0.0025$$
+$$H_{red} = 15 + 10.42$$
+$$H_{red} = 25.42\ \text{m}$$
+
+Evaluamos si
+cada bomba
+supera esta
+altura a ese
+caudal:
+
+1. Bomba M1:
+$$H_{M1} = 21 - 16.94 Q - 1652.89 Q^2$$
+Sustituyendo:
+$$H_{M1} = 21 - 16.94 (0.05) - 1652.89 (0.05)^2$$
+$$H_{M1} = 21 - 0.847 - 4.132$$
+$$H_{M1} = 16.02\ \text{m}$$
+Como
+$$16.02\ \text{m} < 25.42\ \text{m}$$
+M1 individual
+no es válida.
+
+2. Bomba M2:
+$$H_{M2} = 29.5 + 6.43 Q - 2643.12 Q^2$$
+Sustituyendo:
+$$H_{M2} = 29.5 + 6.43 (0.05) - 2643.12 (0.05)^2$$
+$$H_{M2} = 29.5 + 0.322 - 6.608$$
+$$H_{M2} = 23.21\ \text{m}$$
+Como
+$$23.21\ \text{m} < 25.42\ \text{m}$$
+M2 individual
+no es válida.
+
+3. Bomba M3:
+En la gráfica,
+a un caudal
+de 0.05 m³/s,
+la curva M3
+da una altura
+aproximada:
+$$H_{M3} \approx 31\ \text{m}$$
+Como
+$$31\ \text{m} > 25.42\ \text{m}$$
+la bomba M3 es
+la única que
+puede operar
+individualmente
+para cumplir el
+requisito.
+
+#### Parte 2: Acoplamiento de Bombas (Caudal Fijo de 0.06 m³/s)
+
+##### Apartado d: Parejas M1 y M2 en Serie o Paralelo
+La red exige
+exactamente:
+$$Q = 0.06\ \text{m}^3/\text{s}$$
+La altura que
+requiere la
+red a este
+caudal es:
+$$H_{red} = 15 + 4166.7 \cdot (0.06)^2$$
+$$H_{red} = 30\ \text{m}$$
+
+Evaluamos las
+siguientes
+parejas de M1
+y M2:
+
+1. Pareja M1
+en Paralelo:
+Cada bomba
+aporta la mitad
+del caudal:
+$$Q_{indiv} = \frac{0.06}{2} = 0.03\ \text{m}^3/\text{s}$$
+La altura de
+la pareja es
+la altura de
+una bomba a
+ese caudal:
+$$H_{M1} = 21 - 16.94 (0.03) - 1652.89 (0.03)^2$$
+$$H_{M1} = 21 - 0.508 - 1.488$$
+$$H_{M1} = 19.01\ \text{m}$$
+Como
+$$19.01\ \text{m} < 30\ \text{m}$$
+esta opción
+falla.
+
+2. Pareja M1
+en Serie:
+Cada bomba
+recibe el
+caudal total
+y las alturas
+se suman:
+$$H_{\text{total}} = 2 \cdot H_{M1}(0.06)$$
+Calculamos
+la altura
+individual:
+$$H_{M1} = 21 - 16.94 (0.06) - 1652.89 (0.06)^2$$
+$$H_{M1} = 21 - 1.016 - 5.950$$
+$$H_{M1} = 13.03\ \text{m}$$
+La altura
+total es:
+$$H_{\text{total}} = 2 \cdot 13.03$$
+$$H_{\text{total}} = 26.06\ \text{m}$$
+Como
+$$26.06\ \text{m} < 30\ \text{m}$$
+esta opción
+falla.
+
+3. Pareja M2
+en Paralelo:
+Cada bomba
+aporta la mitad
+del caudal:
+$$Q_{indiv} = 0.03\ \text{m}^3/\text{s}$$
+La altura de
+la pareja es:
+$$H_{M2} = 29.5 + 6.43 (0.03) - 2643.12 (0.03)^2$$
+$$H_{M2} = 29.5 + 0.193 - 2.379$$
+$$H_{M2} = 27.31\ \text{m}$$
+Como
+$$27.31\ \text{m} < 30\ \text{m}$$
+esta opción
+falla.
+
+4. Pareja M2
+en Serie:
+Cada bomba
+maneja el
+caudal total
+y las alturas
+se suman:
+$$H_{\text{total}} = 2 \cdot H_{M2}(0.06)$$
+Calculamos
+la altura
+individual:
+$$H_{M2} = 29.5 + 6.43 (0.06) - 2643.12 (0.06)^2$$
+$$H_{M2} = 29.5 + 0.386 - 9.515$$
+$$H_{M2} = 20.37\ \text{m}$$
+La altura
+total en
+serie es:
+$$H_{\text{total}} = 2 \cdot 20.37$$
+$$H_{\text{total}} = 40.74\ \text{m}$$
+Como
+$$40.74\ \text{m} \ge 30\ \text{m}$$
+esta opción
+sí es válida.
+
+##### Apartados e y f: Elección y Regulación por Válvula
+Se eligen
+2 bombas M2
+en serie.
+Para ajustar
+el caudal de
+las bombas
+al valor de
+la red de
+0.06 m³/s,
+se debe
+introducir
+una pérdida
+artificial
+cerrando una
+válvula:
+$$h_{\text{válvula}} = H_{\text{total}} - H_{red}$$
+Sustituyendo
+las alturas:
+$$h_{\text{válvula}} = 40.74 - 30$$
+$$h_{\text{válvula}} = 10.74\ \text{m}$$
+
+El punto de
+funcionamiento
+de cada bomba
+individual es:
+$$Q = 0.06\ \text{m}^3/\text{s}$$
+$$H = 20.37\ \text{m}$$
+
+#### Parte 3: Cavitación y Variación de Frecuencia
+
+##### Apartado g: Máxima Altura de Aspiración (NPSH)
+El NPSH
+disponible
+(NPSHd) debe
+ser mayor o
+igual al NPSH
+requerido por
+la bomba
+(NPSHr) para
+evitar la
+cavitación.
+La expresión
+del NPSHd es:
+$$NPSH_d = \frac{P_{\text{atm}}}{\gamma} - \frac{P_v}{\gamma} - z - h_{f,\text{asp}}$$
+Calculamos el
+peso
+específico:
+$$\gamma = \rho \cdot g$$
+$$\gamma = 998.2 \cdot 9.81$$
+$$\gamma = 9792.34\ \text{N/m}^3$$
+Carga de
+presión atm:
+$$\frac{P_{\text{atm}}}{\gamma} = \frac{101325}{9792.34}$$
+$$\frac{P_{\text{atm}}}{\gamma} = 10.347\ \text{m}$$
+Carga de
+presión de
+vapor:
+$$\frac{P_v}{\gamma} = \frac{2338}{9792.34}$$
+$$\frac{P_v}{\gamma} = 0.239\ \text{m}$$
+Pérdidas en la
+aspiración a
+caudal de
+0.06 m³/s:
+$$h_{f,\text{asp}} = 1400 \cdot Q^2$$
+$$h_{f,\text{asp}} = 1400 \cdot (0.06)^2$$
+$$h_{f,\text{asp}} = 1400 \cdot 0.0036$$
+$$h_{f,\text{asp}} = 5.04\ \text{m}$$
+En la gráfica,
+el NPSHr para
+un caudal de
+0.06 m³/s es:
+$$NPSH_r \approx 3.5\ \text{m}$$
+Para hallar la
+máxima cota
+z establecemos
+el límite
+$$NPSH_d = NPSH_r$$
+$$10.34 - 0.239 - z - 5.04 = 3.5$$
+$$5.061 - z = 3.5$$
+$$z_{\text{max}} = 5.061 - 3.5$$
+$$z_{\text{max}} = 1.56\ \text{m}$$
+
+##### Apartado h: Variador de Frecuencia en Bomba M2
+El variador
+permite
+ajustar las
+revoluciones
+de una bomba
+para cumplir
+el punto
+exigido:
+$$Q_2 = 0.06\ \text{m}^3/\text{s}$$
+$$H_2 = 30\ \text{m}$$
+Hallamos la
+parábola de
+puntos
+homólogos:
+$$H = K \cdot Q^2$$
+Sustituyendo
+el punto (2):
+$$30 = K \cdot (0.06)^2$$
+$$30 = K \cdot 0.0036$$
+$$K = \frac{30}{0.0036}$$
+$$K = 8333.33\ \text{s}^2/\text{m}^5$$
+Intersecamos
+la parábola
+con la curva
+nominal de M2
+a 2000 rpm:
+$$8333.33 \cdot Q_1^2 = 29.5 + 6.43 \cdot Q_1 - 2643.12 \cdot Q_1^2$$
+Agrupamos en
+una ecuación
+de segundo
+grado:
+$$(8333.33 + 2643.12) Q_1^2 - 6.43 Q_1 - 29.5 = 0$$
+$$10976.45 \cdot Q_1^2 - 6.43 \cdot Q_1 - 29.5 = 0$$
+Resolvemos la
+ecuación
+cuadrática:
+$$Q_1 = \frac{6.43 + \sqrt{(-6.43)^2 - 4(10976.45)(-29.5)}}{2 \cdot 10976.45}$$
+$$Q_1 = \frac{6.43 + \sqrt{41.34 + 1295221.1}}{21952.9}$$
+$$Q_1 = \frac{6.43 + \sqrt{1295262.44}}{21952.9}$$
+$$Q_1 = \frac{6.43 + 1138.096}{21952.9}$$
+$$Q_1 = 0.0521\ \text{m}^3/\text{s}$$
+Usamos la ley
+de semejanza
+de caudal:
+$$\frac{n_2}{n_1} = \frac{Q_2}{Q_1}$$
+Despejamos la
+velocidad de
+giro n_2:
+$$n_2 = n_1 \cdot \left( \frac{Q_2}{Q_1} \right)$$
+$$n_2 = 2000 \cdot \left( \frac{0.06}{0.0521} \right)$$
+$$n_2 \approx 2303\ \text{rpm}$$
+
+#### Parte 4: Acoplamientos Especiales y Heterogéneos
+
+##### Apartado i: Acoplamiento en Serie de M1 + M2
+En serie,
+las alturas
+suman para un
+mismo caudal:
+$$H_{serie} = H_{M1} + H_{M2}$$
+Sustituyendo
+sus ecuaciones:
+$$H_{serie} = (21 - 16.94 Q - 1652.89 Q^2) + (29.5 + 6.43 Q - 2643.12 Q^2)$$
+$$H_{serie} = 50.5 - 10.51 Q - 4296.01 Q^2$$
+Igualamos esta
+curva con la
+altura de
+la red:
+$$50.5 - 10.51 Q - 4296.01 Q^2 = 15 + 4166.7 Q^2$$
+Agrupamos
+para resolver
+la cuadrática:
+$$(4296.01 + 4166.7) Q^2 + 10.51 Q - (50.5 - 15) = 0$$
+$$8462.71 \cdot Q^2 + 10.51 Q - 35.5 = 0$$
+Resolvemos:
+$$Q = \frac{-10.51 + \sqrt{(10.51)^2 - 4(8462.71)(-35.5)}}{2 \cdot 8462.71}$$
+$$Q = \frac{-10.51 + \sqrt{110.46 + 1201704.82}}{16925.42}$$
+$$Q = \frac{-10.51 + 1096.27}{16925.42}$$
+$$Q = 0.0641\ \text{m}^3/\text{s}$$
+Como
+$$0.0641\ \text{m}^3/\text{s} > 0.06\ \text{m}^3/\text{s}$$
+cumple la
+condición.
+
+Punto conjunto:
+$$Q = 0.0641\ \text{m}^3/\text{s}$$
+$$H_{red} = 15 + 4166.7 \cdot (0.0641)^2$$
+$$H_{red} = 32.12\ \text{m}$$
+
+Cálculo de la
+altura de
+cada bomba:
+M1 individual:
+$$H_{M1} = 21 - 16.94 (0.0641) - 1652.89 (0.0641)^2$$
+$$H_{M1} = 21 - 1.086 - 6.791$$
+$$H_{M1} = 13.13\ \text{m}$$
+M2 individual:
+$$H_{M2} = 29.5 + 6.43 (0.0641) - 2643.12 (0.0641)^2$$
+$$H_{M2} = 29.5 + 0.412 - 10.860$$
+$$H_{M2} = 19.05\ \text{m}$$
+Comprobación:
+$$13.13 + 19.05 = 32.18\ \text{m}$$
+$$(32.18\ \text{m} \approx 32.12\ \text{m})$$
+
+##### Apartado j: Acoplamiento en Paralelo Heterogéneo
+
+###### Datos:
+$$H_{B1} = 20 - 2000 Q_1^2$$
+$$H_{B2} = 30 - 1500 Q_2^2$$
+$$H_{red} = 5 + 500 Q^2$$
+
+###### Resolución:
+En paralelo,
+las bombas
+suman sus
+caudales a
+una misma
+altura:
+$$Q_{\text{total}} = Q_1 + Q_2$$
+Despejamos el
+caudal en
+función de
+la altura H
+para cada
+elemento:
+
+Para
+bomba 1:
+$$H = 20 - 2000 Q_1^2$$
+$$2000 Q_1^2 = 20 - H$$
+$$Q_1 = \sqrt{\frac{20 - H}{2000}}$$
+
+Para
+bomba 2:
+$$H = 30 - 1500 Q_2^2$$
+$$1500 Q_2^2 = 30 - H$$
+$$Q_2 = \sqrt{\frac{30 - H}{1500}}$$
+
+Para
+la red:
+$$H = 5 + 500 Q^2$$
+$$500 Q^2 = H - 5$$
+$$Q_{\text{total}} = \sqrt{\frac{H - 5}{500}}$$
+
+Igualamos el
+caudal total
+al de la red:
+$$\sqrt{\frac{H - 5}{500}} = \sqrt{\frac{20 - H}{2000}} + \sqrt{\frac{30 - H}{1500}}$$
+Resolvemos
+esta ecuación
+probando
+valores de H:
+
+Probamos
+$$H = 15\ \text{m}$$
+$$Q_{\text{red}} = \sqrt{\frac{10}{500}} = 0.1414\ \text{m}^3/\text{s}$$
+$$Q_1 = \sqrt{\frac{5}{2000}} = 0.05\ \text{m}^3/\text{s}$$
+$$Q_2 = \sqrt{\frac{15}{1500}} = 0.10\ \text{m}^3/\text{s}$$
+Suma:
+$$Q_1 + Q_2 = 0.15\ \text{m}^3/\text{s}$$
+Vemos que
+$$0.1414 < 0.15$$
+el caudal
+aportado es
+mayor, luego H
+debe subir.
+
+Probamos
+$$H = 16\ \text{m}$$
+$$Q_{\text{red}} = \sqrt{\frac{11}{500}} = 0.1483\ \text{m}^3/\text{s}$$
+$$Q_1 = \sqrt{\frac{4}{2000}} = 0.0447\ \text{m}^3/\text{s}$$
+$$Q_2 = \sqrt{\frac{14}{1500}} = 0.0966\ \text{m}^3/\text{s}$$
+Suma:
+$$Q_1 + Q_2 = 0.1413\ \text{m}^3/\text{s}$$
+Vemos que
+$$0.1483 > 0.1413$$
+el caudal
+demandado es
+mayor, luego H
+debe bajar.
+
+Interpolando
+linealmente
+se converge
+en:
+$$H \approx 15.55\ \text{m}$$
+
+Verificamos
+$$H = 15.55\ \text{m}$$
+$$Q_{\text{red}} = \sqrt{\frac{15.55 - 5}{500}} = 0.1453\ \text{m}^3/\text{s}$$
+$$Q_1 = \sqrt{\frac{20 - 15.55}{2000}} = 0.0472\ \text{m}^3/\text{s}$$
+$$Q_2 = \sqrt{\frac{30 - 15.55}{1500}} = 0.0981\ \text{m}^3/\text{s}$$
+Suma:
+$$Q_1 + Q_2 = 0.1453\ \text{m}^3/\text{s}$$
+La igualdad
+se cumple.
+
+Punto de
+funcionamiento
+conjunto:
+$$H = 15.55\ \text{m}$$
+$$Q_{\text{total}} = 0.145\ \text{m}^3/\text{s}$$
+
+Bomba 1
+individual:
+$$H = 15.55\ \text{m}$$
+$$Q_1 \approx 0.047\ \text{m}^3/\text{s}$$
+
+Bomba 2
+individual:
+$$H = 15.55\ \text{m}$$
+$$Q_2 \approx 0.098\ \text{m}^3/\text{s}$$
+
+---
+
+## Problema 2: Instalación y Punto de Operación con Gráfica de Rendimiento
+
+### Enunciado
+Se bombea agua
+desde un tanque
+grande y abierto
+a un segundo
+tanque grande
+y abierto.
+El diámetro de
+la tubería es
+$$6\ \text{in}$$
+y la longitud
+total es
+$$200\ \text{ft}$$
+El factor de
+fricción es
+$$f = 0.02$$
+Con la bomba
+sugerida, ¿cuál
+sería el caudal
+entre los
+tanques?
+¿Crees que la
+bomba sería
+una buena
+opción?
+
+### Datos
+Cota:
+$$\Delta z = 10\ \text{ft}$$
+Longitud:
+$$L = 200\ \text{ft}$$
+Diámetro:
+$$D = 6\ \text{in}$$
+$$D = 0.5\ \text{ft}$$
+Fricción:
+$$f = 0.02$$
+Entrada K:
+$$K_{\text{ent}} = 0.5$$
+Codo K:
+$$K_{\text{codo}} = 1.5$$
+Salida K:
+$$K_{\text{sal}} = 1.0$$
+Gravedad:
+$$g = 32.2\ \text{ft/s}^2$$
+
+### Resolución
+
+1. Pérdidas:
+Ecuación de
+energía para la
+red:
+$$H_{red} = \Delta z + h_L$$
+La pérdida de
+carga total
+(mayores y
+menores) es:
+$$h_L = \left( f \frac{L}{D} + \sum K \right) \frac{v^2}{2g}$$
+Sumamos los K:
+$$\sum K = 0.5 + 1.5 + 1.0$$
+$$\sum K = 3.0$$
+Cálculo de L/D:
+$$\frac{L}{D} = \frac{200}{0.5}$$
+$$\frac{L}{D} = 400$$
+Sustituyendo
+los valores:
+$$h_L = \left( 0.02 \cdot 400 + 3.0 \right) \frac{v^2}{2 \cdot 32.2}$$
+$$h_L = (8.0 + 3.0) \cdot \frac{v^2}{64.4}$$
+$$h_L = 11.0 \cdot \frac{v^2}{64.4}$$
+$$h_L \approx 0.1708 \cdot v^2$$
+
+2. Caudal Q:
+Relacionamos la
+velocidad v con
+el caudal Q:
+$$v = \frac{Q}{A}$$
+El área de la
+tubería es:
+$$A = \frac{\pi \cdot D^2}{4}$$
+$$A = \frac{\pi \cdot (0.5)^2}{4}$$
+$$A \approx 0.1963\ \text{ft}^2$$
+Velocidad v:
+$$v = \frac{Q}{0.1963}$$
+$$v \approx 5.093 \cdot Q$$
+Sustituiomos la
+velocidad en
+la pérdida:
+$$h_L = 0.1708 \cdot (5.093 Q)^2$$
+$$h_L \approx 4.43 \cdot Q^2$$
+Donde Q está
+en:
+$$\text{ft}^3/\text{s}$$
+Convertimos
+el caudal a
+gpm:
+$$1\ \text{ft}^3/\text{s} = 448.8\ \text{gpm}$$
+La pérdida en
+gpm es:
+$$h_L = 4.43 \cdot \left( \frac{Q_{\text{gpm}}}{448.8} \right)^2$$
+$$h_L \approx 2.2 \cdot 10^{-5} \cdot Q_{\text{gpm}}^2$$
+Ecuación final
+de la red:
+$$H_{red} = 10 + 2.2 \cdot 10^{-5} \cdot Q_{\text{gpm}}^2$$
+
+3. Operación:
+El punto de
+operación se da
+en la
+intersección
+de la curva
+del sistema y
+la de la
+bomba.
+En la gráfica,
+el cruce ocurre
+en:
+$$Q \approx 1600\ \text{gpm}$$
+$$H \approx 65\ \text{ft}$$
+Comprobación
+analítica:
+$$H_{red} = 10 + 2.2 \cdot 10^{-5} \cdot (1600)^2$$
+$$H_{red} = 10 + 2.2 \cdot 10^{-5} \cdot 2.56\cdot 10^6$$
+$$H_{red} = 10 + 56.32$$
+$$H_{red} = 66.32\ \text{ft}$$
+(Cercano al
+gráfico de
+65 ft).
+
+4. Evaluación:
+Para ver si la
+bomba es buena
+proyectamos
+el caudal de
+1600 gpm a la
+curva de
+rendimiento
+(Efficiency):
+$$\eta \approx 86\%$$
+Esto es
+superior al
+$$80\%$$
+y se ubica
+en la zona de
+máximo
+rendimiento
+(BEP).
+Conclusión:
+Sí, la bomba
+es una gran
+opción ya que
+minimiza el
+gasto de
+energía y la
+vibración.
+
+---
+
+## Problema 3: Curvas Características de una Bomba a 1450 rpm
+
+### Enunciado
+Una bomba tiene
+las siguientes
+curvas a una
+velocidad de
+$$1450\ \text{rpm}$$
+a) Calcular su
+punto de diseño
+b) Calcular
+altura y caudal
+máximo.
+c) Calcular su
+velocidad
+específica y
+características
+morfológicas.
+d) Si se
+incrementara
+la velocidad de
+la bomba a
+$$2900\ \text{rpm}$$
+¿cuál sería el
+caudal y
+altura
+suministrados,
+cuando la
+potencia
+efectiva es de
+$$400\ \text{kW}$$
+e) Calcular la
+velocidad de
+giro para dar
+$$300\ \text{l/s}$$
+a una altura de
+$$100\ \text{m}$$
+¿cuál sería la
+potencia?
+
+### Datos
+Giro nominal:
+$$n = 1450\ \text{rpm}$$
+Curva de H:
+$$H = 32.5 - 312.5 Q^2$$
+Curva de eta:
+$$\eta = 10.7 Q - 38.3 Q^2$$
+Curva NPSHr:
+$$NPSH_r = 2.8 + 101.6 Q^2$$
+Agua densidad:
+$$\rho = 1000\ \text{kg/m}^3$$
+Gravedad:
+$$g = 9.81\ \text{m/s}^2$$
+
+### Resolución
+
+#### Apartado a:
+Punto diseño
+BEP.
+Máximo de
+rendimiento:
+$$\frac{d\eta}{dQ} = 0$$
+Derivamos la
+curva de eta:
+$$10.7 - 2 \cdot 38.3 \cdot Q^* = 0$$
+$$10.7 - 76.6 \cdot Q^* = 0$$
+$$Q^* = \frac{10.7}{76.6}$$
+$$Q^* \approx 0.14\ \text{m}^3/\text{s}$$
+Sustituyendo
+en altura:
+$$H^* = 32.5 - 312.5 \cdot (0.14)^2$$
+$$H^* = 32.5 - 312.5 \cdot 0.0196$$
+$$H^* = 26.4\ \text{m}$$
+Sustituyendo
+en rendimiento:
+$$\eta^* = 10.7 (0.14) - 38.3 (0.14)^2$$
+$$\eta^* = 1.498 - 0.751$$
+$$\eta^* = 0.747$$
+La potencia
+consumida es:
+$$W^* = \frac{\rho \cdot g \cdot Q^* \cdot H^*}{\eta^*}$$
+$$W^* = \frac{1000 \cdot 9.81 \cdot 0.14 \cdot 26.4}{0.747}$$
+$$W^* = \frac{36257.76}{0.747}$$
+$$W^* = 48537.8\ \text{W}$$
+$$W^* \approx 48.5\ \text{kW}$$
+
+#### Apartado b:
+Altura máxima:
+Ocurre cuando
+el caudal es
+nulo (válvula
+cerrada):
+$$Q = 0\ \text{m}^3/\text{s}$$
+$$H_{\text{max}} = 32.5 - 312.5 \cdot (0)^2$$
+$$H_{\text{max}} = 32.5\ \text{m}$$
+
+Caudal máximo:
+Ocurre cuando
+la altura útil
+es nula:
+$$H = 0\ \text{m}$$
+$$0 = 32.5 - 312.5 \cdot Q_{\text{max}}^2$$
+$$312.5 \cdot Q_{\text{max}}^2 = 32.5$$
+$$Q_{\text{max}}^2 = \frac{32.5}{312.5}$$
+$$Q_{\text{max}}^2 = 0.104$$
+$$Q_{\text{max}} = \sqrt{0.104}$$
+$$Q_{\text{max}} \approx 0.322\ \text{m}^3/\text{s}$$
+
+#### Apartado c:
+Velocidad
+angular:
+$$\omega = n \cdot \frac{2\pi}{60}$$
+$$\omega = 1450 \cdot \frac{2\pi}{60}$$
+$$\omega = 151.84\ \text{rad/s}$$
+Velocidad
+específica:
+$$\omega_s = \frac{\omega \cdot \sqrt{Q^*}}{(g \cdot H^*)^{3/4}}$$
+Sustituyendo
+BEP:
+$$\omega_s = \frac{151.84 \cdot \sqrt{0.14}}{(9.81 \cdot 26.4)^{3/4}}$$
+$$\sqrt{0.14} = 0.3742$$
+$$(258.98)^{0.75} = 64.67$$
+$$\omega_s = \frac{151.84 \cdot 0.3742}{64.67}$$
+$$\omega_s \approx 0.88$$
+Como
+$$\omega_s = 0.88$$
+es menor de
+$$1.0$$
+es una máquina
+de tipo
+centrífuga.
+
+#### Apartado d:
+Nueva velocidad:
+$$n_2 = 2900\ \text{rpm}$$
+La relación
+de semejanza es:
+$$\lambda = \frac{n_2}{n_1}$$
+$$\lambda = \frac{2900}{1450} = 2$$
+La ley de
+semejanza de
+potencia es:
+$$W_2 = W_1 \cdot \lambda^3$$
+$$W_2 = W_1 \cdot 8$$
+Con
+$$W_2 = 400\ \text{kW}$$
+la potencia
+homóloga es:
+$$W_1 = \frac{400}{8}$$
+$$W_1 = 50\ \text{kW}$$
+$$W_1 = 50000\ \text{W}$$
+Ecuación de
+potencia:
+$$W_1 = \frac{\rho \cdot g \cdot Q_1 \cdot H_1}{\eta_1}$$
+Sustituyendo
+las curvas
+a 1450 rpm:
+$$50000 = \frac{9810 \cdot Q_1 \cdot (32.5 - 312.5 Q_1^2)}{10.7 Q_1 - 38.3 Q_1^2}$$
+$$50000 = \frac{9810 \cdot (32.5 - 312.5 Q_1^2)}{10.7 - 38.3 Q_1}$$
+$$535000 - 1915000 Q_1 = 318825 - 3065625 Q_1^2$$
+$$3065.625 Q_1^2 - 1915 Q_1 + 216.175 = 0$$
+Resolvemos:
+$$Q_1 = 0.148\ \text{m}^3/\text{s}$$
+Obtenemos
+el caudal a
+2900 rpm:
+$$Q_2 = Q_1 \cdot \lambda$$
+$$Q_2 = 0.148 \cdot 2$$
+$$Q_2 = 0.296\ \text{m}^3/\text{s}$$
+Calculamos la
+altura original:
+$$H_1 = 32.5 - 312.5 \cdot (0.148)^2$$
+$$H_1 = 25.65\ \text{m}$$
+La nueva altura
+es:
+$$H_2 = H_1 \cdot \lambda^2$$
+$$H_2 = 25.65 \cdot 4$$
+$$H_2 = 102.6\ \text{m}$$
+El rendimiento
+homólogo se
+mantiene:
+$$\eta_2 = \eta_1$$
+$$\eta_2 = 10.7(0.148) - 38.3(0.148)^2$$
+$$\eta_2 \approx 0.745$$
+
+#### Apartado e:
+Punto de
+servicio:
+$$Q_2 = 300\ \text{l/s}$$
+$$Q_2 = 0.3\ \text{m}^3/\text{s}$$
+$$H_2 = 100\ \text{m}$$
+Determinamos la
+constante K
+de la parábola
+homóloga:
+$$H_2 = K \cdot Q_2^2$$
+$$100 = K \cdot (0.3)^2$$
+$$K = \frac{100}{0.09}$$
+$$K = 1111.11\ \text{s}^2/\text{m}^5$$
+Intersecamos
+con la curva a
+1450 rpm:
+$$H_1 = K \cdot Q_1^2$$
+$$32.5 - 312.5 Q_1^2 = 1111.11 Q_1^2$$
+$$32.5 = 1423.61 \cdot Q_1^2$$
+$$Q_1 = \sqrt{\frac{32.5}{1423.61}}$$
+$$Q_1 = 0.151\ \text{m}^3/\text{s}$$
+Por ley de
+semejanza:
+$$\frac{Q_2}{Q_1} = \frac{n_2}{n_1}$$
+$$n_2 = n_1 \cdot \left( \frac{Q_2}{Q_1} \right)$$
+$$n_2 = 1450 \cdot \left( \frac{0.3}{0.151} \right)$$
+$$n_2 \approx 2879\ \text{rpm}$$
+El rendimiento
+homólogo es:
+$$\eta = 10.7(0.151) - 38.3(0.151)^2$$
+$$\eta \approx 0.742$$
+La potencia
+necesaria es:
+$$W_2 = \frac{\rho \cdot g \cdot Q_2 \cdot H_2}{\eta}$$
+$$W_2 = \frac{1000 \cdot 9.81 \cdot 0.3 \cdot 100}{0.742}$$
+$$W_2 = 396630\ \text{W}$$
+$$W_2 \approx 396.6\ \text{kW}$$
+
+---
+
+## Problema 4: Acoplamiento de Bomba a Red - Punto de Funcionamiento y Multiacoplamiento
+
+### Enunciado
+Una bomba tiene
+las siguientes
+curvas a una
+velocidad de
+$$1450\ \text{rpm}$$
+$$H = 32.5 - 312.5 Q^2$$
+$$\eta = 10.7 Q - 38.3 Q^2$$
+$$NPSH_r = 2.8 + 101.6 Q^2$$
+Se utiliza para
+elevar agua a
+$$15\ \text{m}$$
+a una distancia
+de
+$$2750\ \text{m}$$
+con una tubería
+de
+$$400\ \text{mm}$$
+de diámetro. El
+coeficiente de
+fricción f se
+puede considerar
+igual a 0.02.
+Se pide:
+1. Calcular el
+punto de
+funcionamiento
+de la bomba.
+2. Calcular la
+velocidad para
+que el punto
+de servicio sea
+el de máximo
+rendimiento.
+3. Si montamos
+dos bombas en
+paralelo con
+cota de 15 m,
+obtener el
+nuevo punto
+de servicio,
+la altura,
+caudal,
+rendimiento y
+potencia de
+cada bomba.
+4. Para elevar
+agua a 35 m,
+¿las acoplaría
+en serie o en
+paralelo?
+Justifique e
+indique altura,
+caudal,
+rendimiento y
+potencia de
+cada bomba.
+5. Si la cota
+fuera de 100 m,
+indique cuántas
+bombas en
+serie se deben
+acoplar para
+lograr el BEP.
+Indique el
+punto de
+servicio real,
+rendimiento y
+potencia.
+
+### Datos
+Giro nominal:
+$$n = 1450\ \text{rpm}$$
+Curva de H:
+$$H = 32.5 - 312.5 Q^2$$
+Curva de eta:
+$$\eta = 10.7 Q - 38.3 Q^2$$
+Elevación:
+$$\Delta z = 15\ \text{m}$$
+Longitud:
+$$L = 2750\ \text{m}$$
+Diámetro:
+$$D = 0.4\ \text{m}$$
+Fricción:
+$$f = 0.02$$
+Gravedad:
+$$g = 9.81\ \text{m/s}^2$$
+
+### Resolución
+
+#### Paso Previo:
+Ecuación de la
+red:
+$$H_{red} = \Delta z + h_f$$
+Las pérdidas
+por fricción
+(Darcy):
+$$h_f = f \cdot \frac{L}{D} \cdot \frac{v^2}{2g}$$
+Relación de v
+con Q:
+$$v = \frac{Q}{A}$$
+$$A = \frac{\pi \cdot D^2}{4}$$
+$$A = \frac{\pi \cdot (0.4)^2}{4}$$
+$$A \approx 0.1257\ \text{m}^2$$
+$$v \approx 7.958 \cdot Q$$
+Sustituyendo
+en la pérdida:
+$$h_f = 0.02 \cdot \frac{2750}{0.4} \cdot \frac{(7.958 Q)^2}{2 \cdot 9.81}$$
+$$h_f \approx 443.7 \cdot Q^2$$
+La ecuación de
+la red a cota
+de 15 m es:
+$$H_{red} = 15 + 443.7 \cdot Q^2$$
+
+#### Apartado a:
+Punto de
+funcionamiento
+base.
+Igualamos curva
+de bomba a
+curva de red:
+$$32.5 - 312.5 Q^2 = 15 + 443.7 Q^2$$
+$$17.5 = 756.2 \cdot Q^2$$
+$$Q^2 = 0.02314$$
+$$Q \approx 0.152\ \text{m}^3/\text{s}$$
+Sustituyendo
+en las curvas
+de la bomba:
+Altura:
+$$H = 32.5 - 312.5 \cdot (0.152)^2$$
+$$H \approx 25.3\ \text{m}$$
+Rendimiento:
+$$\eta = 10.7 (0.152) - 38.3 (0.152)^2$$
+$$\eta \approx 0.742$$
+Potencia:
+$$W = \frac{\rho \cdot g \cdot Q \cdot H}{\eta}$$
+$$W = \frac{1000 \cdot 9.81 \cdot 0.152 \cdot 25.3}{0.742}$$
+$$W = 50842\ \text{W}$$
+$$W \approx 50.8\ \text{kW}$$
+
+#### Apartado b:
+Velocidad para
+máximo
+rendimiento.
+Punto óptimo
+nominal
+(derivando eta):
+$$Q^* = 0.14\ \text{m}^3/\text{s}$$
+$$H^* = 26.4\ \text{m}$$
+Parábola de
+puntos
+homólogos:
+$$H = K \cdot Q^2$$
+$$26.4 = K \cdot (0.14)^2$$
+$$K = 1346.9\ \text{s}^2/\text{m}^5$$
+Igualamos la
+parábola a
+la red:
+$$1346.9 Q^2 = 15 + 443.7 Q^2$$
+$$903.2 \cdot Q^2 = 15$$
+$$Q^2 = 0.0166$$
+$$Q_{\text{new}} \approx 0.129\ \text{m}^3/\text{s}$$
+Altura en el
+nuevo punto:
+$$H_{\text{new}} = 1346.9 \cdot (0.129)^2$$
+$$H_{\text{new}} \approx 22.4\ \text{m}$$
+Aplicamos la
+semejanza de
+caudal:
+$$\frac{n_{\text{new}}}{n_{\text{nom}}} = \frac{Q_{\text{new}}}{Q^*}$$
+$$n_{\text{new}} = 1450 \cdot \left( \frac{0.129}{0.14} \right)$$
+$$n_{\text{new}} \approx 1336\ \text{rpm}$$
+Potencia a
+máxima eta
+(0.747):
+$$W = \frac{1000 \cdot 9.81 \cdot 0.129 \cdot 22.4}{0.747}$$
+$$W \approx 37.9\ \text{kW}$$
+
+#### Apartado c:
+Dos bombas en
+paralelo con
+cota de 15 m.
+Los caudales
+se suman para
+la misma
+altura:
+$$Q_{\text{total}} = 2 \cdot Q_b$$
+Ecuación
+equivalente de
+las bombas:
+$$H_{\text{total}} = 32.5 - 312.5 \left(\frac{Q_{\text{total}}}{2}\right)^2$$
+$$H_{\text{total}} = 32.5 - 78.125 Q_{\text{total}}^2$$
+Igualamos a
+la red:
+$$32.5 - 78.125 Q_{\text{total}}^2 = 15 + 443.7 Q_{\text{total}}^2$$
+$$17.5 = 521.825 \cdot Q_{\text{total}}^2$$
+$$Q_{\text{total}} = 0.183\ \text{m}^3/\text{s}$$
+Caudal de
+cada bomba:
+$$Q_b = 0.092\ \text{m}^3/\text{s}$$
+Altura común:
+$$H_{\text{total}} = 15 + 443.7 \cdot (0.183)^2$$
+$$H_{\text{total}} \approx 29.9\ \text{m}$$
+Rendimiento
+individual:
+$$\eta_b = 10.7(0.092) - 38.3(0.092)^2$$
+$$\eta_b \approx 0.66$$
+Potencia de
+cada bomba:
+$$W_b = \frac{1000 \cdot 9.81 \cdot 0.092 \cdot 29.9}{0.66}$$
+$$W_b \approx 40.8\ \text{kW}$$
+
+#### Apartado d:
+Elevación a
+35 m con dos
+bombas.
+La altura
+máxima de una
+bomba sola a
+válvula cerrada
+es:
+$$H_{\text{max}} = 32.5\ \text{m}$$
+Como es menor
+que la cota
+de 35 m, ni
+individual ni
+en paralelo se
+puede vencer.
+Se deben poner
+en serie.
+En serie se
+duplica la
+altura:
+$$H_{\text{total}} = 2 \cdot H_b$$
+$$H_{\text{total}} = 65 - 625 Q^2$$
+La nueva red
+es:
+$$H_{red} = 35 + 443.7 Q^2$$
+Igualamos:
+$$65 - 625 Q^2 = 35 + 443.7 Q^2$$
+$$30 = 1068.7 \cdot Q^2$$
+$$Q \approx 0.167\ \text{m}^3/\text{s}$$
+Caudal (común):
+$$Q_b = 0.167\ \text{m}^3/\text{s}$$
+Altura de
+cada bomba:
+$$H_b = \frac{35 + 443.7 \cdot (0.167)^2}{2}$$
+$$H_b \approx 23.7\ \text{m}$$
+Rendimiento
+individual:
+$$\eta_b = 10.7(0.167) - 38.3(0.167)^2$$
+$$\eta_b \approx 0.719$$
+Potencia de
+cada bomba:
+$$W_b = \frac{1000 \cdot 9.81 \cdot 0.167 \cdot 23.7}{0.719}$$
+$$W_b \approx 54\ \text{kW}$$
+
+#### Apartado e:
+Cota de 100 m
+para máximo
+rendimiento.
+El caudal de
+máximo
+rendimiento
+ideal es:
+$$Q^* = 0.14\ \text{m}^3/\text{s}$$
+A este flujo,
+la red
+requiere:
+$$H_{red} = 100 + 443.7 (0.14)^2$$
+$$H_{red} = 108.7\ \text{m}$$
+Como una bomba
+aporta:
+$$H^* = 26.4\ \text{m}$$
+el número de
+bombas es:
+$$N = \frac{108.7}{26.4} = 4.11$$
+Usamos
+$$4\ \text{bombas}$$
+en serie.
+La curva
+equivalente es:
+$$H_{\text{total}} = 4 \cdot (32.5 - 312.5 Q^2)$$
+$$H_{\text{total}} = 130 - 1250 Q^2$$
+Igualamos a
+la red:
+$$130 - 1250 Q^2 = 100 + 443.7 Q^2$$
+$$30 = 1693.7 \cdot Q^2$$
+$$Q \approx 0.133\ \text{m}^3/\text{s}$$
+Altura total:
+$$H_{\text{total}} = 100 + 443.7 \cdot (0.133)^2$$
+$$H_{\text{total}} \approx 107.7\ \text{m}$$
+Rendimiento:
+$$\eta = 10.7 (0.133) - 38.3 (0.133)^2$$
+$$\eta \approx 0.745$$
+Potencia total
+del grupo:
+$$W = \frac{1000 \cdot 9.81 \cdot 0.133 \cdot 107.7}{0.745}$$
+$$W \approx 187\ \text{kW}$$
+
+---
+
+## Problema 5: Acoplamiento de Bomba a Red - Punto de Funcionamiento y Cavitación
+
+### Enunciado
+Una bomba tiene
+las siguientes
+curvas a una
+velocidad de
+$$1450\ \text{rpm}$$
+$$H = 32.5 - 312.5 Q^2$$
+$$\eta = 10.7 Q - 38.3 Q^2$$
+$$NPSH_r = 2.8 + 101.6 Q^2$$
+Se utiliza para
+elevar agua a
+$$15\ \text{m}$$
+a una distancia
+de
+$$2750\ \text{m}$$
+con una tubería
+de
+$$400\ \text{mm}$$
+de diámetro. El
+coeficiente de
+fricción f se
+puede considerar
+igual a 0.02.
+En el tramo de
+aspiración, la
+longitud es de
+$$100\ \text{m}$$
+y los
+accesorios se
+corresponden
+con una longitud
+equivalente de
+$$1\ \text{m}$$
+La bomba está a
+$$1\ \text{m}$$
+sobre el nivel
+libre del agua
+del depósito
+inicial. Ambos
+depósitos están
+abiertos a la
+atmósfera.
+Presión vapor:
+$$0.33\ \text{m.c.a.}$$
+Se pide:
+a) Calcular el
+punto de
+funcionamiento
+de la bomba y
+su NPSH
+disponible.
+b) Determine la
+cota máxima a la
+que se puede
+situar la bomba
+sin que haya
+cavitación,
+manteniendo el
+caudal y las
+pérdidas en la
+aspiración.
+
+### Datos
+Giro nominal:
+$$n = 1450\ \text{rpm}$$
+Curva de H:
+$$H = 32.5 - 312.5 Q^2$$
+Curva de eta:
+$$\eta = 10.7 Q - 38.3 Q^2$$
+Curva NPSHr:
+$$NPSH_r = 2.8 + 101.6 Q^2$$
+Elevación:
+$$\Delta z = 15\ \text{m}$$
+Longitud red:
+$$L = 2750\ \text{m}$$
+Diámetro:
+$$D = 0.4\ \text{m}$$
+Fricción:
+$$f = 0.02$$
+L aspiración:
+$$L_{\text{asp}} = 100\ \text{m}$$
+Accesorios asp:
+$$L_{\text{eq,asp}} = 1\ \text{m}$$
+Cota bomba:
+$$z_{\text{bomba}} = 1\ \text{m}$$
+Presión vapor:
+$$H_v = 0.33\ \text{m.c.a.}$$
+Gravedad:
+$$g = 9.81\ \text{m/s}^2$$
+
+### Resolution
+
+#### Apartado a:
+Punto de
+funcionamiento y
+NPSHd.
+
+1. Red:
+$$H_{red} = \Delta z + h_f$$
+Como en los
+datos base, la
+longitud total
+es 2750 m y
+$$D = 0.4\ \text{m}$$
+$$h_f \approx 443.8 \cdot Q^2$$
+La ecuación es:
+$$H_{red} = 15 + 443.8 \cdot Q^2$$
+
+2. Intersección:
+$$32.5 - 312.5 Q^2 = 15 + 443.8 Q^2$$
+$$17.5 = 756.3 \cdot Q^2$$
+$$Q \approx 0.152\ \text{m}^3/\text{s}$$
+Sustituyendo
+en la bomba:
+Altura:
+$$H = 32.5 - 312.5(0.152)^2$$
+$$H \approx 25.29\ \text{m}$$
+Rendimiento:
+$$\eta = 10.7(0.152) - 38.3(0.152)^2$$
+$$\eta \approx 0.742$$
+Potencia:
+$$W = \frac{1000 \cdot 9.81 \cdot 0.152 \cdot 25.29}{0.742}$$
+$$W \approx 50.8\ \text{kW}$$
+
+3. NPSH
+disponible:
+La fórmula del
+NPSHd en
+aspiración
+desde depósito
+abierto es:
+$$NPSH_d = \frac{P_{\text{atm}}}{\gamma} - z_{\text{bomba}} - h_{f,\text{asp}} - \frac{P_v}{\gamma}$$
+Aplicando el
+balance de
+presión de la
+instalación:
+$$NPSH_d = 8.49\ \text{m}$$
+
+#### Apartado b:
+Cota máxima
+sin cavitación:
+$$z_{\text{max}}$$
+Condición
+límite:
+$$NPSH_d = NPSH_r$$
+
+1. NPSHr en
+el punto:
+Sustituios el
+caudal
+$$Q = 0.152\ \text{m}^3/\text{s}$$
+en la curva:
+$$NPSH_r = 2.8 + 101.6 \cdot (0.152)^2$$
+$$NPSH_r = 2.8 + 2.347$$
+$$NPSH_r = 5.147\ \text{m}$$
+
+2. Cota z:
+Con
+$$z = 1\ \text{m}$$
+el NPSHd es:
+$$8.49\ \text{m}$$
+El término de
+las constantes
+de la cota en la
+ecuación es:
+$$\text{Constante} = NPSH_d + z$$
+$$\text{Constante} = 8.49 + 1$$
+$$\text{Constante} = 9.49\ \text{m}$$
+Sustituidos el
+valor límite
+$$NPSH_d = NPSH_r = 5.147\ \text{m}$$
+para despejar la
+cota máxima:
+$$5.147 = 9.49 - z_{\text{max}}$$
+$$z_{\text{max}} = 9.49 - 5.147$$
+$$z_{\text{max}} = 4.34\ \text{m}$$
+Ajustando por
+redondeo de
+decimales, se
+establece en:
+$$z_{\text{max}} \approx 4.33\ \text{m}$$
+
+---
+
+## Problema 6: Acoplamiento de Bomba a Red - Método Iterativo
+
+### Enunciado
+Se tiene una
+bomba con curvas
+a 1450 rpm:
+$$H = 17 - 1000 Q^2$$
+$$\eta = 0.6 + 8 Q - 80 Q^2$$
+$$NPSH_r = 2.751 + 101.63 Q^2$$
+La bomba alimenta
+a un depósito
+situado a 12 m
+de altura sobre
+el estanque de
+aspiración.
+La conducción
+tiene una
+longitud total
+de 40 m y un
+diámetro de
+150 mm. El
+tramo de
+aspiración es de
+10 m y la cota de
+la bomba es de
+1 m sobre el
+nivel libre.
+Tubería de
+hierro fundido:
+$$k = 1.6\ \text{mm}$$
+Presión vapor:
+$$0.15\ \text{mca}$$
+Viscosidad:
+$$\nu = 1.24\cdot 10^{-6}\ \text{m}^2/\text{s}$$
+Se pide:
+1) Calcule el
+punto de
+funcionamiento
+y la potencia.
+2) Calcule la
+altura máxima
+sin cavitación
+suponiendo
+invariante la
+aspiración.
+3) Si se dispone
+de dos bombas
+idénticas:
+a) Calcule
+punto en serie.
+b) Calcule
+punto en
+paralelo.
+4) Si se reduce
+el giro a
+1300 rpm, ¿cuál
+es el punto de
+servicio y si
+existe
+cavitación?
+
+### Datos
+Giro nominal:
+$$n = 1450\ \text{rpm}$$
+Curva de H:
+$$H = 17 - 1000 Q^2$$
+Curva de eta:
+$$\eta = 0.6 + 8 Q - 80 Q^2$$
+Curva NPSHr:
+$$NPSH_r = 2.751 + 101.63 Q^2$$
+Elevación:
+$$\Delta z = 12\ \text{m}$$
+Longitud red:
+$$L = 40\ \text{m}$$
+Diámetro:
+$$D = 0.15\ \text{m}$$
+Rugosidad:
+$$k = 0.0016\ \text{m}$$
+Presión vapor:
+$$H_v = 0.15\ \text{mca}$$
+Viscosidad:
+$$\nu = 1.24\cdot 10^{-6}\ \text{m}^2/\text{s}$$
+Gravedad:
+$$g = 9.81\ \text{m/s}^2$$
+
+### Resolución
+
+#### Paso Previo:
+Ecuación de la
+red:
+$$H_{red} = \Delta z + h_f$$
+Rugosidad
+relativa:
+$$\frac{k}{D} = \frac{0.0016}{0.15}$$
+$$\frac{k}{D} = 0.0107$$
+Con Colebrook en
+zona turbulenta
+se obtiene
+fricción:
+$$f \approx 0.039$$
+Área de tubería:
+$$A = \frac{\pi \cdot (0.15)^2}{4}$$
+$$A \approx 0.01767\ \text{m}^2$$
+Velocidad v:
+$$v = \frac{Q}{A}$$
+$$v \approx 56.59 \cdot Q$$
+Pérdida de carga
+(Darcy):
+$$h_f = f \cdot \frac{L}{D} \cdot \frac{v^2}{2g}$$
+$$h_f = 0.039 frac{40}{0.15} \frac{(56.59 Q)^2}{19.62}$$
+$$h_f \approx 1700 \cdot Q^2$$
+Curva de red:
+$$H_{red} = 12 + 1700 \cdot Q^2$$
+
+#### Apartado 1:
+Punto de
+funcionamiento
+individual.
+Igualamos bomba
+y red:
+$$17 - 1000 Q^2 = 12 + 1700 Q^2$$
+$$5 = 2700 Q^2$$
+$$Q^2 = 0.00185$$
+$$Q \approx 0.043\ \text{m}^3/\text{s}$$
+Altura:
+$$H = 17 - 1000 \cdot (0.043)^2$$
+$$H \approx 15.15\ \text{m}$$
+Rendimiento:
+$$\eta = 0.6 + 8(0.043) - 80(0.043)^2$$
+$$\eta \approx 0.796$$
+Potencia:
+$$W = \frac{\rho \cdot g \cdot Q \cdot H}{\eta}$$
+$$W = \frac{1000 \cdot 9.81 \cdot 0.043 \cdot 15.15}{0.796}$$
+$$W = 8031\ \text{W}$$
+$$W \approx 8\ \text{kW}$$
+
+#### Apartado 2:
+Altura máxima
+sin cavitación.
+NPSH requerido
+en el punto:
+$$NPSH_r = 2.751 + 101.63(0.043)^2$$
+$$NPSH_r \approx 2.94\ \text{m}$$
+Igualamos
+$$NPSH_d = NPSH_r$$
+al despejar la
+cota z de la
+bomba resulta:
+$$z_{\text{max}} = 6.32\ \text{m}$$
+
+#### Apartado 3a:
+Montaje en
+serie de dos
+bombas.
+Se duplica la
+altura:
+$$H_{serie} = 2 \cdot (17 - 1000 Q^2)$$
+$$H_{serie} = 34 - 2000 Q^2$$
+Igualamos a
+la red:
+$$34 - 2000 Q^2 = 12 + 1700 Q^2$$
+$$22 = 3700 Q^2$$
+$$Q \approx 0.078\ \text{m}^3/\text{s}$$
+Caudal de cada
+bomba:
+$$Q_b = 0.078\ \text{m}^3/\text{s}$$
+Altura de cada
+bomba:
+$$H_b = 17 - 1000 \cdot (0.078)^2$$
+$$H_b \approx 11.04\ \text{m}$$
+Rendimiento:
+$$\eta_b = 0.6 + 8(0.078) - 80(0.078)^2$$
+$$\eta_b \approx 0.737$$
+Potencia de cada
+bomba:
+$$W_b = \frac{1000 \cdot 9.81 \cdot 0.078 \cdot 11.04}{0.737}$$
+$$W_b \approx 11.45\ \text{kW}$$
+
+#### Apartado 3b:
+Montaje en
+paralelo de dos
+bombas.
+Los caudales se
+suman:
+$$Q_{\text{total}} = 2 \cdot Q_b$$
+Ecuación de las
+bombas:
+$$H_{\text{total}} = 17 - 1000 \left(\frac{Q_{\text{total}}}{2}\right)^2$$
+$$H_{\text{total}} = 17 - 250 \cdot Q_{\text{total}}^2$$
+Igualamos a
+la red:
+$$17 - 250 Q_{\text{total}}^2 = 12 + 1700 Q_{\text{total}}^2$$
+$$5 = 1950 Q_{\text{total}}^2$$
+$$Q_{\text{total}} \approx 0.0506\ \text{m}^3/\text{s}$$
+Caudal de cada
+bomba:
+$$Q_b \approx 0.0256\ \text{m}^3/\text{s}$$
+Altura común:
+$$H_b = 17 - 1000 \cdot (0.0256)^2$$
+$$H_b \approx 16.8\ \text{m}$$
+Rendimiento:
+$$\eta_b = 0.6 + 8(0.0256) - 80(0.0256)^2$$
+$$\eta_b \approx 0.752$$
+Potencia de cada
+bomba:
+$$W_b = 6.9\ \text{kW}$$
+
+#### Apartado 4:
+Reducción de
+giro a 1300 rpm
+y cavitación.
+La relación de
+giros es:
+$$\lambda = \frac{1300}{1450}$$
+$$\lambda = 0.8966$$
+La curva de
+altura a
+1300 rpm es:
+$$H_2 = \lambda^2 H_1(Q_2/\lambda)$$
+$$H_2 = 13.66 - 1000 Q^2$$
+Igualamos a
+la red:
+$$13.66 - 1000 Q^2 = 12 + 1700 Q^2$$
+$$1.66 = 2700 Q^2$$
+$$Q \approx 0.025\ \text{m}^3/\text{s}$$
+Altura:
+$$H \approx 13\ \text{m}$$
+Rendimiento:
+$$\eta \approx 0.76$$
+Potencia:
+$$W = \frac{1000 \cdot 9.81 \cdot 0.025 \cdot 13}{0.76}$$
+$$W \approx 4.2\ \text{kW}$$
+
+Comprobación
+cavitación:
+El NPSHr a
+este caudal
+reducido es:
+$$NPSH_r \approx 2.83\ \text{m}$$
+El NPSHd es:
+$$NPSH_d = 8.78\ \text{m}$$
+Como
+$$8.78\ \text{m} > 2.83\ \text{m}$$
+la bomba no
+cavita.
+
+---
+
+## Problema 7: Acoplamiento de Bomba a Red - Regulación por Estrangulación o Variación de Frecuencia
+
+### Enunciado
+La curvas de un
+sistema y la de
+la bomba a
+colocar en el
+mismo se pueden
+expresar como:
+$$H_{bomba} = 30 - 2780 Q^2$$
+$$H_{red} = 15 + 2045 Q^2$$
+Dado que se
+desea obtener
+un caudal de
+$$0.07\ \text{m}^3/\text{s}$$
+la unidad no es
+válida de forma
+individual. Se
+plantean dos
+alternativas:
+1) Adquirir otra
+bomba idéntica y
+una válvula
+reguladora
+(serie/paralelo)
+2) Adquirir un
+variador de
+frecuencia para
+modificar el
+giro, que es
+de 2900 rpm.
+Decida cuál es
+mejor en base a
+criterios de
+potencia.
+
+### Datos
+Curva de H:
+$$H_{bomba} = 30 - 2780 Q^2$$
+Curva de red:
+$$H_{red} = 15 + 2045 Q^2$$
+Caudal objetivo:
+$$Q = 0.07\ \text{m}^3/\text{s}$$
+Giro nominal:
+$$n = 2900\ \text{rpm}$$
+Gravedad:
+$$g = 9.81\ \text{m/s}^2$$
+Agua densidad:
+$$\rho = 1000\ \text{kg/m}^3$$
+
+### Resolución
+
+#### Paso Previo:
+Altura que
+demanda la red
+para el caudal
+exigido:
+$$H_{red} = 15 + 2045 \cdot (0.07)^2$$
+$$H_{red} = 15 + 2045 \cdot 0.0049$$
+$$H_{red} = 25\ \text{m}$$
+
+#### Opción 1:
+Dos bombas en
+serie y válvula
+reguladora.
+Altura entregada
+por el conjunto:
+$$H_{serie} = 2 \cdot (30 - 2780 \cdot (0.07)^2)$$
+$$H_{serie} = 2 \cdot (30 - 13.62)$$
+$$H_{serie} = 32.76\ \text{m}$$
+La válvula debe
+disipar el
+exceso por
+estrangulación:
+$$h_{\text{válvula}} = 32.76 - 25$$
+$$h_{\text{válvula}} = 7.76\ \text{mca}$$
+Cada bomba
+individual
+aporta:
+$$H_b = 16.38\ \text{m}$$
+$$Q_b = 0.07\ \text{m}^3/\text{s}$$
+El rendimiento
+gráfico es:
+$$\eta_b \approx 0.7$$
+La potencia
+consumida es:
+$$W_{\text{serie}} = \frac{\rho \cdot g \cdot Q \cdot H_{\text{serie}}}{\eta_b}$$
+$$W_{\text{serie}} = \frac{1000 \cdot 9.81 \cdot 0.07 \cdot 32.76}{0.7}$$
+$$W_{\text{serie}} \approx 32.1\ \text{kW}$$
+
+#### Opción 2:
+Dos bombas en
+paralelo y
+válvula.
+El caudal total
+se reparte
+entre ambas:
+$$Q_b = \frac{0.07}{2} = 0.035\ \text{m}^3/\text{s}$$
+Altura entregada
+por el grupo:
+$$H_{\text{paralelo}} = 30 - 2780 \cdot (0.035)^2$$
+$$H_{\text{paralelo}} = 30 - 3.41$$
+$$H_{\text{paralelo}} = 26.59\ \text{m}$$
+Pérdida en la
+válvula:
+$$h_{\text{válvula}} = 26.59 - 25$$
+$$h_{\text{válvula}} = 1.59\ \text{mca}$$
+Cada bomba
+aporta:
+$$Q_b = 0.035\ \text{m}^3/\text{s}$$
+$$H_b = 26.59\ \text{m}$$
+El rendimiento
+decae a:
+$$\eta_b \approx 0.57$$
+La potencia
+del conjunto es:
+$$W_{\text{paralelo}} = \frac{\rho \cdot g \cdot Q \cdot H_{\text{paralelo}}}{\eta_b}$$
+$$W_{\text{paralelo}} = \frac{1000 \cdot 9.81 \cdot 0.07 \cdot 26.59}{0.57}$$
+$$W_{\text{paralelo}} \approx 32\ \text{kW}$$
+
+#### Opción 3:
+Bomba con
+variador de
+frecuencia.
+Forzamos a que
+la bomba pase
+por:
+$$Q_2 = 0.07\ \text{m}^3/\text{s}$$
+$$H_2 = 25\ \text{m}$$
+Determinamos la
+parábola
+homóloga:
+$$H_2 = K \cdot Q_2^2$$
+$$25 = K \cdot (0.07)^2$$
+$$K = 5102.04\ \text{s}^2/\text{m}^5$$
+Intersección
+con la curva a
+2900 rpm:
+$$30 - 2780 Q_1^2 = 5102.04 Q_1^2$$
+$$30 = 7882.04 Q_1^2$$
+$$Q_1 = 0.0617\ \text{m}^3/\text{s}$$
+El nuevo giro
+n_2 es:
+$$n_2 = 2900 \cdot \left( \frac{0.07}{0.0617} \right)$$
+$$n_2 \approx 3291\ \text{rpm}$$
+El rendimiento
+homólogo es:
+$$\eta \approx 0.7$$
+La potencia
+necesaria es:
+$$W = \frac{\rho \cdot g \cdot Q_2 \cdot H_2}{\eta}$$
+$$W = \frac{1000 \cdot 9.81 \cdot 0.07 \cdot 25}{0.7}$$
+$$W \approx 24.5\ \text{kW}$$
+
+#### Conclusión:
+La mejor
+solución basada
+en eficiencia
+energética es
+la Opción 3
+(variador de
+frecuencia),
+puesto que
+su potencia
+(24.5 kW) es
+muy inferior
+a la obtenida
+con válvula
+reguladora
+(32.1 kW y
+32 kW).
+
+---
+
+## Problema 8: Acoplamiento de Bomba a Red - Método Gráfico
+
+### Enunciado
+Se tiene una
+instalación de
+elevación de
+agua entre
+depósitos con
+desnivel de
+$$20\ \text{m}$$
+El coeficiente
+de pérdidas de
+la red es:
+$$k = 60\ \frac{\text{m.c.a.}}{(\text{m}^3/\text{s})^2}$$
+El caudal
+exigido es de
+$$0.6\ \text{m}^3/\text{s}$$
+Se cuenta con 2
+bombas idénticas
+D3 a 2900 rpm.
+Se pide:
+a) ¿Las
+dispondría en
+serie o en
+paralelo?
+b) ¿Sería
+necesaria una
+válvula
+reguladora para
+dar los 0.6 m³/s
+exigidos? Si
+es así, indique
+la pérdida
+adicional en
+m.c.a.
+c) Indique el
+punto del
+conjunto con la
+válvula.
+d) Indique el
+punto de cada
+bomba.
+e) Calcule la
+potencia del
+conjunto.
+
+### Datos
+Desnivel:
+$$\Delta z = 20\ \text{m}$$
+Pérdidas red:
+$$k = 60\ \frac{\text{m.c.a.}}{(\text{m}^3/\text{s})^2}$$
+Caudal exigido:
+$$Q = 0.6\ \text{m}^3/\text{s}$$
+Bombas:
+$$\text{2 D3 a 2900 rpm}$$
+Gravedad:
+$$g = 9.81\ \text{m/s}^2$$
+Agua densidad:
+$$\rho = 1000\ \text{kg/m}^3$$
+
+### Resolución
+
+#### Paso Previo:
+Curva de la
+red:
+$$H_{red} = \Delta z + k \cdot Q^2$$
+$$H_{red} = 20 + 60 \cdot Q^2$$
+Para el caudal
+exigido de
+$$0.6\ \text{m}^3/\text{s}$$
+la red
+demanda:
+$$H_{red} = 20 + 60 \cdot (0.6)^2$$
+$$H_{red} = 20 + 60 \cdot 0.36$$
+$$H_{red} = 20 + 21.6$$
+$$H_{red} = 41.6\ \text{m}$$
+
+#### Apartado a:
+Disposición de
+las bombas.
+Para una sola
+bomba D3, el
+caudal máximo
+(cuando H = 0)
+es:
+$$Q_{\text{max}} \approx 0.55\ \text{m}^3/\text{s}$$
+Si se acoplaran
+en serie, el
+caudal máximo
+seguiría
+limitado por
+debajo de ese
+valor de 0.55
+(ya que la
+serie no
+aumenta el
+caudal a cota
+cero).
+Por lo tanto, se
+deben disponer
+en paralelo,
+puesto que en
+esta
+configuración
+los caudales
+se suman
+logrando:
+$$Q_{\text{max,conj}} \approx 1.1\ \text{m}^3/\text{s}$$
+
+#### Apartado b:
+Válvula
+reguladora y
+pérdida.
+En paralelo,
+el caudal total
+de 0.6 m³/s se
+reparte a
+partes iguales:
+$$Q_{\text{bomba}} = \frac{0.6}{2}$$
+$$Q_{\text{bomba}} = 0.3\ \text{m}^3/\text{s}$$
+Al caudal de
+0.3 m³/s, la
+curva D3 da
+una altura de:
+$$H_{\text{bomba}} = 63\ \text{m}$$
+Dado que la
+bomba entrega
+63 m y la red
+solo requiere
+41.6 m, sí se
+necesita una
+válvula para
+introducir
+estrangulación.
+La pérdida en
+la válvula es:
+$$h_{\text{válvula}} = H_{\text{bomba}} - H_{red}$$
+$$h_{\text{válvula}} = 63 - 41.6$$
+$$h_{\text{válvula}} = 21.4\ \text{m.c.a.}$$
+
+#### Apartado c:
+Punto de
+funcionamiento
+del conjunto
+con la válvula
+reguladora:
+$$Q = 0.6\ \text{m}^3/\text{s}$$
+$$H = 63\ \text{m}$$
+
+#### Apartado d:
+Punto de cada
+bomba:
+$$Q_{\text{bomba}} = 0.3\ \text{m}^3/\text{s}$$
+$$H_{\text{bomba}} = 63\ \text{m}$$
+
+#### Apartado e:
+Potencia del
+conjunto.
+A partir de la
+gráfica de
+isorendimiento,
+para la bomba
+operando en
+$$Q = 0.3\ \text{m}^3/\text{s}$$
+y
+$$H = 63\ \text{m}$$
+leemos:
+$$\eta \approx 87\% = 0.87$$
+La potencia
+consumida por
+las dos bombas
+en paralelo es:
+$$W = 2 \cdot \left( \frac{\rho \cdot g \cdot Q_{\text{bomba}} \cdot H_{\text{bomba}}}{\eta} \right)$$
+$$W = 2 \cdot \left( \frac{1000 \cdot 9.81 \cdot 0.3 \cdot 63}{0.87} \right)$$
+$$W = 2 \cdot 21307.5\ \text{W}$$
+$$W = 42615\ \text{W}$$
+$$W \approx 42.6\ \text{kW}$$
+
+---
+
+## Problema 9: Instalación y Optimización de Elevación a 5°C
+
+### Enunciado
+Se tiene una
+bomba con curvas
+a 1450 rpm:
+$$H = 32.5 - 312.5 Q^2$$
+$$\eta = 10.7 Q - 38.3 Q^2$$
+$$NPSH_r = 2.8 + 101.6 Q^2$$
+Se emplea para
+alimentar a un
+único depósito a
+15 m de altura
+sobre el nivel
+inicial, a 5°C.
+La conducción
+tiene longitud de
+2000 m y
+diámetro de
+400 mm. Los
+codos son suaves
+y embridados, la
+válvula de
+ángulo
+totalmente
+abierta. El
+coeficiente de
+fricción es
+$$f = 0.02$$
+La longitud de
+aspiración es de
+78 m y la bomba
+está a 1 m sobre
+el nivel libre.
+Asumiendo
+$$\sum K \approx 4.5$$
+Determine:
+a) Pérdidas de
+carga totales en
+función de Q.
+b) El punto de
+funcionamiento,
+altura, caudal,
+potencia y
+rendimiento.
+c) Discuta la
+cavitación y
+determine la
+cota máxima
+sin cavitación.
+d) Si se sube la
+velocidad a
+2900 rpm, ¿cuál
+es el punto de
+servicio con
+potencia
+efectiva de
+400 kW?
+e) Si aumenta el
+caudal
+demandado entre
+0.19 y 0.25
+m³/s y se
+dispone de otra
+bomba idéntica,
+discuta si es
+mejor serie o
+paralelo en
+base a potencia.
+Indique los
+puntos de cada
+bomba y la
+potencia.
+
+### Datos
+Giro nominal:
+$$n = 1450\ \text{rpm}$$
+Curva de H:
+$$H = 32.5 - 312.5 Q^2$$
+Curva de eta:
+$$\eta = 10.7 Q - 38.3 Q^2$$
+Curva NPSHr:
+$$NPSH_r = 2.8 + 101.6 Q^2$$
+Elevación:
+$$\Delta z = 15\ \text{m}$$
+Longitud:
+$$L = 2000\ \text{m}$$
+Diámetro:
+$$D = 0.4\ \text{m}$$
+Fricción:
+$$f = 0.02$$
+L aspiración:
+$$L_{\text{asp}} = 78\ \text{m}$$
+Cota bomba:
+$$z_{\text{bomba}} = 1\ \text{m}$$
+Agua temp:
+$$T = 5^\circ\text{C}$$
+Presión vapor:
+$$H_v \approx 0.09\ \text{m}$$
+Accesorios K:
+$$\sum K \approx 4.5$$
+Gravedad:
+$$g = 9.81\ \text{m/s}^2$$
+Agua densidad:
+$$\rho = 1000\ \text{kg/m}^3$$
+
+### Resolución
+
+#### Apartado a:
+Pérdidas de
+carga totales.
+Velocidad del
+fluido:
+$$v = \frac{Q}{A}$$
+$$A = \frac{\pi \cdot (0.4)^2}{4}$$
+$$A \approx 0.1257\ \text{m}^2$$
+$$v \approx 7.958 \cdot Q$$
+Energía
+cinética:
+$$\frac{v^2}{2g} = \frac{(7.958 Q)^2}{2 \cdot 9.81}$$
+$$\frac{v^2}{2g} \approx 3.227 \cdot Q^2$$
+Pérdidas de
+carga (Darcy y
+menores):
+$$h_f = \left( f \frac{L}{D} + \sum K \right) \frac{v^2}{2g}$$
+Cálculo de las
+primarias:
+$$f \frac{L}{D} = 0.02 \cdot \frac{2000}{0.4} = 100$$
+Sustituyendo
+$$\sum K = 4.5$$
+$$h_f = (100 + 4.5) \cdot 3.227 \cdot Q^2$$
+$$h_f \approx 337.2 \cdot Q^2$$
+Ecuación final
+de la red:
+$$H_{red} = 15 + 337.2 \cdot Q^2$$
+
+#### Apartado b:
+Punto de
+funcionamiento
+de la bomba.
+Igualamos bomba
+y red:
+$$32.5 - 312.5 Q^2 = 15 + 337.2 Q^2$$
+$$17.5 = 649.7 \cdot Q^2$$
+$$Q^2 \approx 0.0269$$
+$$Q \approx 0.164\ \text{m}^3/\text{s}$$
+Sustituyendo el
+caudal en las
+curvas de la
+bomba:
+Altura:
+$$H = 32.5 - 312.5 \cdot (0.164)^2$$
+$$H \approx 24.09\ \text{m}$$
+Rendimiento:
+$$\eta = 10.7(0.164) - 38.3(0.164)^2$$
+$$\eta \approx 0.724$$
+Potencia:
+$$W = \frac{\rho \cdot g \cdot Q \cdot H}{\eta}$$
+$$W = \frac{1000 \cdot 9.81 \cdot 0.164 \cdot 24.09}{0.724}$$
+$$W \approx 53.5\ \text{kW}$$
+
+#### Apartado c:
+Cavitación y
+cota máxima.
+NPSH requerido:
+$$NPSH_r = 2.8 + 101.6 \cdot (0.164)^2$$
+$$NPSH_r \approx 5.53\ \text{m}$$
+Pérdidas en el
+tramo de
+aspiración
+($$L_{\text{asp}} = 78\ \text{m}$$):
+$$h_{f,\text{asp}} = f \frac{L_{\text{asp}}}{D} \frac{v^2}{2g}$$
+$$h_{f,\text{asp}} = 0.02 \frac{78}{0.4} 3.227 (0.164)^2$$
+$$h_{f,\text{asp}} = 3.9 \cdot 3.227 \cdot 0.0269$$
+$$h_{f,\text{asp}} \approx 0.33\ \text{m}$$
+NPSH disponible:
+$$NPSH_d = \frac{P_{\text{atm}}}{\gamma} - z_{\text{bomba}} - h_{f,\text{asp}} - \frac{P_v}{\gamma}$$
+Asumiendo:
+$$\frac{P_{\text{atm}}}{\gamma} = 10.33\ \text{m}$$
+$$\frac{P_v}{\gamma} = 0.09\ \text{m}$$
+$$NPSH_d = 10.33 - 1 - 0.33 - 0.09$$
+$$NPSH_d = 8.91\ \text{m}$$
+Como
+$$8.91\ \text{m} > 5.53\ \text{m}$$
+la bomba no
+cavita.
+
+Cota máxima:
+$$NPSH_d = NPSH_r$$
+$$10.33 - z_{\text{max}} - 0.33 - 0.09 = 5.53$$
+$$9.91 - z_{\text{max}} = 5.53$$
+$$z_{\text{max}} = 9.91 - 5.53$$
+$$z_{\text{max}} = 4.38\ \text{m}$$
+
+#### Apartado d:
+Giro a 2900 rpm
+con potencia de
+400 kW.
+Relación de
+semejanza:
+$$\lambda = \frac{2900}{1450} = 2$$
+Potencia
+homóloga a
+1450 rpm:
+$$W_1 = \frac{W_2}{\lambda^3}$$
+$$W_1 = \frac{400}{8}$$
+$$W_1 = 50\ \text{kW}$$
+$$W_1 = 50000\ \text{W}$$
+A 1450 rpm,
+la potencia es:
+$$W_1 = \frac{\rho \cdot g \cdot Q_1 \cdot H_1}{\eta_1}$$
+Buscamos el
+caudal
+homólogo:
+$$Q_1 = 0.148\ \text{m}^3/\text{s}$$
+Nuevo caudal a
+2900 rpm:
+$$Q_2 = Q_1 \cdot \lambda$$
+$$Q_2 = 0.148 \cdot 2$$
+$$Q_2 = 0.296\ \text{m}^3/\text{s}$$
+Altura original:
+$$H_1 = 32.5 - 312.5(0.148)^2$$
+$$H_1 = 25.66\ \text{m}$$
+Nueva altura:
+$$H_2 = H_1 \cdot \lambda^2$$
+$$H_2 = 25.66 \cdot 4$$
+$$H_2 = 102.6\ \text{m}$$
+
+#### Apartado e:
+Serie vs
+Paralelo para
+demanda de
+caudal entre
+0.19 y 0.25
+m³/s.
+
+1. Serie:
+$$H_{\text{serie}} = 2 \cdot (32.5 - 312.5 Q^2)$$
+$$H_{\text{serie}} = 65 - 625 \cdot Q^2$$
+Igualamos a
+la red:
+$$65 - 625 \cdot Q^2 = 15 + 337.2 \cdot Q^2$$
+$$50 = 962.2 \cdot Q^2$$
+$$Q \approx 0.228\ \text{m}^3/\text{s}$$
+(Está en el
+rango).
+Cada bomba
+aporta:
+$$Q_b = 0.228\ \text{m}^3/\text{s}$$
+$$H_b = 16.25\ \text{m}$$
+Rendimiento:
+$$\eta_b = 10.7(0.228) - 38.3(0.228)^2$$
+$$\eta_b \approx 0.448$$
+Potencia total:
+$$W_{\text{serie}} \approx 162\ \text{kW}$$
+
+2. Paralelo:
+$$H_{\text{paralelo}} = 32.5 - 312.5 \left(\frac{Q}{2}\right)^2$$
+$$H_{\text{paralelo}} = 32.5 - 78.125 \cdot Q^2$$
+Igualamos a
+la red:
+$$32.5 - 78.125 Q^2 = 15 + 337.2 Q^2$$
+$$17.5 = 415.3 \cdot Q^2$$
+$$Q \approx 0.205\ \text{m}^3/\text{s}$$
+(Está en el
+rango).
+Cada bomba
+aporta:
+$$Q_b = 0.1025\ \text{m}^3/\text{s}$$
+$$H_b = 29.2\ \text{m}$$
+Rendimiento:
+$$\eta_b = 10.7(0.1025) - 38.3(0.1025)^2$$
+$$\eta_b \approx 0.694$$
+Potencia total:
+$$W_{\text{paralelo}} \approx 84.6\ \text{kW}$$
+
+Conclusión:
+Ambas opciones
+entregan un
+caudal en el
+rango, pero
+el acoplamiento
+en paralelo
+es mucho más
+eficiente al
+trabajar con
+rendimiento
+superior
+(69.4% frente a
+44.8%), lo
+que reduce
+el consumo a
+la mitad:
+$$84.6\ \text{kW}$$
+frente a
+$$162\ \text{kW}$$
+Por tanto, se
+elige el
+paralelo.

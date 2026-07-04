@@ -1,0 +1,736 @@
+# Tema 5: Mecánica de Fluidos - Problemas Resueltos de Arrastre
+
+## Índice de Contenidos
+1. [Conceptos Clave y Fórmulas](#conceptos-clave-y-fórmulas)
+2. [Problema 1: Avión y Cartel Publicitario](#problema-1-avión-y-cartel-publicitario)
+3. [Problema 2: Depósito de Agua Elevado](#problema-2-depósito-de-agua-elevado)
+4. [Problema 3: Antena de Radio](#problema-3-antena-de-radio)
+5. [Problema Propuesto 1: Bola de Corcho](#problema-propuesto-1-bola-de-corcho)
+6. [Problema Propuesto 2: Tensión en la Cuerda del Árbol](#problema-propuesto-2-tensión-en-la-cuerda-del-árbol)
+7. [Problema Propuesto 3: Hojas de Árbol](#problema-propuesto-3-hojas-de-árbol)
+
+---
+
+## Conceptos Clave y Fórmulas
+
+### Fuerza Arrastre
+Fuerza que
+ejerce el
+fluido sobre
+un cuerpo en la
+dirección del
+movimiento.
+$$F_D = C_D \cdot A \cdot \frac{1}{2}\rho U^2$$
+* $$C_D$$:
+Arrastre.
+* $$A$$:
+Área ref.
+* $$\rho$$:
+Densidad.
+* $$U$$:
+Velocidad.
+
+### Reynolds
+Relación entre
+inercia y
+viscosidad:
+$$Re = \frac{U \cdot L}{\nu}$$
+* $$L$$:
+Longitud.
+* $$\nu$$:
+Viscosidad.
+
+### Potencia
+Potencia para
+vencer el
+arrastre:
+$$P = F_D \cdot U$$
+
+---
+
+## Problema 1: Avión y Cartel Publicitario
+
+### Enunciado
+Un avión
+arrastra un
+cartel
+publicitario
+como se muestra
+en la figura a
+$$150\ \text{km/h}$$
+Las dimensiones
+son
+$$b = 0.8\ \text{m}$$
+de alto por
+$$L = 25\ \text{m}$$
+de largo. Se ha
+calculado un
+coeficiente
+total de
+arrastre de
+$$C_D = 0.06$$
+para un área de
+referencia
+$$b \cdot L$$
+Determinar:
+1. La potencia
+necesaria para
+desplazar el
+cartel.
+2. Comparar los
+resultados con
+los obtenidos
+para placa
+plana.
+
+### Datos
+Velocidad
+$$U = 150\ \text{km/h}$$
+$$U = 41.67\ \text{m/s}$$
+Alto
+$$b = 0.8\ \text{m}$$
+Largo
+$$L = 25\ \text{m}$$
+Arrastre
+$$C_D = 0.06$$
+Densidad aire
+$$\rho = 1.23\ \text{kg/m}^3$$
+Viscosidad
+$$\nu = 1.46\cdot 10^{-5}\ \text{m}^2/\text{s}$$
+Área
+$$A = b \cdot L$$
+$$A = 20\ \text{m}^2$$
+
+### Resolución
+
+#### Apartado A:
+Pasamos la
+velocidad a
+unidades del
+SI (m/s) para
+hacer los
+cálculos:
+$$U = 150 \cdot \frac{1000}{3600}$$
+$$U = 41.67\ \text{m/s}$$
+El área de
+referencia es el
+alto por el
+largo del
+cartel:
+$$A = b \cdot L$$
+$$A = 0.8 \cdot 25$$
+$$A = 20\ \text{m}^2$$
+La fuerza de
+arrastre del
+aire se opone
+al movimiento
+y se calcula
+como:
+$$F_D = C_D \cdot A \cdot \frac{1}{2}\rho U^2$$
+Sustituimos el
+coeficiente de
+arrastre, área,
+densidad y la
+velocidad al
+cuadrado:
+$$F_D = 0.06 \cdot 20 \cdot 0.5 \cdot 1.23 \cdot (41.67)^2$$
+$$F_D = 1281.46\ \text{N}$$
+La potencia
+necesaria para
+arrastrar el
+cartel es la
+fuerza por la
+velocidad del
+avión:
+$$P = F_D \cdot U$$
+Sustituyendo
+los valores
+anteriores:
+$$P = 1281.46 \cdot 41.67$$
+$$P = 53398.23\ \text{W}$$
+$$P \approx 53.4\ \text{kW}$$
+
+#### Apartado B:
+Para comparar
+con una placa
+plana lisa,
+primero hay que
+obtener el
+número de
+Reynolds
+para conocer
+el régimen
+de la capa
+límite:
+$$Re = \frac{U \cdot L}{\nu}$$
+Sustituyendo la
+velocidad,
+longitud y
+viscosidad:
+$$Re = \frac{41.67 \cdot 25}{1.46 \cdot 10^{-5}}$$
+$$Re = 7.13 \cdot 10^7$$
+Con este valor
+de Reynolds,
+buscamos en el
+ábaco de capa
+límite el
+coeficiente de
+fricción:
+$$C_f = 0.0025$$
+Una placa plana
+tiene fricción
+en dos caras,
+por lo que se
+multiplica
+por dos:
+$$F_{\text{placa}} = 2 \cdot C_f \cdot A \cdot \frac{1}{2}\rho U^2$$
+Sustituyendo
+los valores:
+$$F_{\text{placa}} = 2 \cdot 0.0025 \cdot 20 \cdot 0.5 \cdot 1.23 \cdot (41.67)^2$$
+$$F_{\text{placa}} = 106.8\ \text{N}$$
+La potencia
+requerida en
+este caso es:
+$$P_{\text{placa}} = F_{\text{placa}} \cdot U$$
+Sustituyendo:
+$$P_{\text{placa}} = 106.8 \cdot 41.67$$
+$$P_{\text{placa}} = 4449.5\ \text{W}$$
+$$P_{\text{placa}} \approx 4.45\ \text{kW}$$
+
+---
+
+## Problema 2: Depósito de Agua Elevado
+
+### Enunciado
+Un viento de
+$$96.5\ \text{km/h}$$
+actúa sobre un
+depósito de
+agua elevado.
+Determine el
+par necesario
+en la base para
+mantener la
+torre a salvo.
+
+### Datos
+Viento:
+$$U = 96.5\ \text{km/h}$$
+$$U = 26.81\ \text{m/s}$$
+Esfera:
+$$D_s = 12.19\ \text{m}$$
+Cilindro:
+$$D_c = 4.57\ \text{m}$$
+H cilindro:
+$$b = 15.24\ \text{m}$$
+Aire:
+$$\rho = 1.23\ \text{kg/m}^3$$
+$$\nu = 1.46\cdot 10^{-5}\ \text{m}^2/\text{s}$$
+
+### Resolución
+El peso del
+depósito no
+genera momento
+respecto a la
+base porque su
+línea de acción
+pasa justo por
+el centro.
+El par es
+causado solo
+por la fuerza
+del viento.
+Convertimos la
+velocidad a
+m/s:
+$$U = 96.5 \cdot \frac{1000}{3600}$$
+$$U = 26.81\ \text{m/s}$$
+
+1. Esfera:
+El número de
+Reynolds para
+la esfera es:
+$$Re_s = \frac{U \cdot D_s}{\nu}$$
+Sustituyendo:
+$$Re_s = \frac{26.81 \cdot 12.19}{1.46 \cdot 10^{-5}}$$
+$$Re_s = 2.23 \cdot 10^7$$
+En el ábaco
+para esferas
+lisas a este
+Reynolds se
+obtiene:
+$$C_{Ds} = 0.2$$
+El área frontal
+proyectada de
+la esfera es:
+$$A_s = \frac{\pi \cdot D_s^2}{4}$$
+Sustituyendo:
+$$A_s = \frac{\pi \cdot (12.19)^2}{4}$$
+$$A_s = 116.71\ \text{m}^2$$
+La fuerza de
+arrastre en la
+esfera es:
+$$F_s = C_{Ds} \cdot A_s \cdot \frac{1}{2}\rho U^2$$
+Sustituyendo:
+$$F_s = 0.2 \cdot 116.71 \cdot 0.5 \cdot 1.23 \cdot (26.81)^2$$
+$$F_s = 20629.87\ \text{N}$$
+
+2. Cilindro:
+El número de
+Reynolds para
+el poste es:
+$$Re_c = \frac{U \cdot D_c}{\nu}$$
+Sustituyendo:
+$$Re_c = \frac{26.81 \cdot 4.57}{1.46 \cdot 10^{-5}}$$
+$$Re_c = 8.39 \cdot 10^6$$
+En el ábaco
+para cilindros
+lisos a este
+Reynolds se
+obtiene:
+$$C_{Dc} = 0.7$$
+El área frontal
+expuesta es:
+$$A_c = D_c \cdot b$$
+Sustituyendo:
+$$A_c = 4.57 \cdot 15.24$$
+$$A_c = 69.65\ \text{m}^2$$
+La fuerza de
+arrastre en el
+cilindro es:
+$$F_c = C_{Dc} \cdot A_c \cdot \frac{1}{2}\rho U^2$$
+Sustituyendo:
+$$F_c = 0.7 \cdot 69.65 \cdot 0.5 \cdot 1.23 \cdot (26.81)^2$$
+$$F_c = 21544.6\ \text{N}$$
+
+3. Par total:
+Los brazos de
+giro desde la
+base hasta el
+centro de cada
+cuerpo son:
+Para la esfera:
+$$y_s = b + \frac{D_s}{2}$$
+$$y_s = 15.24 + \frac{12.19}{2}$$
+$$y_s = 21.335\ \text{m}$$
+Para el poste,
+su centro de
+gravedad es:
+$$y_c = \frac{b}{2}$$
+$$y_c = \frac{15.24}{2}$$
+$$y_c = 7.62\ \text{m}$$
+El momento de
+vuelco total
+en la base se
+obtiene como:
+$$M = F_s \cdot y_s + F_c \cdot y_c$$
+Sustituyendo:
+$$M = 20629.87 \cdot 21.335 + 21544.6 \cdot 7.62$$
+$$M = 440139.25 + 164164.85$$
+$$M = 604304.1\ \text{N}\cdot\text{m}$$
+
+---
+
+## Problema 3: Antena de Radio
+
+### Enunciado
+Una antena de
+radio de onda
+corta se
+construye con
+un tubo
+circular.
+Estime la
+fuerza del
+viento sobre la
+antena en un
+viento de
+$$100\ \text{km/h}$$
+
+### Datos
+Viento:
+$$U = 100\ \text{km/h}$$
+$$U = 27.78\ \text{m/s}$$
+Tramo 1 (vert):
+$$D_1 = 40\ \text{mm}$$
+$$L_1 = 5\ \text{m}$$
+Tramo 2 (horz):
+$$D_2 = 20\ \text{mm}$$
+$$L_2 = 1.5\ \text{m}$$
+Tramo 3 (punt):
+$$4\ \text{unidades}$$
+$$D_3 = 10\ \text{mm}$$
+$$L_3 = 1\ \text{m}$$
+Aire:
+$$\rho = 1.23\ \text{kg/m}^3$$
+$$\nu = 1.46\cdot 10^{-5}\ \text{m}^2/\text{s}$$
+
+### Resolución
+Velocidad:
+$$U = 27.78\ \text{m/s}$$
+
+1. Reynolds:
+Calculamos el
+Reynolds en
+cada cilindro
+para hallar su
+coeficiente de
+arrastre:
+Tramo 1:
+$$Re_1 = \frac{U \cdot D_1}{\nu}$$
+$$Re_1 = \frac{27.78 \cdot 0.04}{1.46 \cdot 10^{-5}}$$
+$$Re_1 = 7.61 \cdot 10^4$$
+$$C_{D1} \approx 1.4$$
+Tramo 2:
+$$Re_2 = \frac{U \cdot D_2}{\nu}$$
+$$Re_2 = \frac{27.78 \cdot 0.02}{1.46 \cdot 10^{-5}}$$
+$$Re_2 = 3.81 \cdot 10^4$$
+$$C_{D2} \approx 1.4$$
+Tramo 3:
+$$Re_3 = \frac{U \cdot D_3}{\nu}$$
+$$Re_3 = \frac{27.78 \cdot 0.01}{1.46 \cdot 10^{-5}}$$
+$$Re_3 = 1.9 \cdot 10^4$$
+$$C_{D3} \approx 1.4$$
+Los tres
+Reynolds caen
+en la zona del
+gráfico donde
+el coeficiente
+es:
+$$C_D = 1.4$$
+
+2. Área total:
+Al ser el C_D
+igual para
+todos, sumamos
+sus áreas
+frontales
+proyectadas:
+$$A_1 = D_1 \cdot L_1$$
+$$A_1 = 0.04 \cdot 5 = 0.2\ \text{m}^2$$
+$$A_2 = D_2 \cdot L_2$$
+$$A_2 = 0.02 \cdot 1.5 = 0.03\ \text{m}^2$$
+$$A_3 = 4 \cdot D_3 \cdot L_3$$
+$$A_3 = 4 \cdot 0.01 \cdot 1 = 0.04\ \text{m}^2$$
+Área total:
+$$A_{\text{total}} = A_1 + A_2 + A_3$$
+$$A_{\text{total}} = 0.2 + 0.03 + 0.04$$
+$$A_{\text{total}} = 0.27\ \text{m}^2$$
+
+3. Fuerza:
+La fuerza total
+del viento es:
+$$F_D = C_D \cdot A_{\text{total}} \cdot \frac{1}{2}\rho U^2$$
+Sustituyendo:
+$$F_D = 1.4 \cdot 0.27 \cdot 0.5 \cdot 1.23 \cdot (27.78)^2$$
+$$F_D = 179.3\ \text{N}$$
+
+---
+
+## Problema Propuesto 1: Bola de Corcho
+
+### Enunciado
+Una bola de
+corcho de
+$$0.30\ \text{m}$$
+de diámetro
+$$SG = 0.21$$
+está atada a un
+objeto en el
+fondo de un
+río. Estime la
+velocidad de la
+corriente.
+Desprecie peso
+y arrastre del
+cable.
+
+### Datos
+Diámetro:
+$$D = 0.30\ \text{m}$$
+Densidad rel:
+$$SG = 0.21$$
+Ángulo:
+$$\theta = 30^\circ$$
+Agua:
+$$\rho = 1000\ \text{kg/m}^3$$
+$$\nu = 1.12\cdot 10^{-6}\ \text{m}^2/\text{s}$$
+$$g = 9.81\ \text{m/s}^2$$
+
+### Resolución
+
+1. Volumen:
+Calculamos el
+volumen de la
+esfera:
+$$V = \frac{4}{3} \pi R^3 = \frac{\pi \cdot D^3}{6}$$
+$$V = \frac{\pi \cdot (0.3)^3}{6}$$
+$$V = 0.01414\ \text{m}^3$$
+
+2. Empuje/Peso:
+Por Arquímedes
+el empuje es el
+peso del agua
+desalojada:
+$$E = \rho \cdot V \cdot g$$
+$$E = 1000 \cdot 0.01414 \cdot 9.81$$
+$$E = 138.69\ \text{N}$$
+El peso de la
+bola es:
+$$W = SG \cdot E$$
+$$W = 0.21 \cdot 138.69$$
+$$W = 29.12\ \text{N}$$
+
+3. Tensión:
+Equilibrio
+vertical:
+$$E - W - T_y = 0$$
+La componente
+vertical es
+tensión por
+seno de 30:
+$$T \cdot \sin(30^\circ) = E - W$$
+$$T \cdot \sin(30^\circ) = 138.69 - 29.12$$
+$$T \cdot \sin(30^\circ) = 109.57\ \text{N}$$
+$$T = \frac{109.57}{\sin(30^\circ)}$$
+$$T = 219.14\ \text{N}$$
+
+4. Arrastre:
+Equilibrio
+horizontal:
+$$F_D - T_x = 0$$
+La componente
+horizontal es
+tensión por
+coseno de 30:
+$$F_D = T \cdot \cos(30^\circ)$$
+$$F_D = 219.14 \cdot \cos(30^\circ)$$
+$$F_D = 189.78\ \text{N}$$
+
+5. Ecuación:
+El área frontal
+proyectada de
+la esfera es:
+$$A = \frac{\pi \cdot D^2}{4}$$
+$$A = \frac{\pi \cdot (0.3)^2}{4}$$
+$$A = 0.07069\ \text{m}^2$$
+La relación de
+arrastre es:
+$$F_D = C_D \cdot A \cdot \frac{1}{2}\rho U^2$$
+Sustituyendo
+la fuerza:
+$$189.78 = C_D \cdot 0.07069 \cdot 500 \cdot U^2$$
+$$C_D \cdot U^2 = 5.37$$
+El número de
+Reynolds es:
+$$Re = \frac{U \cdot D}{\nu}$$
+$$Re = \frac{U \cdot 0.30}{1.12\cdot 10^{-6}}$$
+$$Re = 2.68\cdot 10^5 \cdot U$$
+
+6. Iteración:
+Iteración 1:
+Supón
+$$U = 3\ \text{m/s}$$
+$$Re = 8.04\cdot 10^5$$
+De ábaco:
+$$C_D \approx 0.1$$
+Nueva U:
+$$U = \sqrt{\frac{5.37}{0.1}}$$
+$$U = 7.32\ \text{m/s}$$
+
+Iteración 2:
+$$U = 7.32\ \text{m/s}$$
+$$Re = 1.96\cdot 10^6$$
+De ábaco:
+$$C_D \approx 0.2$$
+Nueva U:
+$$U = \sqrt{\frac{5.37}{0.2}}$$
+$$U = 5.18\ \text{m/s}$$
+
+Iteración 3:
+$$U = 5.18\ \text{m/s}$$
+$$Re = 1.39\cdot 10^6$$
+De ábaco:
+$$C_D \approx 0.15$$
+Nueva U:
+$$U = \sqrt{\frac{5.37}{0.15}}$$
+$$U = 5.98\ \text{m/s}$$
+
+Iteración 4:
+Converge en:
+$$C_D \approx 0.18$$
+$$U = \sqrt{\frac{5.37}{0.18}}$$
+$$U = 5.46\ \text{m/s}$$
+(Analítico
+del PDF:
+$$U = 5.31\ \text{m/s}$$
+)
+
+---
+
+## Problema Propuesto 2: Tensión en la Cuerda del Árbol
+
+### Enunciado
+El gran árbol
+recién plantado
+se evita que se
+vuelque con el
+viento mediante
+una cuerda.
+Estime la
+tensión en la
+cuerda si el
+viento es de
+$$80\ \text{km/h}$$
+
+### Datos
+Viento:
+$$U = 80\ \text{km/h}$$
+$$U = 22.22\ \text{m/s}$$
+Copa árbol:
+$$A = 10.45\ \text{m}^2$$
+$$C_D = 0.26$$
+Brazo fuerza:
+$$h_{cp} = 6.1\ \text{m}$$
+Brazo cuerda:
+$$h = 2\ \text{m}$$
+Ángulo cuerda:
+$$\theta = 45^\circ$$
+Aire:
+$$\rho = 1.23\ \text{kg/m}^3$$
+
+### Resolución
+
+1. Arrastre:
+La fuerza del
+viento en la
+copa es:
+$$F_D = C_D \cdot A \cdot \frac{1}{2}\rho U^2$$
+Sustituyendo
+los valores:
+$$F_D = 0.26 \cdot 10.45 \cdot 0.5 \cdot 1.23 \cdot (22.22)^2$$
+$$F_D = 824.9\ \text{N}$$
+
+2. Tensión T:
+Tomamos el
+momento de
+fuerzas en el
+pivote A de la
+base:
+$$F_D \cdot h_{cp} - T_x \cdot h = 0$$
+La componente
+horizontal es
+tensión por
+coseno de 45:
+$$F_D \cdot h_{cp} = T \cdot \cos(45^\circ) \cdot h$$
+Sustituyendo:
+$$824.9 \cdot 6.1 = T \cdot \cos(45^\circ) \cdot 2$$
+$$5031.89 = T \cdot 1.4142$$
+$$T = \frac{5031.89}{1.4142}$$
+$$T = 3558.1\ \text{N}$$
+$$T \approx 3.56\ \text{kN}$$
+(PDF estima:
+$$T \approx 3.65\ \text{kN}$$
+)
+
+---
+
+## Problema Propuesto 3: Hojas de Árbol
+
+### Enunciado
+El coeficiente
+de resistencia
+total de un
+árbol es
+función de la
+longitud de sus
+hojas
+$$L$$
+Para
+$$L = 0.1\ \text{m}$$
+determine:
+1. Fuerza de
+resistencia
+para viento de
+$$4.6\ \text{m/s}$$
+2. Velocidad
+para que la
+resistencia
+sea 6 veces
+mayor.
+
+### Datos
+Árbol:
+$$W = 1.6\ \text{m}$$
+$$H = 2.5\ \text{m}$$
+Área frontal:
+$$A = W \cdot H$$
+$$A = 4\ \text{m}^2$$
+Hoja:
+$$L = 0.1\ \text{m}$$
+Aire:
+$$\rho = 1.23\ \text{kg/m}^3$$
+$$\nu = 1.46\cdot 10^{-5}\ \text{m}^2/\text{s}$$
+
+### Resolución
+
+1. Fuerza para
+$$U = 4.6\ \text{m/s}$$
+Reynolds de
+la hoja:
+$$Re = \frac{U \cdot L}{\nu}$$
+Sustituyendo:
+$$Re = \frac{4.6 \cdot 0.1}{1.46 \cdot 10^{-5}}$$
+$$Re = 3.15 \cdot 10^4$$
+De la gráfica
+para Reynolds
+de 3.15e4:
+$$C_D \approx 0.46$$
+Fuerza arrastre:
+$$F_D = C_D \cdot A \cdot \frac{1}{2}\rho U^2$$
+Sustituyendo:
+$$F_D = 0.46 \cdot 4 \cdot 0.5 \cdot 1.23 \cdot (4.6)^2$$
+$$F_D = 23.94\ \text{N}$$
+
+2. Sextuplicar:
+La nueva
+fuerza es:
+$$F'_D = 6 \cdot F_D$$
+$$F'_D = 143.64\ \text{N}$$
+Ecuación:
+$$F'_D = C'_D \cdot A \cdot \frac{1}{2}\rho U'^2$$
+Sustituyendo:
+$$143.64 = C'_D \cdot 4 \cdot 0.5 \cdot 1.23 \cdot U'^2$$
+$$C'_D \cdot U'^2 = 58.39$$
+
+3. Iteración:
+Iteración 1:
+Supón
+$$C'_D = 0.3$$
+Nueva U:
+$$U' = \sqrt{\frac{58.39}{0.3}}$$
+$$U' = 13.95\ \text{m/s}$$
+Reynolds:
+$$Re' = \frac{U' \cdot L}{\nu}$$
+Sustituyendo:
+$$Re' = \frac{13.95 \cdot 0.1}{1.46 \cdot 10^{-5}}$$
+$$Re' = 9.55 \cdot 10^4$$
+Ábaco:
+$$C'_D \approx 0.34$$
+
+Iteración 2:
+$$U' = \sqrt{\frac{58.39}{0.34}}$$
+$$U' = 13.1\ \text{m/s}$$
+Reynolds:
+$$Re' = \frac{13.1 \cdot 0.1}{1.46\cdot 10^{-5}}$$
+$$Re' = 8.97 \cdot 10^4$$
+Ábaco:
+$$C'_D \approx 0.35$$
+Cercano a
+$$0.34$$
+Converge en:
+$$U' \approx 13.1\ \text{m/s}$$
+(Analítico
+del PDF:
+$$U' = 12.65\ \text{m/s}$$
+)

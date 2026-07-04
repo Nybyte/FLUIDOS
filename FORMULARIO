@@ -1,0 +1,450 @@
+# Formulario de Mecánica de Fluidos
+
+---
+
+## TEMA 2 — Estática de Fluidos
+
+### Presión Hidrostática
+$$p = p_0 + \rho g h$$
+
+$$p_0$$
+= presión en la
+superficie libre
+$$h$$
+= profundidad
+vertical
+$$\rho$$
+= densidad del
+fluido
+
+### Fuerza sobre Superficie Plana
+$$F_R = \gamma \cdot h_c \cdot A$$
+
+donde:
+$$\gamma = \rho \cdot g$$
+$$h_c$$
+= profundidad
+del centroide
+$$A$$
+= área de la
+superficie
+
+### Centro de Presiones
+$$y_p = y_c + \frac{I_{xc}}{y_c \cdot A}$$
+
+$$y_c$$
+= distancia del
+centroide a la
+superficie libre
+a lo largo de
+la inclinación
+$$I_{xc}$$
+= momento de
+inercia centroidal
+
+Rectángulo
+$$b \times L$$:
+$$I_{xc} = \frac{1}{12} b L^3$$
+
+Círculo de diámetro D:
+$$I_{xc} = \frac{\pi D^4}{64}$$
+
+### Profundidad del Centroide (superficie inclinada)
+Si la superficie
+está inclinada un
+ángulo
+$$\theta$$
+respecto a la
+horizontal:
+$$h_c = y_c \cdot \sin\theta$$
+
+### Fuerza sobre Superficie Curva
+$$F_H = \gamma \cdot h_{c,\text{proy}} \cdot A_{\text{proy}}$$
+
+$$F_V = \gamma \cdot V_{\text{fluido sobre la curva}}$$
+
+$$F_R = \sqrt{F_H^2 + F_V^2}$$
+
+Centroide de un
+cuarto de cilindro
+(horizontal desde
+el eje):
+$$x_c = \frac{4R}{3\pi}$$
+
+### Fluido Bajo Aceleración Lineal
+Inclinación de la
+superficie libre:
+$$\tan\theta = \frac{a_x}{g}$$
+
+Elevación máxima
+en la pared (a
+distancia
+$$L/2$$
+del centro):
+$$\Delta z = \frac{L}{2} \cdot \tan\theta$$
+
+Presión en punto
+$$x, z$$
+con origen en la
+superficie libre
+en reposo:
+$$p = p_0 - \rho a_x x - \rho g z$$
+
+---
+
+## TEMA 3 — Fluidodinámica
+
+### Continuidad (flujo incompresible)
+$$Q = A_1 v_1 = A_2 v_2$$
+
+$$\dot{m} = \rho Q = \rho A v = \text{cte}$$
+
+### Bernoulli (sin pérdidas)
+$$\frac{p_1}{\gamma} + z_1 + \frac{v_1^2}{2g} = \frac{p_2}{\gamma} + z_2 + \frac{v_2^2}{2g}$$
+
+En unidades de
+presión:
+$$p_1 + \frac{1}{2}\rho v_1^2 + \rho g z_1 = p_2 + \frac{1}{2}\rho v_2^2 + \rho g z_2$$
+
+### Bernoulli con Pérdidas y Bomba
+$$\frac{p_1}{\gamma} + z_1 + \frac{v_1^2}{2g} + H_B = \frac{p_2}{\gamma} + z_2 + \frac{v_2^2}{2g} + H_r$$
+
+donde:
+$$H_B$$
+= altura útil
+de la bomba
+$$H_r$$
+= pérdidas de
+carga totales
+
+### Tubo de Pitot
+$$v = \sqrt{2g \cdot l} = \sqrt{\frac{2(p_{\text{tot}} - p_{\text{est}})}{\rho}}$$
+
+donde
+$$l$$
+es la diferencia
+de niveles entre
+el Pitot y el
+piezómetro.
+
+### Venturi + Manómetro Diferencial
+Con fluido
+manométrico
+$$\gamma_m$$
+y deflexión
+$$d$$:
+$$\frac{p_1 - p_2}{\gamma} = d\left(\frac{\gamma_m}{\gamma} - 1\right) + (z_2 - z_1)$$
+
+### Presión de Estancamiento (Pitot)
+$$p_{\text{estag}} = p_{\text{est}} + \frac{1}{2}\rho v^2$$
+
+### Torricelli (vaciado de depósito)
+$$v_{\text{salida}} = \sqrt{2g \cdot \Delta h}$$
+
+### Conservación de Momento Lineal
+$$\sum \vec{F} = \dot{m}(\vec{v}_2 - \vec{v}_1)$$
+
+En la dirección
+$$x$$:
+$$\sum F_x = \dot{m}(v_{2x} - v_{1x})$$
+
+Fuerzas en el VdC:
+* Presión entrada:
+$$+p_1 A_1$$
+* Presión salida:
+$$-p_2 A_2$$
+* Anclaje:
+$$+F_{\text{anclaje}}$$
+* Peso fluido + cuerpo:
+$$-W$$
+
+---
+
+## TEMA 5 — Flujo en Tuberías
+
+### Darcy-Weisbach
+$$H_r = f \cdot \frac{L}{D} \cdot \frac{v^2}{2g}$$
+
+$$\Delta p = f \cdot \frac{L}{D} \cdot \frac{\rho v^2}{2}$$
+
+### Número de Reynolds
+$$Re = \frac{\rho v D}{\mu} = \frac{v D}{\nu}$$
+
+Laminar:
+$$Re < 2300$$
+Turbulento:
+$$Re > 4000$$
+
+### Factor de Fricción
+
+Laminar:
+$$f = \frac{64}{Re}$$
+
+Turbulento liso
+(Blasius,
+$$Re < 10^5$$):
+$$f = \frac{0.316}{Re^{0.25}}$$
+
+Turbulento general
+(Colebrook-White,
+implícita):
+$$\frac{1}{\sqrt{f}} = -2 \log\left(\frac{\varepsilon/D}{3.71} + \frac{2.51}{Re\sqrt{f}}\right)$$
+
+Swamee-Jain
+(explícita):
+$$f = \frac{0.25}{\left[\log\left(\frac{\varepsilon/D}{3.71} + \frac{5.74}{Re^{0.9}}\right)\right]^2}$$
+
+### Pérdidas Singulares
+$$H_{r,s} = K \cdot \frac{v^2}{2g}$$
+
+### Tuberías en Serie
+$$H_{r,\text{total}} = \sum_{i} H_{r,i}$$
+$$Q = \text{cte}$$
+
+### Tuberías en Paralelo
+$$Q_{\text{total}} = \sum_{i} Q_i$$
+$$\Delta H_i = \text{igual en cada rama}$$
+
+---
+
+## TEMA 8 — Máquinas Hidráulicas: Bombas
+
+### Potencia Hidráulica y Rendimiento
+$$P_{\text{hidráulica}} = \gamma \cdot Q \cdot H_B$$
+
+$$P_{\text{al freno}} = \frac{P_{\text{hidráulica}}}{\eta_{\text{total}}}$$
+
+$$\eta_{\text{total}} = \eta_h \cdot \eta_v \cdot \eta_m$$
+
+### Carga Útil de la Bomba
+$$H_B = \frac{p_2 - p_1}{\gamma} + z_2 - z_1 + \frac{v_2^2 - v_1^2}{2g}$$
+
+### Curva de la Red
+$$H_{\text{red}} = \Delta z + k \cdot Q^2$$
+
+### Semejanza Hidráulica
+$$\frac{Q'}{Q} = \frac{n'}{n}$$
+
+$$\frac{H'}{H} = \left(\frac{n'}{n}\right)^2$$
+
+$$\frac{P'}{P} = \left(\frac{n'}{n}\right)^3$$
+
+El rendimiento
+$$\eta$$
+se conserva entre
+velocidades afines.
+
+### Acoplamiento en Serie
+$$H_{\text{total}} = H_1 + H_2$$
+$$Q_1 = Q_2 = Q$$
+
+Usar en serie si la
+red tiene gran
+diferencia de cota.
+
+### Acoplamiento en Paralelo
+$$Q_{\text{total}} = Q_1 + Q_2$$
+$$H_1 = H_2 = H$$
+
+Usar en paralelo
+si se necesita
+mayor caudal.
+
+### Estrangulación (Válvula Reguladora)
+$$H_{\text{válvula}} = H_B(Q_{\text{des}}) - H_{\text{red}}(Q_{\text{des}})$$
+
+Esta energía se
+disipa (solución
+ineficiente).
+
+### NPSH — Cavitación
+
+NPSH disponible:
+$$NPSH_d = \frac{p_{\text{atm}} - p_v}{\gamma} - z_{\text{asp}} - H_{r,\text{asp}}$$
+
+Criterio:
+$$NPSH_d > NPSH_r$$
+
+Altura máxima
+de aspiración:
+$$z_{\text{asp,max}} = \frac{p_{\text{atm}} - p_v}{\gamma} - H_{r,\text{asp}} - NPSH_r$$
+
+---
+
+## ANEXO — Manometría
+
+### Manómetro Simple
+$$p_A = p_{\text{ref}} + \gamma \cdot h$$
+
+### Manómetro Diferencial en U
+Recorrido hidrostático
+de A hasta B:
+$$p_A + \gamma_f h_1 - \gamma_m d - \gamma_f h_2 = p_B$$
+
+Para puntos al
+mismo nivel:
+$$p_A - p_B = (\gamma_m - \gamma_f) \cdot d$$
+
+### Manómetro Invertido
+Para fluido ligero
+(aceite, aire)
+sobre el fluido:
+$$p_A - p_B = \gamma_f \Delta h - \gamma_m \cdot d$$
+
+---
+
+## GUÍA DE RESOLUCIÓN
+
+### Estática — Superficie Plana
+1. Identifica la
+profundidad del
+centroide:
+$$h_c$$
+2. Calcula la fuerza:
+$$F_R = \gamma h_c A$$
+3. Halla el centro de
+presiones:
+$$y_p = y_c + \frac{I_{xc}}{y_c A}$$
+4. Equilibrio de
+momentos respecto
+al punto de
+articulación.
+
+### Estática — Superficie Curva
+1. Proyección
+vertical
+$$\rightarrow F_H$$
+2. Volumen de agua
+encima de la curva
+$$\rightarrow F_V$$
+3. Resultante:
+$$F_R = \sqrt{F_H^2 + F_V^2}$$
+4. Punto de acción:
+centroide del
+volumen.
+
+### Bernoulli — Método General
+1. Elige dos puntos
+entre los que
+aplicar Bernoulli.
+2. Simplifica:
+si el depósito
+es grande,
+$$v_1 \approx 0$$
+Si descarga libre,
+$$p_2 = 0$$
+3. Despeja la
+incógnita.
+4. Si hay bomba,
+añade
+$$H_B$$
+al lado de
+menor energía.
+
+### Cantidad de Movimiento
+1. Define el
+volumen de control.
+2. Identifica entradas
+y salidas.
+3. Aplica:
+$$\sum F = \dot{m}(v_2 - v_1)$$
+4. Incluye todas las
+fuerzas sobre el
+VdC: presión,
+peso, anclaje.
+5. El signo de la
+fuerza de anclaje
+indica su sentido.
+
+### Número de Reynolds y Colebrook — Paso a Paso
+
+Este es el proceso
+más frecuente en
+problemas de
+tuberías.
+
+Paso 1: Calcula la
+velocidad:
+$$v = \frac{Q}{A} = \frac{4Q}{\pi D^2}$$
+
+Paso 2: Calcula Re:
+$$Re = \frac{v D}{\nu}$$
+
+donde para agua
+a 20°C:
+$$\nu \approx 1.004 \times 10^{-6}\ \text{m}^2/\text{s}$$
+
+Paso 3: Decide el
+régimen:
+Si
+$$Re < 2300$$
+es laminar:
+$$f = \frac{64}{Re}$$
+Si
+$$Re > 4000$$
+es turbulento,
+usa Colebrook:
+$$\frac{1}{\sqrt{f}} = -2\log\!\left(\frac{\varepsilon/D}{3.71} + \frac{2.51}{Re\sqrt{f}}\right)$$
+
+Paso 4: Itera f.
+Valor inicial:
+$$f_0 = 0.02$$
+Sustituye en el
+lado derecho,
+obtén un nuevo
+$$f$$,
+repite hasta que
+la diferencia sea
+menor que 0.001.
+
+Paso 5: Calcula
+pérdidas:
+$$H_r = f \frac{L}{D} \frac{v^2}{2g}$$
+
+Paso 6: Aplica
+Bernoulli con
+pérdidas.
+
+### Bombas — Punto de Funcionamiento
+1. Iguala la curva
+de la bomba con
+la curva de la red:
+$$H_B(Q) = H_{\text{red}}(Q)$$
+2. Resuelve para
+$$Q$$
+y luego obtén
+$$H$$
+sustituyendo.
+3. Si no alcanza el
+caudal deseado,
+evalúa:
+- Serie: sube
+$$H$$
+al doble.
+- Paralelo: sube
+$$Q$$
+al doble.
+4. Verifica siempre:
+$$NPSH_d > NPSH_r$$
+5. Para cambiar
+velocidad usa
+semejanza:
+$$\frac{n'}{n} = \sqrt{\frac{H'}{H}}$$
+
+### NPSH — Anti-Cavitación
+1. Calcula
+$$NPSH_d$$
+con la instalación
+real (altura de
+aspiración y
+pérdidas).
+2. Compara con
+$$NPSH_r$$
+del catálogo.
+3. Si
+$$NPSH_d < NPSH_r$$
+la bomba cavita:
+reduce
+$$z_{\text{asp}}$$
+o las pérdidas
+en aspiración.
